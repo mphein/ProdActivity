@@ -1,0 +1,271 @@
+[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SessionLengthDelegate.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [System,1,13,19]; ]
+using Toybox.System;
+[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SessionLengthDelegate.mc"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [WatchUi,2,13,20]; ]
+using Toybox.WatchUi;
+[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SessionLengthDelegate.mc"; @line = 3; @symbol_importdef<0> = [DurationLimits,3,7,21]; ]
+import DurationLimits;
+[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SessionLengthDelegate.mc"; @line = 5; @symbol_classdef = [SessionLengthDelegate,5,6,27]; @symbol_extends<0> = [WatchUi,5,36,43]; @symbol_extends<1> = [InputDelegate,5,44,57]; ]
+class SessionLengthDelegate extends WatchUi.InputDelegate {
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SessionLengthDelegate.mc"; @line = 5; ]
+    <init> {
+    }
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SessionLengthDelegate.mc"; @line = 5; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SessionLengthDelegate.mc"; @line = 6; @position = 8; @symbol_vardef = [view,6,8,12]; ]
+    var view;
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SessionLengthDelegate.mc"; @line = 8; @symbol_functiondef = [initialize,8,13,23]; @symbol_param<0> = [v,8,24,25]; ]
+    function initialize(v) as Void {
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionLengthDelegate_mc_8_27_11_4_start:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SessionLengthDelegate.mc" 9 8 ]
+        symbol [ WatchUi %tmp.1 9 8 15 ];
+        %tmp.1 = getm $.Toybox.WatchUi;
+        symbol [ InputDelegate %tmp.2 9 16 29 ];
+        %tmp.2 = getv %tmp.1 :InputDelegate;
+        symbol [ initialize %tmp.3 9 30 40 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SessionLengthDelegate.mc" 10 8 ]
+        %tmp.4 = lgetv %v;
+        symbol [ v %tmp.4 10 15 16 ];
+        symbol [ view ? 10 8 12 ];
+        putv self :view %tmp.4;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionLengthDelegate_mc_8_27_11_4_stop:
+    }
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SessionLengthDelegate.mc"; @line = 13; @symbol_functiondef = [onKey,13,13,18]; @symbol_param<0> = [keyEvent,13,19,27]; ]
+    function onKey(keyEvent) {
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionLengthDelegate_mc_13_29_24_4_start:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SessionLengthDelegate.mc" 14 8 ]
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionLengthDelegate_mc_14_8_18_8_if_stmt:
+        %tmp.1 = lgetv %keyEvent;
+        symbol [ keyEvent %tmp.1 14 12 20 ];
+        symbol [ getKey %tmp.2 14 21 27 ];
+        %tmp.2 = getv function %tmp.1 :getKey;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        symbol [ WatchUi %tmp.4 14 33 40 ];
+        %tmp.4 = getm $.Toybox.WatchUi;
+        symbol [ KEY_UP %tmp.5 14 41 47 ];
+        %tmp.5 = getv %tmp.4 :KEY_UP;
+        %tmp.6 = eq %tmp.3 %tmp.5;
+        bf %tmp.6 @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionLengthDelegate_mc_14_8_18_8_if_end;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionLengthDelegate_mc_14_8_18_8_if_true:
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionLengthDelegate_mc_14_49_18_8_start:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SessionLengthDelegate.mc" 15 12 ]
+        symbol [ System %tmp.7 15 12 18 ];
+        %tmp.7 = getm $.Toybox.System;
+        symbol [ println %tmp.8 15 19 26 ];
+        %tmp.8 = getv function %tmp.7 :println;
+        %tmp.9 = "onKey: KEY_UP";
+        invoke %tmp.7 %tmp.8(%tmp.9);
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SessionLengthDelegate.mc" 16 12 ]
+        %tmp.10 = self;
+        symbol [ onUp %tmp.11 16 12 16 ];
+        %tmp.11 = getv function %tmp.10 :onUp;
+        invoke %tmp.10 %tmp.11();
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SessionLengthDelegate.mc" 17 12 ]
+        %tmp.12 = true;
+        ret %tmp.12;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionLengthDelegate_mc_14_49_18_8_stop:
+        goto @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionLengthDelegate_mc_14_8_18_8_if_end;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionLengthDelegate_mc_14_8_18_8_if_end:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SessionLengthDelegate.mc" 18 10 ]
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionLengthDelegate_mc_18_10_22_8_if_stmt:
+        %tmp.13 = lgetv %keyEvent;
+        symbol [ keyEvent %tmp.13 18 14 22 ];
+        symbol [ getKey %tmp.14 18 23 29 ];
+        %tmp.14 = getv function %tmp.13 :getKey;
+        %tmp.15 = invoke %tmp.13 %tmp.14();
+        symbol [ WatchUi %tmp.16 18 35 42 ];
+        %tmp.16 = getm $.Toybox.WatchUi;
+        symbol [ KEY_DOWN %tmp.17 18 43 51 ];
+        %tmp.17 = getv %tmp.16 :KEY_DOWN;
+        %tmp.18 = eq %tmp.15 %tmp.17;
+        bf %tmp.18 @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionLengthDelegate_mc_18_10_22_8_if_end;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionLengthDelegate_mc_18_10_22_8_if_true:
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionLengthDelegate_mc_18_53_22_8_start:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SessionLengthDelegate.mc" 19 12 ]
+        symbol [ System %tmp.19 19 12 18 ];
+        %tmp.19 = getm $.Toybox.System;
+        symbol [ println %tmp.20 19 19 26 ];
+        %tmp.20 = getv function %tmp.19 :println;
+        %tmp.21 = "onKey: KEY_DOWN";
+        invoke %tmp.19 %tmp.20(%tmp.21);
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SessionLengthDelegate.mc" 20 12 ]
+        %tmp.22 = self;
+        symbol [ onDown %tmp.23 20 12 18 ];
+        %tmp.23 = getv function %tmp.22 :onDown;
+        invoke %tmp.22 %tmp.23();
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SessionLengthDelegate.mc" 21 12 ]
+        %tmp.24 = true;
+        ret %tmp.24;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionLengthDelegate_mc_18_53_22_8_stop:
+        goto @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionLengthDelegate_mc_18_10_22_8_if_end;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionLengthDelegate_mc_18_10_22_8_if_end:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SessionLengthDelegate.mc" 23 8 ]
+        %tmp.25 = false;
+        ret %tmp.25;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionLengthDelegate_mc_13_29_24_4_stop:
+    }
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SessionLengthDelegate.mc"; @line = 27; @symbol_functiondef = [onUp,27,13,17]; ]
+    function onUp() {
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionLengthDelegate_mc_27_20_36_4_start:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SessionLengthDelegate.mc" 28 8 ]
+        symbol [ System %tmp.1 28 8 14 ];
+        %tmp.1 = getm $.Toybox.System;
+        symbol [ println %tmp.2 28 15 22 ];
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "onUp called";
+        invoke %tmp.1 %tmp.2(%tmp.3);
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SessionLengthDelegate.mc" 29 8 ]
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionLengthDelegate_mc_29_8_34_8_if_stmt:
+        symbol [ view %tmp.5 29 12 16 ];
+        %tmp.5 = getv ? :view;
+        symbol [ currentValue %tmp.6 29 17 29 ];
+        %tmp.6 = getv %tmp.5 :currentValue;
+        symbol [ DurationLimits %tmp.7 29 32 46 ];
+        %tmp.7 = getm $.DurationLimits;
+        symbol [ total %tmp.8 29 47 52 ];
+        %tmp.8 = getv %tmp.7 :total;
+        %tmp.9 = "max";
+        %tmp.10 = agetv %tmp.8 %tmp.9;
+        %tmp.11 = lt %tmp.6 %tmp.10;
+        bf %tmp.11 @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionLengthDelegate_mc_29_8_34_8_if_end;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionLengthDelegate_mc_29_8_34_8_if_true:
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionLengthDelegate_mc_29_61_34_8_start:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SessionLengthDelegate.mc" 30 12 ]
+        symbol [ view %tmp.12 30 12 16 ];
+        %tmp.12 = getv self :view;
+        symbol [ view %tmp.13 30 12 16 ];
+        %tmp.13 = getv self :view;
+        symbol [ currentValue %tmp.14 30 17 29 ];
+        %tmp.14 = getv %tmp.13 :currentValue;
+        %tmp.15 = 30;
+        %tmp.16 = add %tmp.14 %tmp.15;
+        symbol [ currentValue ? 30 17 29 ];
+        putv %tmp.12 :currentValue dup %tmp.16;
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SessionLengthDelegate.mc" 31 12 ]
+        symbol [ Application %tmp.18 31 12 23 ];
+        %tmp.18 = getv ? :Application;
+        symbol [ getApp %tmp.19 31 24 30 ];
+        %tmp.19 = getv function %tmp.18 :getApp;
+        %tmp.20 = invoke %tmp.18 %tmp.19();
+        symbol [ setDuration %tmp.21 31 33 44 ];
+        %tmp.21 = getv function %tmp.20 :setDuration;
+        %tmp.22 = 3;
+        symbol [ view %tmp.24 31 48 52 ];
+        %tmp.24 = getv ? :view;
+        symbol [ currentValue %tmp.25 31 53 65 ];
+        %tmp.25 = getv %tmp.24 :currentValue;
+        invoke %tmp.20 %tmp.21(%tmp.22, %tmp.25);
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SessionLengthDelegate.mc" 32 12 ]
+        symbol [ view %tmp.27 32 12 16 ];
+        %tmp.27 = getv ? :view;
+        symbol [ invalidate %tmp.28 32 17 27 ];
+        %tmp.28 = getv function %tmp.27 :invalidate;
+        invoke %tmp.27 %tmp.28();
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SessionLengthDelegate.mc" 33 12 ]
+        %tmp.29 = true;
+        ret %tmp.29;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionLengthDelegate_mc_29_61_34_8_stop:
+        goto @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionLengthDelegate_mc_29_8_34_8_if_end;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionLengthDelegate_mc_29_8_34_8_if_end:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SessionLengthDelegate.mc" 35 8 ]
+        %tmp.30 = false;
+        ret %tmp.30;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionLengthDelegate_mc_27_20_36_4_stop:
+    }
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SessionLengthDelegate.mc"; @line = 38; @symbol_functiondef = [onDown,38,13,19]; ]
+    function onDown() {
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionLengthDelegate_mc_38_22_47_4_start:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SessionLengthDelegate.mc" 39 8 ]
+        symbol [ System %tmp.1 39 8 14 ];
+        %tmp.1 = getm $.Toybox.System;
+        symbol [ println %tmp.2 39 15 22 ];
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "onDown called";
+        invoke %tmp.1 %tmp.2(%tmp.3);
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SessionLengthDelegate.mc" 40 8 ]
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionLengthDelegate_mc_40_8_45_8_if_stmt:
+        symbol [ view %tmp.5 40 12 16 ];
+        %tmp.5 = getv ? :view;
+        symbol [ currentValue %tmp.6 40 17 29 ];
+        %tmp.6 = getv %tmp.5 :currentValue;
+        symbol [ DurationLimits %tmp.7 40 32 46 ];
+        %tmp.7 = getm $.DurationLimits;
+        symbol [ total %tmp.8 40 47 52 ];
+        %tmp.8 = getv %tmp.7 :total;
+        %tmp.9 = "min";
+        %tmp.10 = agetv %tmp.8 %tmp.9;
+        %tmp.11 = gt %tmp.6 %tmp.10;
+        bf %tmp.11 @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionLengthDelegate_mc_40_8_45_8_if_end;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionLengthDelegate_mc_40_8_45_8_if_true:
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionLengthDelegate_mc_40_61_45_8_start:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SessionLengthDelegate.mc" 41 12 ]
+        symbol [ view %tmp.12 41 12 16 ];
+        %tmp.12 = getv self :view;
+        symbol [ view %tmp.13 41 12 16 ];
+        %tmp.13 = getv self :view;
+        symbol [ currentValue %tmp.14 41 17 29 ];
+        %tmp.14 = getv %tmp.13 :currentValue;
+        %tmp.15 = 30;
+        %tmp.16 = sub %tmp.14 %tmp.15;
+        symbol [ currentValue ? 41 17 29 ];
+        putv %tmp.12 :currentValue dup %tmp.16;
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SessionLengthDelegate.mc" 42 12 ]
+        symbol [ Application %tmp.18 42 12 23 ];
+        %tmp.18 = getv ? :Application;
+        symbol [ getApp %tmp.19 42 24 30 ];
+        %tmp.19 = getv function %tmp.18 :getApp;
+        %tmp.20 = invoke %tmp.18 %tmp.19();
+        symbol [ setDuration %tmp.21 42 33 44 ];
+        %tmp.21 = getv function %tmp.20 :setDuration;
+        %tmp.22 = 3;
+        symbol [ view %tmp.24 42 48 52 ];
+        %tmp.24 = getv ? :view;
+        symbol [ currentValue %tmp.25 42 53 65 ];
+        %tmp.25 = getv %tmp.24 :currentValue;
+        invoke %tmp.20 %tmp.21(%tmp.22, %tmp.25);
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SessionLengthDelegate.mc" 43 12 ]
+        symbol [ view %tmp.27 43 12 16 ];
+        %tmp.27 = getv ? :view;
+        symbol [ invalidate %tmp.28 43 17 27 ];
+        %tmp.28 = getv function %tmp.27 :invalidate;
+        invoke %tmp.27 %tmp.28();
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SessionLengthDelegate.mc" 44 12 ]
+        %tmp.29 = true;
+        ret %tmp.29;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionLengthDelegate_mc_40_61_45_8_stop:
+        goto @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionLengthDelegate_mc_40_8_45_8_if_end;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionLengthDelegate_mc_40_8_45_8_if_end:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SessionLengthDelegate.mc" 46 8 ]
+        %tmp.30 = false;
+        ret %tmp.30;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionLengthDelegate_mc_38_22_47_4_stop:
+    }
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SessionLengthDelegate.mc"; @line = 49; @symbol_functiondef = [onSelect,49,13,21]; ]
+    function onSelect() {
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionLengthDelegate_mc_49_24_53_4_start:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SessionLengthDelegate.mc" 51 8 ]
+        symbol [ Application %tmp.2 51 8 19 ];
+        %tmp.2 = getv ? :Application;
+        symbol [ getApp %tmp.3 51 20 26 ];
+        %tmp.3 = getv function %tmp.2 :getApp;
+        %tmp.4 = invoke %tmp.2 %tmp.3();
+        symbol [ setDuration %tmp.5 51 29 40 ];
+        %tmp.5 = getv function %tmp.4 :setDuration;
+        %tmp.6 = 3;
+        symbol [ view %tmp.8 51 44 48 ];
+        %tmp.8 = getv ? :view;
+        symbol [ currentValue %tmp.9 51 49 61 ];
+        %tmp.9 = getv %tmp.8 :currentValue;
+        invoke %tmp.4 %tmp.5(%tmp.6, %tmp.9);
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SessionLengthDelegate.mc" 52 8 ]
+        %tmp.10 = true;
+        ret %tmp.10;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionLengthDelegate_mc_49_24_53_4_stop:
+    }
+}
+[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SessionLengthDelegate.mc"; @line = 1; ]
+<init> {
+}

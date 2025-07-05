@@ -1,0 +1,48 @@
+[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\DurationLimits.mc"; @line = 1; @symbol_moduledef = [DurationLimits,1,7,21]; ]
+module DurationLimits {
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\DurationLimits.mc"; @line = 1; ]
+    <init> {
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\DurationLimits.mc" 2 8 ]
+        %tmp.1 = newd 2;
+        %tmp.2 = "min";
+        %tmp.3 = 30;
+        %tmp.4 = dup %tmp.1;
+        %tmp.5 = aputv %tmp.4 %tmp.2 %tmp.3;
+        %tmp.6 = "max";
+        %tmp.7 = 120;
+        %tmp.8 = dup %tmp.5;
+        %tmp.9 = aputv %tmp.8 %tmp.6 %tmp.7;
+        putv self :total %tmp.9;
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\DurationLimits.mc" 3 8 ]
+        %tmp.10 = newd 2;
+        %tmp.11 = "min";
+        %tmp.12 = 0;
+        %tmp.13 = dup %tmp.10;
+        %tmp.14 = aputv %tmp.13 %tmp.11 %tmp.12;
+        %tmp.15 = "max";
+        %tmp.16 = 5;
+        %tmp.17 = dup %tmp.14;
+        %tmp.18 = aputv %tmp.17 %tmp.15 %tmp.16;
+        putv self :focus %tmp.18;
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\DurationLimits.mc" 4 8 ]
+        %tmp.19 = newd 2;
+        %tmp.20 = "min";
+        %tmp.21 = 0;
+        %tmp.22 = dup %tmp.19;
+        %tmp.23 = aputv %tmp.22 %tmp.20 %tmp.21;
+        %tmp.24 = "max";
+        %tmp.25 = 5;
+        %tmp.26 = dup %tmp.23;
+        %tmp.27 = aputv %tmp.26 %tmp.24 %tmp.25;
+        putv self :rest %tmp.27;
+    }
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\DurationLimits.mc"; @line = 2; @position = 8; @symbol_vardef = [total,2,8,13]; ]
+    var total;
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\DurationLimits.mc"; @line = 3; @position = 8; @symbol_vardef = [focus,3,8,13]; ]
+    var focus;
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\DurationLimits.mc"; @line = 4; @position = 8; @symbol_vardef = [rest,4,8,12]; ]
+    var rest;
+}
+[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\DurationLimits.mc"; @line = 1; ]
+<init> {
+}

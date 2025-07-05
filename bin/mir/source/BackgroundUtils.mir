@@ -1,0 +1,158 @@
+[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\BackgroundUtils.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Graphics,1,14,22]; ]
+import Toybox.Graphics;
+[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\BackgroundUtils.mc"; @line = 3; @symbol_moduledef = [BackgroundUtils,3,7,22]; ]
+module BackgroundUtils {
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\BackgroundUtils.mc"; @line = 3; ]
+    <init> {
+    }
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\BackgroundUtils.mc"; @line = 4; @symbol_functiondef = [drawBackground,4,13,27]; @symbol_param<0> = [dc,4,28,30]; @symbol_param<0>_type<0> = [Dc,4,34,36]; ]
+    function drawBackground(dc as Dc) as Void {
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_BackgroundUtils_mc_4_46_18_4_start:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\BackgroundUtils.mc" 5 8 ]
+        [ "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_BackgroundUtils_mc_4_46_18_4_start" "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_BackgroundUtils_mc_4_46_18_4_stop" ]
+        %width.1 = local;
+        symbol [ width %width.1 5 12 17 ];
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 5 20 22 ];
+        symbol [ getWidth %tmp.2 5 23 31 ];
+        %tmp.2 = getv function %tmp.1 :getWidth;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %width.1 %tmp.3;
+        symbol [ width %width.1 5 12 17 ];
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\BackgroundUtils.mc" 6 8 ]
+        [ "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_BackgroundUtils_mc_4_46_18_4_start" "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_BackgroundUtils_mc_4_46_18_4_stop" ]
+        %height.2 = local;
+        symbol [ height %height.2 6 12 18 ];
+        %tmp.4 = lgetv %dc;
+        symbol [ dc %tmp.4 6 21 23 ];
+        symbol [ getHeight %tmp.5 6 24 33 ];
+        %tmp.5 = getv function %tmp.4 :getHeight;
+        %tmp.6 = invoke %tmp.4 %tmp.5();
+        lputv %height.2 %tmp.6;
+        symbol [ height %height.2 6 12 18 ];
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\BackgroundUtils.mc" 7 8 ]
+        [ "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_BackgroundUtils_mc_4_46_18_4_start" "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_BackgroundUtils_mc_4_46_18_4_stop" ]
+        %centerX.3 = local;
+        symbol [ centerX %centerX.3 7 12 19 ];
+        %tmp.7 = lgetv %width.1;
+        symbol [ width %tmp.7 7 22 27 ];
+        %tmp.8 = 2;
+        %tmp.9 = div %tmp.7 %tmp.8;
+        lputv %centerX.3 %tmp.9;
+        symbol [ centerX %centerX.3 7 12 19 ];
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\BackgroundUtils.mc" 8 8 ]
+        [ "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_BackgroundUtils_mc_4_46_18_4_start" "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_BackgroundUtils_mc_4_46_18_4_stop" ]
+        %centerY.4 = local;
+        symbol [ centerY %centerY.4 8 12 19 ];
+        %tmp.10 = lgetv %height.2;
+        symbol [ height %tmp.10 8 22 28 ];
+        %tmp.11 = 2;
+        %tmp.12 = div %tmp.10 %tmp.11;
+        lputv %centerY.4 %tmp.12;
+        symbol [ centerY %centerY.4 8 12 19 ];
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\BackgroundUtils.mc" 9 8 ]
+        [ "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_BackgroundUtils_mc_4_46_18_4_start" "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_BackgroundUtils_mc_4_46_18_4_stop" ]
+        %outerRadius.5 = local;
+        symbol [ outerRadius %outerRadius.5 9 12 23 ];
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_BackgroundUtils_mc_9_26_9_58_begin:
+        %tmp.13 = lgetv %centerX.3;
+        symbol [ centerX %tmp.13 9 27 34 ];
+        %tmp.14 = lgetv %centerY.4;
+        symbol [ centerY %tmp.14 9 37 44 ];
+        %tmp.15 = lt %tmp.13 %tmp.14;
+        bf %tmp.15 @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_BackgroundUtils_mc_9_26_9_58_false;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_BackgroundUtils_mc_9_26_9_58_true:
+        %tmp.16 = lgetv %centerX.3;
+        symbol [ centerX %tmp.16 9 48 55 ];
+        push %tmp.16;
+        goto @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_BackgroundUtils_mc_9_26_9_58_end;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_BackgroundUtils_mc_9_26_9_58_false:
+        %tmp.17 = lgetv %centerY.4;
+        symbol [ centerY %tmp.17 9 58 65 ];
+        push %tmp.17;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_BackgroundUtils_mc_9_26_9_58_end:
+        %tmp.18 = phi [%tmp.15 @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_BackgroundUtils_mc_9_26_9_58_begin] [%tmp.16 @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_BackgroundUtils_mc_9_26_9_58_true] [%tmp.17 @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_BackgroundUtils_mc_9_26_9_58_false] [%tmp.18 @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_BackgroundUtils_mc_9_26_9_58_end];
+        lputv %outerRadius.5 %tmp.18;
+        symbol [ outerRadius %outerRadius.5 9 12 23 ];
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\BackgroundUtils.mc" 10 8 ]
+        [ "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_BackgroundUtils_mc_4_46_18_4_start" "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_BackgroundUtils_mc_4_46_18_4_stop" ]
+        %borderThickness.6 = local;
+        symbol [ borderThickness %borderThickness.6 10 12 27 ];
+        %tmp.19 = 10;
+        lputv %borderThickness.6 %tmp.19;
+        symbol [ borderThickness %borderThickness.6 10 12 27 ];
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\BackgroundUtils.mc" 11 8 ]
+        [ "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_BackgroundUtils_mc_4_46_18_4_start" "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_BackgroundUtils_mc_4_46_18_4_stop" ]
+        %innerRadius.7 = local;
+        symbol [ innerRadius %innerRadius.7 11 12 23 ];
+        %tmp.20 = lgetv %outerRadius.5;
+        symbol [ outerRadius %tmp.20 11 26 37 ];
+        %tmp.21 = lgetv %borderThickness.6;
+        symbol [ borderThickness %tmp.21 11 40 55 ];
+        %tmp.22 = sub %tmp.20 %tmp.21;
+        lputv %innerRadius.7 %tmp.22;
+        symbol [ innerRadius %innerRadius.7 11 12 23 ];
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\BackgroundUtils.mc" 13 8 ]
+        %tmp.23 = lgetv %dc;
+        symbol [ dc %tmp.23 13 8 10 ];
+        symbol [ clear %tmp.24 13 11 16 ];
+        %tmp.24 = getv function %tmp.23 :clear;
+        invoke %tmp.23 %tmp.24();
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\BackgroundUtils.mc" 14 8 ]
+        %tmp.25 = lgetv %dc;
+        symbol [ dc %tmp.25 14 8 10 ];
+        symbol [ setColor %tmp.26 14 11 19 ];
+        %tmp.26 = getv function %tmp.25 :setColor;
+        symbol [ Graphics %tmp.27 14 20 28 ];
+        %tmp.27 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.28 14 29 40 ];
+        %tmp.28 = getv %tmp.27 :COLOR_WHITE;
+        symbol [ Graphics %tmp.29 14 42 50 ];
+        %tmp.29 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.30 14 51 62 ];
+        %tmp.30 = getv %tmp.29 :COLOR_WHITE;
+        invoke %tmp.25 %tmp.26(%tmp.28, %tmp.30);
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\BackgroundUtils.mc" 15 8 ]
+        %tmp.31 = lgetv %dc;
+        symbol [ dc %tmp.31 15 8 10 ];
+        symbol [ fillCircle %tmp.32 15 11 21 ];
+        %tmp.32 = getv function %tmp.31 :fillCircle;
+        %tmp.33 = lgetv %centerX.3;
+        symbol [ centerX %tmp.33 15 22 29 ];
+        %tmp.34 = lgetv %centerY.4;
+        symbol [ centerY %tmp.34 15 31 38 ];
+        %tmp.35 = lgetv %outerRadius.5;
+        symbol [ outerRadius %tmp.35 15 40 51 ];
+        invoke %tmp.31 %tmp.32(%tmp.33, %tmp.34, %tmp.35);
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\BackgroundUtils.mc" 16 8 ]
+        %tmp.36 = lgetv %dc;
+        symbol [ dc %tmp.36 16 8 10 ];
+        symbol [ setColor %tmp.37 16 11 19 ];
+        %tmp.37 = getv function %tmp.36 :setColor;
+        symbol [ Graphics %tmp.38 16 20 28 ];
+        %tmp.38 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.39 16 29 40 ];
+        %tmp.39 = getv %tmp.38 :COLOR_BLACK;
+        symbol [ Graphics %tmp.40 16 42 50 ];
+        %tmp.40 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.41 16 51 62 ];
+        %tmp.41 = getv %tmp.40 :COLOR_BLACK;
+        invoke %tmp.36 %tmp.37(%tmp.39, %tmp.41);
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\BackgroundUtils.mc" 17 8 ]
+        %tmp.42 = lgetv %dc;
+        symbol [ dc %tmp.42 17 8 10 ];
+        symbol [ fillCircle %tmp.43 17 11 21 ];
+        %tmp.43 = getv function %tmp.42 :fillCircle;
+        %tmp.44 = lgetv %centerX.3;
+        symbol [ centerX %tmp.44 17 22 29 ];
+        %tmp.45 = lgetv %centerY.4;
+        symbol [ centerY %tmp.45 17 31 38 ];
+        %tmp.46 = lgetv %innerRadius.7;
+        symbol [ innerRadius %tmp.46 17 40 51 ];
+        invoke %tmp.42 %tmp.43(%tmp.44, %tmp.45, %tmp.46);
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_BackgroundUtils_mc_4_46_18_4_stop:
+    }
+}
+[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\BackgroundUtils.mc"; @line = 1; ]
+<init> {
+}
