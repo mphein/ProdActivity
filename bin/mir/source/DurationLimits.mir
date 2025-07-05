@@ -1,47 +1,72 @@
-[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\DurationLimits.mc"; @line = 1; @symbol_moduledef = [DurationLimits,1,7,21]; ]
+[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\DurationLimits.mc"; @line = 1; @symbol_importdef<0> = [DurationType,1,7,19]; ]
+import DurationType;
+[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\DurationLimits.mc"; @line = 3; @symbol_moduledef = [DurationLimits,3,7,21]; ]
 module DurationLimits {
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\DurationLimits.mc"; @line = 1; ]
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\DurationLimits.mc"; @line = 3; ]
     <init> {
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\DurationLimits.mc" 2 8 ]
-        %tmp.1 = newd 2;
-        %tmp.2 = "min";
-        %tmp.3 = 30;
-        %tmp.4 = dup %tmp.1;
-        %tmp.5 = aputv %tmp.4 %tmp.2 %tmp.3;
-        %tmp.6 = "max";
-        %tmp.7 = 120;
-        %tmp.8 = dup %tmp.5;
-        %tmp.9 = aputv %tmp.8 %tmp.6 %tmp.7;
-        putv self :total %tmp.9;
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\DurationLimits.mc" 3 8 ]
-        %tmp.10 = newd 2;
-        %tmp.11 = "min";
-        %tmp.12 = 0;
-        %tmp.13 = dup %tmp.10;
-        %tmp.14 = aputv %tmp.13 %tmp.11 %tmp.12;
-        %tmp.15 = "max";
-        %tmp.16 = 5;
-        %tmp.17 = dup %tmp.14;
-        %tmp.18 = aputv %tmp.17 %tmp.15 %tmp.16;
-        putv self :focus %tmp.18;
 [ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\DurationLimits.mc" 4 8 ]
-        %tmp.19 = newd 2;
-        %tmp.20 = "min";
-        %tmp.21 = 0;
-        %tmp.22 = dup %tmp.19;
-        %tmp.23 = aputv %tmp.22 %tmp.20 %tmp.21;
-        %tmp.24 = "max";
-        %tmp.25 = 5;
-        %tmp.26 = dup %tmp.23;
-        %tmp.27 = aputv %tmp.26 %tmp.24 %tmp.25;
-        putv self :rest %tmp.27;
+        %tmp.1 = newd 3;
+        symbol [ DurationType %tmp.2 5 9 21 ];
+        %tmp.2 = getm $.DurationType;
+        symbol [ ACTIVE %tmp.3 5 22 28 ];
+        %tmp.3 = getv %tmp.2 :ACTIVE;
+        %tmp.4 = newd 3;
+        %tmp.5 = "min";
+        %tmp.6 = 0;
+        %tmp.7 = dup %tmp.4;
+        %tmp.8 = aputv %tmp.7 %tmp.5 %tmp.6;
+        %tmp.9 = "max";
+        %tmp.10 = 5;
+        %tmp.11 = dup %tmp.8;
+        %tmp.12 = aputv %tmp.11 %tmp.9 %tmp.10;
+        %tmp.13 = "incr";
+        %tmp.14 = 1;
+        %tmp.15 = dup %tmp.12;
+        %tmp.16 = aputv %tmp.15 %tmp.13 %tmp.14;
+        %tmp.17 = dup %tmp.1;
+        %tmp.18 = aputv %tmp.17 %tmp.3 %tmp.16;
+        symbol [ DurationType %tmp.19 6 9 21 ];
+        %tmp.19 = getm $.DurationType;
+        symbol [ REST %tmp.20 6 22 26 ];
+        %tmp.20 = getv %tmp.19 :REST;
+        %tmp.21 = newd 3;
+        %tmp.22 = "min";
+        %tmp.23 = 0;
+        %tmp.24 = dup %tmp.21;
+        %tmp.25 = aputv %tmp.24 %tmp.22 %tmp.23;
+        %tmp.26 = "max";
+        %tmp.27 = 5;
+        %tmp.28 = dup %tmp.25;
+        %tmp.29 = aputv %tmp.28 %tmp.26 %tmp.27;
+        %tmp.30 = "incr";
+        %tmp.31 = 1;
+        %tmp.32 = dup %tmp.29;
+        %tmp.33 = aputv %tmp.32 %tmp.30 %tmp.31;
+        %tmp.34 = dup %tmp.18;
+        %tmp.35 = aputv %tmp.34 %tmp.20 %tmp.33;
+        symbol [ DurationType %tmp.36 7 9 21 ];
+        %tmp.36 = getm $.DurationType;
+        symbol [ TOTAL %tmp.37 7 22 27 ];
+        %tmp.37 = getv %tmp.36 :TOTAL;
+        %tmp.38 = newd 3;
+        %tmp.39 = "min";
+        %tmp.40 = 30;
+        %tmp.41 = dup %tmp.38;
+        %tmp.42 = aputv %tmp.41 %tmp.39 %tmp.40;
+        %tmp.43 = "max";
+        %tmp.44 = 120;
+        %tmp.45 = dup %tmp.42;
+        %tmp.46 = aputv %tmp.45 %tmp.43 %tmp.44;
+        %tmp.47 = "incr";
+        %tmp.48 = 30;
+        %tmp.49 = dup %tmp.46;
+        %tmp.50 = aputv %tmp.49 %tmp.47 %tmp.48;
+        %tmp.51 = dup %tmp.35;
+        %tmp.52 = aputv %tmp.51 %tmp.37 %tmp.50;
+        putv self :limits %tmp.52;
     }
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\DurationLimits.mc"; @line = 2; @position = 8; @symbol_vardef = [total,2,8,13]; ]
-    var total;
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\DurationLimits.mc"; @line = 3; @position = 8; @symbol_vardef = [focus,3,8,13]; ]
-    var focus;
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\DurationLimits.mc"; @line = 4; @position = 8; @symbol_vardef = [rest,4,8,12]; ]
-    var rest;
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\DurationLimits.mc"; @line = 4; @position = 8; @symbol_vardef = [limits,4,8,14]; ]
+    var limits;
 }
 [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\DurationLimits.mc"; @line = 1; ]
 <init> {

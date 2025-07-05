@@ -38,7 +38,7 @@ class LoadingView extends WatchUi.View {
     }
 
     function switchToMain() as Void {
-        var view = new SessionLengthView();
+        var view = new SessionLengthView("Set your ", "session length:", DurationType.TOTAL);  // 3 is the TOTAL phase
         var delegate = new SessionLengthDelegate(view);
         WatchUi.switchToView(view, delegate, WatchUi.SLIDE_BLINK);
     }

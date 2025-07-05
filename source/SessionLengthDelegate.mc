@@ -1,13 +1,14 @@
 using Toybox.System;
 using Toybox.WatchUi;
 import DurationLimits;
+import SessionFlow;
 
 class SessionLengthDelegate extends WatchUi.InputDelegate {
-    var view;
+    var _view;
 
     function initialize(v) {
         WatchUi.InputDelegate.initialize();
-        view = v;
+        _view = v;
     }
 
     function onKey(keyEvent) {
@@ -19,17 +20,21 @@ class SessionLengthDelegate extends WatchUi.InputDelegate {
             System.println("onKey: KEY_DOWN");
             onDown();
             return true;
-        }
+        } if (keyEvent.getKey() == WatchUi.KEY_ENTER) {
+            System.println("onKey: KEY_SELECT");
+            onSelect();
+            return true;
+        } // Handle Back key functionality here
         return false;
     }
 
     // Checks if the current value is within the limits and updates the view.
     function onUp() {
         System.println("onUp called");
-        if (view.currentValue < DurationLimits.total["max"]) {
-            view.currentValue += 30;
-            Application.getApp().setDuration(3, view.currentValue);
-            view.invalidate();
+        if (_view.currentValue < DurationLimits.limits[_view.phaseId]["max"]) {
+            _view.currentValue += DurationLimits.limits[_view.phaseId]["incr"];
+            Application.getApp().setDuration(_view.phaseId, _view.currentValue);
+            _view.invalidate();
             return true;
         }
         return false;
@@ -37,10 +42,10 @@ class SessionLengthDelegate extends WatchUi.InputDelegate {
 
     function onDown() {
         System.println("onDown called");
-        if (view.currentValue > DurationLimits.total["min"]) {
-            view.currentValue -= 30;
-            Application.getApp().setDuration(3, view.currentValue);
-            view.invalidate();
+        if (_view.currentValue > DurationLimits.limits[_view.phaseId]["min"]) {
+            _view.currentValue -= DurationLimits.limits[_view.phaseId]["incr"];
+            Application.getApp().setDuration(_view.phaseId, _view.currentValue);
+            _view.invalidate();
             return true;
         }
         return false;
@@ -48,7 +53,19 @@ class SessionLengthDelegate extends WatchUi.InputDelegate {
 
     function onSelect() {
         // Confirm selection 
-        Application.getApp().setDuration(3, view.currentValue);
-        return true;
+        Application.getApp().setDuration(_view.phaseId, _view.currentValue);
+
+        // Switch to the next view
+        var currentIndex = SessionFlow.findPhaseIndex(_view.phaseId);
+        if (currentIndex >= 0 && currentIndex < SessionFlow.steps.size() - 1) {
+            var nextStep = SessionFlow.steps[currentIndex + 1];
+            var nextView = new SessionLengthView(nextStep["title1"], nextStep["title2"], nextStep["phase"]);
+            WatchUi.switchToView(nextView, new SessionLengthDelegate(nextView), WatchUi.SLIDE_BLINK);
+        } else {
+            System.println("Total Session " + Application.getApp().getDuration(DurationType.TOTAL));
+            System.println("Active Session " + Application.getApp().getDuration(DurationType.ACTIVE));
+            System.println("Rest Session " + Application.getApp().getDuration(DurationType.REST));
+        }
+        System.println("onSelect called, switching to active session length view");
     }
 }

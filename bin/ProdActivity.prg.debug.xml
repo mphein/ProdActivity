@@ -5,276 +5,312 @@
         <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="1" lineNum="73" parent="globals" pc="268435460" symbol="getApp"/>
         <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="1" lineNum="74" parent="globals" pc="268435470" symbol="getApp"/>
         <entry filename="c:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\bin\\gen\\006-B4536-00\\source\\Rez.mcgen" id="2" lineNum="7" parent="globals/Rez" pc="268435481" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\BackgroundView.mc" id="3" lineNum="5" parent="globals/BackgroundView" pc="268435501" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityView.mc" id="4" lineNum="4" parent="globals/ProdActivityView" pc="268435513" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\LoadingView.mc" id="5" lineNum="6" parent="globals/LoadingView" pc="268435525" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\NullDelegate.mc" id="6" lineNum="3" parent="globals/NullDelegate" pc="268435537" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="7" lineNum="5" parent="globals/SessionLengthDelegate" pc="268435549" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="8" lineNum="12" parent="globals/ProdActivityApp" pc="268435561" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="9" lineNum="6" parent="globals/SessionLengthView" pc="268435573" symbol="&lt;init&gt;"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\BackgroundUtils.mc" id="10" lineNum="4" parent="globals/BackgroundUtils" pc="268435585" symbol="drawBackground"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\BackgroundUtils.mc" id="10" lineNum="5" parent="globals/BackgroundUtils" pc="268435596" symbol="drawBackground"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\BackgroundUtils.mc" id="10" lineNum="6" parent="globals/BackgroundUtils" pc="268435605" symbol="drawBackground"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\BackgroundUtils.mc" id="10" lineNum="7" parent="globals/BackgroundUtils" pc="268435614" symbol="drawBackground"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\BackgroundUtils.mc" id="10" lineNum="8" parent="globals/BackgroundUtils" pc="268435621" symbol="drawBackground"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\BackgroundUtils.mc" id="10" lineNum="9" parent="globals/BackgroundUtils" pc="268435628" symbol="drawBackground"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\BackgroundUtils.mc" id="10" lineNum="10" parent="globals/BackgroundUtils" pc="268435645" symbol="drawBackground"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\BackgroundUtils.mc" id="10" lineNum="11" parent="globals/BackgroundUtils" pc="268435649" symbol="drawBackground"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\BackgroundUtils.mc" id="10" lineNum="13" parent="globals/BackgroundUtils" pc="268435656" symbol="drawBackground"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\BackgroundUtils.mc" id="10" lineNum="14" parent="globals/BackgroundUtils" pc="268435664" symbol="drawBackground"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\BackgroundUtils.mc" id="10" lineNum="15" parent="globals/BackgroundUtils" pc="268435684" symbol="drawBackground"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\BackgroundUtils.mc" id="10" lineNum="16" parent="globals/BackgroundUtils" pc="268435700" symbol="drawBackground"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\BackgroundUtils.mc" id="10" lineNum="17" parent="globals/BackgroundUtils" pc="268435712" symbol="drawBackground"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\BackgroundView.mc" id="11" lineNum="6" parent="globals/BackgroundView" pc="268435729" symbol="initialize"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\BackgroundView.mc" id="11" lineNum="7" parent="globals/BackgroundView" pc="268435731" symbol="initialize"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\BackgroundView.mc" id="12" lineNum="10" parent="globals/BackgroundView" pc="268435748" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\BackgroundView.mc" id="12" lineNum="11" parent="globals/BackgroundView" pc="268435750" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityView.mc" id="13" lineNum="14" parent="globals/ProdActivityView" pc="268435766" symbol="onShow"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityView.mc" id="13" lineNum="15" parent="globals/ProdActivityView" pc="268435768" symbol="onShow"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityView.mc" id="14" lineNum="7" parent="globals/ProdActivityView" pc="268435861" symbol="initialize"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityView.mc" id="14" lineNum="8" parent="globals/ProdActivityView" pc="268435863" symbol="initialize"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityView.mc" id="16" lineNum="26" parent="globals/ProdActivityView" pc="268435880" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityView.mc" id="16" lineNum="27" parent="globals/ProdActivityView" pc="268435882" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityView.mc" id="16" lineNum="29" parent="globals/ProdActivityView" pc="268435898" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\LoadingView.mc" id="17" lineNum="19" parent="globals/LoadingView" pc="268435915" symbol="onShow"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\LoadingView.mc" id="17" lineNum="20" parent="globals/LoadingView" pc="268435918" symbol="onShow"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\LoadingView.mc" id="17" lineNum="29" parent="globals/LoadingView" pc="268436003" symbol="onShow"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\LoadingView.mc" id="17" lineNum="30" parent="globals/LoadingView" pc="268436027" symbol="onShow"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\LoadingView.mc" id="18" lineNum="13" parent="globals/LoadingView" pc="268436055" symbol="onLayout"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\LoadingView.mc" id="19" lineNum="40" parent="globals/LoadingView" pc="268436058" symbol="switchToMain"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\LoadingView.mc" id="19" lineNum="41" parent="globals/LoadingView" pc="268436061" symbol="switchToMain"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\LoadingView.mc" id="19" lineNum="42" parent="globals/LoadingView" pc="268436081" symbol="switchToMain"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\LoadingView.mc" id="19" lineNum="43" parent="globals/LoadingView" pc="268436103" symbol="switchToMain"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\LoadingView.mc" id="20" lineNum="8" parent="globals/LoadingView" pc="268436123" symbol="initialize"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\LoadingView.mc" id="20" lineNum="9" parent="globals/LoadingView" pc="268436125" symbol="initialize"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\LoadingView.mc" id="22" lineNum="35" parent="globals/LoadingView" pc="268436142" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\LoadingView.mc" id="22" lineNum="36" parent="globals/LoadingView" pc="268436144" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\LoadingView.mc" id="22" lineNum="37" parent="globals/LoadingView" pc="268436159" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\NullDelegate.mc" id="23" lineNum="4" parent="globals/NullDelegate" pc="268436176" symbol="initialize"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\NullDelegate.mc" id="23" lineNum="5" parent="globals/NullDelegate" pc="268436178" symbol="initialize"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="24" lineNum="38" parent="globals/SessionLengthDelegate" pc="268436191" symbol="onDown"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="24" lineNum="39" parent="globals/SessionLengthDelegate" pc="268436193" symbol="onDown"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="24" lineNum="40" parent="globals/SessionLengthDelegate" pc="268436211" symbol="onDown"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="24" lineNum="41" parent="globals/SessionLengthDelegate" pc="268436240" symbol="onDown"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="24" lineNum="42" parent="globals/SessionLengthDelegate" pc="268436259" symbol="onDown"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="24" lineNum="43" parent="globals/SessionLengthDelegate" pc="268436290" symbol="onDown"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="24" lineNum="44" parent="globals/SessionLengthDelegate" pc="268436302" symbol="onDown"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="24" lineNum="46" parent="globals/SessionLengthDelegate" pc="268436307" symbol="onDown"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="25" lineNum="8" parent="globals/SessionLengthDelegate" pc="268436309" symbol="initialize"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="25" lineNum="9" parent="globals/SessionLengthDelegate" pc="268436311" symbol="initialize"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="25" lineNum="10" parent="globals/SessionLengthDelegate" pc="268436327" symbol="initialize"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="26" lineNum="27" parent="globals/SessionLengthDelegate" pc="268436337" symbol="onUp"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="26" lineNum="28" parent="globals/SessionLengthDelegate" pc="268436339" symbol="onUp"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="26" lineNum="29" parent="globals/SessionLengthDelegate" pc="268436357" symbol="onUp"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="26" lineNum="30" parent="globals/SessionLengthDelegate" pc="268436386" symbol="onUp"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="26" lineNum="31" parent="globals/SessionLengthDelegate" pc="268436405" symbol="onUp"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="26" lineNum="32" parent="globals/SessionLengthDelegate" pc="268436436" symbol="onUp"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="26" lineNum="33" parent="globals/SessionLengthDelegate" pc="268436448" symbol="onUp"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="26" lineNum="35" parent="globals/SessionLengthDelegate" pc="268436453" symbol="onUp"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="27" lineNum="13" parent="globals/SessionLengthDelegate" pc="268436455" symbol="onKey"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="27" lineNum="14" parent="globals/SessionLengthDelegate" pc="268436457" symbol="onKey"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="27" lineNum="15" parent="globals/SessionLengthDelegate" pc="268436470" symbol="onKey"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="27" lineNum="16" parent="globals/SessionLengthDelegate" pc="268436488" symbol="onKey"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="27" lineNum="17" parent="globals/SessionLengthDelegate" pc="268436495" symbol="onKey"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="27" lineNum="18" parent="globals/SessionLengthDelegate" pc="268436500" symbol="onKey"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="27" lineNum="19" parent="globals/SessionLengthDelegate" pc="268436513" symbol="onKey"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="27" lineNum="20" parent="globals/SessionLengthDelegate" pc="268436531" symbol="onKey"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="27" lineNum="21" parent="globals/SessionLengthDelegate" pc="268436538" symbol="onKey"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="27" lineNum="23" parent="globals/SessionLengthDelegate" pc="268436543" symbol="onKey"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="28" lineNum="49" parent="globals/SessionLengthDelegate" pc="268436545" symbol="onSelect"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="28" lineNum="51" parent="globals/SessionLengthDelegate" pc="268436547" symbol="onSelect"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="28" lineNum="52" parent="globals/SessionLengthDelegate" pc="268436578" symbol="onSelect"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="29" lineNum="36" parent="globals/ProdActivityApp" pc="268436580" symbol="setDuration"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="29" lineNum="37" parent="globals/ProdActivityApp" pc="268436582" symbol="setDuration"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="29" lineNum="38" parent="globals/ProdActivityApp" pc="268436584" symbol="setDuration"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="29" lineNum="41" parent="globals/ProdActivityApp" pc="268436599" symbol="setDuration"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="29" lineNum="44" parent="globals/ProdActivityApp" pc="268436615" symbol="setDuration"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="29" lineNum="47" parent="globals/ProdActivityApp" pc="268436631" symbol="setDuration"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="29" lineNum="50" parent="globals/ProdActivityApp" pc="268436647" symbol="setDuration"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="29" lineNum="39" parent="globals/ProdActivityApp" pc="268436650" symbol="setDuration"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="29" lineNum="40" parent="globals/ProdActivityApp" pc="268436659" symbol="setDuration"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="29" lineNum="42" parent="globals/ProdActivityApp" pc="268436662" symbol="setDuration"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="29" lineNum="43" parent="globals/ProdActivityApp" pc="268436671" symbol="setDuration"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="29" lineNum="45" parent="globals/ProdActivityApp" pc="268436674" symbol="setDuration"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="29" lineNum="46" parent="globals/ProdActivityApp" pc="268436683" symbol="setDuration"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="29" lineNum="48" parent="globals/ProdActivityApp" pc="268436686" symbol="setDuration"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="29" lineNum="49" parent="globals/ProdActivityApp" pc="268436695" symbol="setDuration"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="29" lineNum="51" parent="globals/ProdActivityApp" pc="268436698" symbol="setDuration"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="30" lineNum="23" parent="globals/ProdActivityApp" pc="268436721" symbol="onStart"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="30" lineNum="24" parent="globals/ProdActivityApp" pc="268436723" symbol="onStart"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="31" lineNum="55" parent="globals/ProdActivityApp" pc="268436742" symbol="getDuration"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="31" lineNum="56" parent="globals/ProdActivityApp" pc="268436744" symbol="getDuration"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="31" lineNum="57" parent="globals/ProdActivityApp" pc="268436746" symbol="getDuration"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="31" lineNum="59" parent="globals/ProdActivityApp" pc="268436761" symbol="getDuration"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="31" lineNum="61" parent="globals/ProdActivityApp" pc="268436777" symbol="getDuration"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="31" lineNum="63" parent="globals/ProdActivityApp" pc="268436793" symbol="getDuration"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="31" lineNum="65" parent="globals/ProdActivityApp" pc="268436809" symbol="getDuration"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="31" lineNum="58" parent="globals/ProdActivityApp" pc="268436812" symbol="getDuration"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="31" lineNum="60" parent="globals/ProdActivityApp" pc="268436818" symbol="getDuration"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="31" lineNum="62" parent="globals/ProdActivityApp" pc="268436824" symbol="getDuration"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="31" lineNum="64" parent="globals/ProdActivityApp" pc="268436830" symbol="getDuration"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="31" lineNum="66" parent="globals/ProdActivityApp" pc="268436836" symbol="getDuration"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="31" lineNum="67" parent="globals/ProdActivityApp" pc="268436857" symbol="getDuration"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="32" lineNum="32" parent="globals/ProdActivityApp" pc="268436861" symbol="getInitialView"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="32" lineNum="33" parent="globals/ProdActivityApp" pc="268436863" symbol="getInitialView"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="33" lineNum="18" parent="globals/ProdActivityApp" pc="268436910" symbol="initialize"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="33" lineNum="19" parent="globals/ProdActivityApp" pc="268436912" symbol="initialize"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="34" lineNum="28" parent="globals/ProdActivityApp" pc="268436925" symbol="onStop"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="35" lineNum="12" parent="globals/SessionLengthView" pc="268436928" symbol="initialize"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="35" lineNum="13" parent="globals/SessionLengthView" pc="268436930" symbol="initialize"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="35" lineNum="21" parent="globals/SessionLengthView" pc="268437021" symbol="initialize"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="36" lineNum="67" parent="globals/SessionLengthView" pc="268437113" symbol="invalidate"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="36" lineNum="68" parent="globals/SessionLengthView" pc="268437115" symbol="invalidate"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="37" lineNum="31" parent="globals/SessionLengthView" pc="268437127" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="37" lineNum="32" parent="globals/SessionLengthView" pc="268437130" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="37" lineNum="33" parent="globals/SessionLengthView" pc="268437157" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="37" lineNum="36" parent="globals/SessionLengthView" pc="268437165" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="37" lineNum="38" parent="globals/SessionLengthView" pc="268437180" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="37" lineNum="39" parent="globals/SessionLengthView" pc="268437196" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="37" lineNum="40" parent="globals/SessionLengthView" pc="268437212" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="37" lineNum="41" parent="globals/SessionLengthView" pc="268437229" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="37" lineNum="42" parent="globals/SessionLengthView" pc="268437241" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="37" lineNum="43" parent="globals/SessionLengthView" pc="268437253" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="37" lineNum="44" parent="globals/SessionLengthView" pc="268437268" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="37" lineNum="45" parent="globals/SessionLengthView" pc="268437272" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="37" lineNum="48" parent="globals/SessionLengthView" pc="268437276" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="37" lineNum="51" parent="globals/SessionLengthView" pc="268437294" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="37" lineNum="53" parent="globals/SessionLengthView" pc="268437312" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="37" lineNum="54" parent="globals/SessionLengthView" pc="268437373" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="37" lineNum="55" parent="globals/SessionLengthView" pc="268437394" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="37" lineNum="56" parent="globals/SessionLengthView" pc="268437404" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="37" lineNum="57" parent="globals/SessionLengthView" pc="268437420" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="37" lineNum="58" parent="globals/SessionLengthView" pc="268437442" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="37" lineNum="59" parent="globals/SessionLengthView" pc="268437488" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="37" lineNum="61" parent="globals/SessionLengthView" pc="268437504" symbol="onUpdate"/>
-        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="37" lineNum="63" parent="globals/SessionLengthView" pc="268437556" symbol="onUpdate"/>
-        <entry filename="c:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\bin\\gen\\006-B4536-00\\source\\Rez.mcgen" id="38" lineNum="14" parent="globals/Rez/Layouts" pc="268437611" symbol="MainLayout"/>
-        <entry filename="c:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\bin\\gen\\006-B4536-00\\source\\Rez.mcgen" id="38" lineNum="15" parent="globals/Rez/Layouts" pc="268437622" symbol="MainLayout"/>
-        <entry filename="c:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\bin\\gen\\006-B4536-00\\source\\Rez.mcgen" id="38" lineNum="17" parent="globals/Rez/Layouts" pc="268437722" symbol="MainLayout"/>
-        <entry filename="c:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\bin\\gen\\006-B4536-00\\source\\Rez.mcgen" id="38" lineNum="18" parent="globals/Rez/Layouts" pc="268437806" symbol="MainLayout"/>
-        <entry filename="c:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\bin\\gen\\006-B4536-00\\source\\Rez.mcgen" id="38" lineNum="20" parent="globals/Rez/Layouts" pc="268437838" symbol="MainLayout"/>
-        <entry filename="c:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\bin\\gen\\006-B4536-00\\source\\Rez.mcgen" id="39" lineNum="25" parent="globals/Rez/Menus/MainMenu" pc="268437853" symbol="&lt;init&gt;"/>
-        <entry filename="c:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\bin\\gen\\006-B4536-00\\source\\Rez.mcgen" id="40" lineNum="26" parent="globals/Rez/Menus/MainMenu" pc="268437865" symbol="initialize"/>
-        <entry filename="c:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\bin\\gen\\006-B4536-00\\source\\Rez.mcgen" id="40" lineNum="27" parent="globals/Rez/Menus/MainMenu" pc="268437867" symbol="initialize"/>
-        <entry filename="c:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\bin\\gen\\006-B4536-00\\source\\Rez.mcgen" id="40" lineNum="28" parent="globals/Rez/Menus/MainMenu" pc="268437879" symbol="initialize"/>
-        <entry filename="c:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\bin\\gen\\006-B4536-00\\source\\Rez.mcgen" id="40" lineNum="29" parent="globals/Rez/Menus/MainMenu" pc="268437924" symbol="initialize"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionFlow.mc" id="3" lineNum="4" parent="globals/SessionFlow" pc="268435501" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\BackgroundView.mc" id="4" lineNum="5" parent="globals/BackgroundView" pc="268435537" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\DurationLimits.mc" id="5" lineNum="4" parent="globals/DurationLimits" pc="268435549" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityView.mc" id="6" lineNum="4" parent="globals/ProdActivityView" pc="268435586" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\LoadingView.mc" id="7" lineNum="6" parent="globals/LoadingView" pc="268435598" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\NullDelegate.mc" id="8" lineNum="3" parent="globals/NullDelegate" pc="268435610" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="9" lineNum="6" parent="globals/SessionLengthDelegate" pc="268435622" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="10" lineNum="12" parent="globals/ProdActivityApp" pc="268435634" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="11" lineNum="6" parent="globals/SessionLengthView" pc="268435646" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionFlow.mc" id="12" lineNum="10" parent="globals/SessionFlow" pc="268435658" symbol="findPhaseIndex"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionFlow.mc" id="12" lineNum="11" parent="globals/SessionFlow" pc="268435669" symbol="findPhaseIndex"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionFlow.mc" id="12" lineNum="12" parent="globals/SessionFlow" pc="268435689" symbol="findPhaseIndex"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionFlow.mc" id="12" lineNum="13" parent="globals/SessionFlow" pc="268435709" symbol="findPhaseIndex"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionFlow.mc" id="12" lineNum="16" parent="globals/SessionFlow" pc="268435725" symbol="findPhaseIndex"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\BackgroundUtils.mc" id="13" lineNum="4" parent="globals/BackgroundUtils" pc="268435728" symbol="drawBackground"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\BackgroundUtils.mc" id="13" lineNum="5" parent="globals/BackgroundUtils" pc="268435739" symbol="drawBackground"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\BackgroundUtils.mc" id="13" lineNum="6" parent="globals/BackgroundUtils" pc="268435748" symbol="drawBackground"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\BackgroundUtils.mc" id="13" lineNum="7" parent="globals/BackgroundUtils" pc="268435757" symbol="drawBackground"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\BackgroundUtils.mc" id="13" lineNum="8" parent="globals/BackgroundUtils" pc="268435764" symbol="drawBackground"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\BackgroundUtils.mc" id="13" lineNum="9" parent="globals/BackgroundUtils" pc="268435771" symbol="drawBackground"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\BackgroundUtils.mc" id="13" lineNum="10" parent="globals/BackgroundUtils" pc="268435788" symbol="drawBackground"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\BackgroundUtils.mc" id="13" lineNum="11" parent="globals/BackgroundUtils" pc="268435792" symbol="drawBackground"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\BackgroundUtils.mc" id="13" lineNum="13" parent="globals/BackgroundUtils" pc="268435799" symbol="drawBackground"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\BackgroundUtils.mc" id="13" lineNum="14" parent="globals/BackgroundUtils" pc="268435807" symbol="drawBackground"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\BackgroundUtils.mc" id="13" lineNum="15" parent="globals/BackgroundUtils" pc="268435827" symbol="drawBackground"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\BackgroundUtils.mc" id="13" lineNum="16" parent="globals/BackgroundUtils" pc="268435843" symbol="drawBackground"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\BackgroundUtils.mc" id="13" lineNum="17" parent="globals/BackgroundUtils" pc="268435855" symbol="drawBackground"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\BackgroundView.mc" id="14" lineNum="6" parent="globals/BackgroundView" pc="268435872" symbol="initialize"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\BackgroundView.mc" id="14" lineNum="7" parent="globals/BackgroundView" pc="268435874" symbol="initialize"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\BackgroundView.mc" id="15" lineNum="10" parent="globals/BackgroundView" pc="268435891" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\BackgroundView.mc" id="15" lineNum="11" parent="globals/BackgroundView" pc="268435893" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityView.mc" id="16" lineNum="14" parent="globals/ProdActivityView" pc="268435909" symbol="onShow"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityView.mc" id="16" lineNum="15" parent="globals/ProdActivityView" pc="268435911" symbol="onShow"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityView.mc" id="17" lineNum="7" parent="globals/ProdActivityView" pc="268436004" symbol="initialize"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityView.mc" id="17" lineNum="8" parent="globals/ProdActivityView" pc="268436006" symbol="initialize"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityView.mc" id="19" lineNum="26" parent="globals/ProdActivityView" pc="268436023" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityView.mc" id="19" lineNum="27" parent="globals/ProdActivityView" pc="268436025" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityView.mc" id="19" lineNum="29" parent="globals/ProdActivityView" pc="268436041" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\LoadingView.mc" id="20" lineNum="19" parent="globals/LoadingView" pc="268436058" symbol="onShow"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\LoadingView.mc" id="20" lineNum="20" parent="globals/LoadingView" pc="268436061" symbol="onShow"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\LoadingView.mc" id="20" lineNum="29" parent="globals/LoadingView" pc="268436146" symbol="onShow"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\LoadingView.mc" id="20" lineNum="30" parent="globals/LoadingView" pc="268436170" symbol="onShow"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\LoadingView.mc" id="21" lineNum="13" parent="globals/LoadingView" pc="268436198" symbol="onLayout"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\LoadingView.mc" id="22" lineNum="40" parent="globals/LoadingView" pc="268436201" symbol="switchToMain"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\LoadingView.mc" id="22" lineNum="41" parent="globals/LoadingView" pc="268436204" symbol="switchToMain"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\LoadingView.mc" id="22" lineNum="42" parent="globals/LoadingView" pc="268436236" symbol="switchToMain"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\LoadingView.mc" id="22" lineNum="43" parent="globals/LoadingView" pc="268436258" symbol="switchToMain"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\LoadingView.mc" id="23" lineNum="8" parent="globals/LoadingView" pc="268436278" symbol="initialize"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\LoadingView.mc" id="23" lineNum="9" parent="globals/LoadingView" pc="268436280" symbol="initialize"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\LoadingView.mc" id="25" lineNum="35" parent="globals/LoadingView" pc="268436297" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\LoadingView.mc" id="25" lineNum="36" parent="globals/LoadingView" pc="268436299" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\LoadingView.mc" id="25" lineNum="37" parent="globals/LoadingView" pc="268436314" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\NullDelegate.mc" id="26" lineNum="4" parent="globals/NullDelegate" pc="268436331" symbol="initialize"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\NullDelegate.mc" id="26" lineNum="5" parent="globals/NullDelegate" pc="268436333" symbol="initialize"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="27" lineNum="43" parent="globals/SessionLengthDelegate" pc="268436346" symbol="onDown"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="27" lineNum="44" parent="globals/SessionLengthDelegate" pc="268436348" symbol="onDown"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="27" lineNum="45" parent="globals/SessionLengthDelegate" pc="268436366" symbol="onDown"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="27" lineNum="46" parent="globals/SessionLengthDelegate" pc="268436406" symbol="onDown"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="27" lineNum="47" parent="globals/SessionLengthDelegate" pc="268436449" symbol="onDown"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="27" lineNum="48" parent="globals/SessionLengthDelegate" pc="268436488" symbol="onDown"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="27" lineNum="49" parent="globals/SessionLengthDelegate" pc="268436500" symbol="onDown"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="27" lineNum="51" parent="globals/SessionLengthDelegate" pc="268436505" symbol="onDown"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="28" lineNum="9" parent="globals/SessionLengthDelegate" pc="268436507" symbol="initialize"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="28" lineNum="10" parent="globals/SessionLengthDelegate" pc="268436509" symbol="initialize"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="28" lineNum="11" parent="globals/SessionLengthDelegate" pc="268436525" symbol="initialize"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="29" lineNum="32" parent="globals/SessionLengthDelegate" pc="268436535" symbol="onUp"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="29" lineNum="33" parent="globals/SessionLengthDelegate" pc="268436537" symbol="onUp"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="29" lineNum="34" parent="globals/SessionLengthDelegate" pc="268436555" symbol="onUp"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="29" lineNum="35" parent="globals/SessionLengthDelegate" pc="268436595" symbol="onUp"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="29" lineNum="36" parent="globals/SessionLengthDelegate" pc="268436638" symbol="onUp"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="29" lineNum="37" parent="globals/SessionLengthDelegate" pc="268436677" symbol="onUp"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="29" lineNum="38" parent="globals/SessionLengthDelegate" pc="268436689" symbol="onUp"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="29" lineNum="40" parent="globals/SessionLengthDelegate" pc="268436694" symbol="onUp"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="30" lineNum="14" parent="globals/SessionLengthDelegate" pc="268436696" symbol="onKey"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="30" lineNum="15" parent="globals/SessionLengthDelegate" pc="268436698" symbol="onKey"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="30" lineNum="16" parent="globals/SessionLengthDelegate" pc="268436711" symbol="onKey"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="30" lineNum="17" parent="globals/SessionLengthDelegate" pc="268436729" symbol="onKey"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="30" lineNum="18" parent="globals/SessionLengthDelegate" pc="268436736" symbol="onKey"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="30" lineNum="19" parent="globals/SessionLengthDelegate" pc="268436741" symbol="onKey"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="30" lineNum="20" parent="globals/SessionLengthDelegate" pc="268436754" symbol="onKey"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="30" lineNum="21" parent="globals/SessionLengthDelegate" pc="268436772" symbol="onKey"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="30" lineNum="22" parent="globals/SessionLengthDelegate" pc="268436779" symbol="onKey"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="30" lineNum="23" parent="globals/SessionLengthDelegate" pc="268436784" symbol="onKey"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="30" lineNum="24" parent="globals/SessionLengthDelegate" pc="268436797" symbol="onKey"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="30" lineNum="25" parent="globals/SessionLengthDelegate" pc="268436815" symbol="onKey"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="30" lineNum="26" parent="globals/SessionLengthDelegate" pc="268436822" symbol="onKey"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="30" lineNum="28" parent="globals/SessionLengthDelegate" pc="268436827" symbol="onKey"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="31" lineNum="54" parent="globals/SessionLengthDelegate" pc="268436829" symbol="onSelect"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="31" lineNum="56" parent="globals/SessionLengthDelegate" pc="268436832" symbol="onSelect"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="31" lineNum="59" parent="globals/SessionLengthDelegate" pc="268436871" symbol="onSelect"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="31" lineNum="60" parent="globals/SessionLengthDelegate" pc="268436895" symbol="onSelect"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="31" lineNum="61" parent="globals/SessionLengthDelegate" pc="268436926" symbol="onSelect"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="31" lineNum="62" parent="globals/SessionLengthDelegate" pc="268436943" symbol="onSelect"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="31" lineNum="63" parent="globals/SessionLengthDelegate" pc="268436987" symbol="onSelect"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="31" lineNum="65" parent="globals/SessionLengthDelegate" pc="268437027" symbol="onSelect"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="31" lineNum="66" parent="globals/SessionLengthDelegate" pc="268437066" symbol="onSelect"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="31" lineNum="67" parent="globals/SessionLengthDelegate" pc="268437105" symbol="onSelect"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthDelegate.mc" id="31" lineNum="69" parent="globals/SessionLengthDelegate" pc="268437144" symbol="onSelect"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="32" lineNum="36" parent="globals/ProdActivityApp" pc="268437163" symbol="setDuration"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="32" lineNum="37" parent="globals/ProdActivityApp" pc="268437165" symbol="setDuration"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="32" lineNum="38" parent="globals/ProdActivityApp" pc="268437167" symbol="setDuration"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="32" lineNum="41" parent="globals/ProdActivityApp" pc="268437182" symbol="setDuration"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="32" lineNum="44" parent="globals/ProdActivityApp" pc="268437198" symbol="setDuration"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="32" lineNum="47" parent="globals/ProdActivityApp" pc="268437214" symbol="setDuration"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="32" lineNum="50" parent="globals/ProdActivityApp" pc="268437230" symbol="setDuration"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="32" lineNum="39" parent="globals/ProdActivityApp" pc="268437233" symbol="setDuration"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="32" lineNum="40" parent="globals/ProdActivityApp" pc="268437242" symbol="setDuration"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="32" lineNum="42" parent="globals/ProdActivityApp" pc="268437245" symbol="setDuration"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="32" lineNum="43" parent="globals/ProdActivityApp" pc="268437254" symbol="setDuration"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="32" lineNum="45" parent="globals/ProdActivityApp" pc="268437257" symbol="setDuration"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="32" lineNum="46" parent="globals/ProdActivityApp" pc="268437266" symbol="setDuration"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="32" lineNum="48" parent="globals/ProdActivityApp" pc="268437269" symbol="setDuration"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="32" lineNum="49" parent="globals/ProdActivityApp" pc="268437278" symbol="setDuration"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="32" lineNum="51" parent="globals/ProdActivityApp" pc="268437281" symbol="setDuration"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="33" lineNum="23" parent="globals/ProdActivityApp" pc="268437304" symbol="onStart"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="33" lineNum="24" parent="globals/ProdActivityApp" pc="268437306" symbol="onStart"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="34" lineNum="55" parent="globals/ProdActivityApp" pc="268437325" symbol="getDuration"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="34" lineNum="56" parent="globals/ProdActivityApp" pc="268437327" symbol="getDuration"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="34" lineNum="57" parent="globals/ProdActivityApp" pc="268437329" symbol="getDuration"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="34" lineNum="59" parent="globals/ProdActivityApp" pc="268437344" symbol="getDuration"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="34" lineNum="61" parent="globals/ProdActivityApp" pc="268437360" symbol="getDuration"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="34" lineNum="63" parent="globals/ProdActivityApp" pc="268437376" symbol="getDuration"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="34" lineNum="65" parent="globals/ProdActivityApp" pc="268437392" symbol="getDuration"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="34" lineNum="58" parent="globals/ProdActivityApp" pc="268437395" symbol="getDuration"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="34" lineNum="60" parent="globals/ProdActivityApp" pc="268437401" symbol="getDuration"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="34" lineNum="62" parent="globals/ProdActivityApp" pc="268437407" symbol="getDuration"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="34" lineNum="64" parent="globals/ProdActivityApp" pc="268437413" symbol="getDuration"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="34" lineNum="66" parent="globals/ProdActivityApp" pc="268437419" symbol="getDuration"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="34" lineNum="67" parent="globals/ProdActivityApp" pc="268437440" symbol="getDuration"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="35" lineNum="32" parent="globals/ProdActivityApp" pc="268437444" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="35" lineNum="33" parent="globals/ProdActivityApp" pc="268437446" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="36" lineNum="18" parent="globals/ProdActivityApp" pc="268437493" symbol="initialize"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="36" lineNum="19" parent="globals/ProdActivityApp" pc="268437495" symbol="initialize"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\ProdActivityApp.mc" id="37" lineNum="28" parent="globals/ProdActivityApp" pc="268437508" symbol="onStop"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="38" lineNum="14" parent="globals/SessionLengthView" pc="268437511" symbol="initialize"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="38" lineNum="15" parent="globals/SessionLengthView" pc="268437513" symbol="initialize"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="38" lineNum="16" parent="globals/SessionLengthView" pc="268437522" symbol="initialize"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="38" lineNum="17" parent="globals/SessionLengthView" pc="268437531" symbol="initialize"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="38" lineNum="18" parent="globals/SessionLengthView" pc="268437540" symbol="initialize"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="38" lineNum="19" parent="globals/SessionLengthView" pc="268437556" symbol="initialize"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="38" lineNum="27" parent="globals/SessionLengthView" pc="268437647" symbol="initialize"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="39" lineNum="73" parent="globals/SessionLengthView" pc="268437739" symbol="invalidate"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="39" lineNum="74" parent="globals/SessionLengthView" pc="268437741" symbol="invalidate"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="40" lineNum="37" parent="globals/SessionLengthView" pc="268437753" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="40" lineNum="38" parent="globals/SessionLengthView" pc="268437756" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="40" lineNum="39" parent="globals/SessionLengthView" pc="268437786" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="40" lineNum="42" parent="globals/SessionLengthView" pc="268437794" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="40" lineNum="44" parent="globals/SessionLengthView" pc="268437809" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="40" lineNum="45" parent="globals/SessionLengthView" pc="268437825" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="40" lineNum="46" parent="globals/SessionLengthView" pc="268437841" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="40" lineNum="47" parent="globals/SessionLengthView" pc="268437858" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="40" lineNum="48" parent="globals/SessionLengthView" pc="268437870" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="40" lineNum="49" parent="globals/SessionLengthView" pc="268437882" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="40" lineNum="50" parent="globals/SessionLengthView" pc="268437897" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="40" lineNum="51" parent="globals/SessionLengthView" pc="268437901" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="40" lineNum="54" parent="globals/SessionLengthView" pc="268437905" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="40" lineNum="57" parent="globals/SessionLengthView" pc="268437923" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="40" lineNum="59" parent="globals/SessionLengthView" pc="268437941" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="40" lineNum="60" parent="globals/SessionLengthView" pc="268438020" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="40" lineNum="61" parent="globals/SessionLengthView" pc="268438041" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="40" lineNum="62" parent="globals/SessionLengthView" pc="268438051" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="40" lineNum="63" parent="globals/SessionLengthView" pc="268438067" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="40" lineNum="64" parent="globals/SessionLengthView" pc="268438089" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="40" lineNum="65" parent="globals/SessionLengthView" pc="268438135" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="40" lineNum="67" parent="globals/SessionLengthView" pc="268438151" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\source\\SessionLengthView.mc" id="40" lineNum="69" parent="globals/SessionLengthView" pc="268438209" symbol="onUpdate"/>
+        <entry filename="c:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\bin\\gen\\006-B4536-00\\source\\Rez.mcgen" id="41" lineNum="14" parent="globals/Rez/Layouts" pc="268438270" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\bin\\gen\\006-B4536-00\\source\\Rez.mcgen" id="41" lineNum="15" parent="globals/Rez/Layouts" pc="268438281" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\bin\\gen\\006-B4536-00\\source\\Rez.mcgen" id="41" lineNum="17" parent="globals/Rez/Layouts" pc="268438381" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\bin\\gen\\006-B4536-00\\source\\Rez.mcgen" id="41" lineNum="18" parent="globals/Rez/Layouts" pc="268438465" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\bin\\gen\\006-B4536-00\\source\\Rez.mcgen" id="41" lineNum="20" parent="globals/Rez/Layouts" pc="268438497" symbol="MainLayout"/>
+        <entry filename="c:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\bin\\gen\\006-B4536-00\\source\\Rez.mcgen" id="42" lineNum="25" parent="globals/Rez/Menus/MainMenu" pc="268438512" symbol="&lt;init&gt;"/>
+        <entry filename="c:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\bin\\gen\\006-B4536-00\\source\\Rez.mcgen" id="43" lineNum="26" parent="globals/Rez/Menus/MainMenu" pc="268438524" symbol="initialize"/>
+        <entry filename="c:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\bin\\gen\\006-B4536-00\\source\\Rez.mcgen" id="43" lineNum="27" parent="globals/Rez/Menus/MainMenu" pc="268438526" symbol="initialize"/>
+        <entry filename="c:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\bin\\gen\\006-B4536-00\\source\\Rez.mcgen" id="43" lineNum="28" parent="globals/Rez/Menus/MainMenu" pc="268438538" symbol="initialize"/>
+        <entry filename="c:\\Users\\Michael Hein\\Desktop\\ConnectIQSDK\\Watch Apps\\ProdActivity\\bin\\gen\\006-B4536-00\\source\\Rez.mcgen" id="43" lineNum="29" parent="globals/Rez/Menus/MainMenu" pc="268438583" symbol="initialize"/>
     </pcToLineNum>
     <symbolTable>
-        <entry id="18" object="true" symbol="SessionLengthDelegate"/>
-        <entry id="34" method="true" symbol="setDuration"/>
-        <entry field="true" id="35" symbol="currentValue"/>
+        <entry field="true" id="32" symbol="_activeDuration"/>
+        <entry id="20" object="true" symbol="SessionLengthDelegate"/>
+        <entry id="37" method="true" symbol="setDuration"/>
+        <entry field="true" id="40" symbol="currentValue"/>
         <entry id="8388639" module="true" symbol="Graphics"/>
         <entry id="8389346" symbol="text"/>
-        <entry id="27" method="true" symbol="onUp"/>
+        <entry id="31" method="true" symbol="onUp"/>
         <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
         <entry id="8" module="true" symbol="globals/Rez/Menus"/>
-        <entry id="47" symbol="textAlign"/>
-        <entry id="41" method="true" symbol="MainLayout"/>
-        <entry field="true" id="32" symbol="_restDuration"/>
+        <entry id="53" symbol="textAlign"/>
+        <entry id="47" method="true" symbol="MainLayout"/>
+        <entry field="true" id="39" symbol="_title2"/>
+        <entry field="true" id="38" symbol="_title1"/>
+        <entry field="true" id="35" symbol="_restDuration"/>
         <entry id="2" module="true" symbol="globals/BackgroundUtils"/>
-        <entry id="16" object="true" symbol="ProdActivityApp"/>
-        <entry field="true" id="30" symbol="_duration"/>
+        <entry id="17" object="true" symbol="ProdActivityApp"/>
+        <entry field="true" id="33" symbol="_duration"/>
         <entry field="true" id="8388611" module="true" symbol="Toybox"/>
-        <entry id="8390436" symbol="focus"/>
-        <entry id="13" module="true" symbol="DurationType"/>
-        <entry field="true" id="43" symbol="AppName"/>
-        <entry field="true" id="29" symbol="_breakDuration"/>
+        <entry field="true" id="44" symbol="phaseId"/>
+        <entry id="14" module="true" symbol="DurationType"/>
+        <entry field="true" id="49" symbol="AppName"/>
         <entry id="4" module="true" symbol="globals/DurationType"/>
         <entry id="9" module="true" symbol="globals/Rez/Strings"/>
         <entry id="8389345" symbol="rezId"/>
+        <entry field="true" id="8388912" symbol="steps"/>
         <entry id="8388648" module="true" symbol="WatchUi"/>
-        <entry id="26" method="true" symbol="onDown"/>
+        <entry id="30" method="true" symbol="onDown"/>
         <entry id="5" module="true" symbol="globals/Rez"/>
-        <entry field="true" id="46" symbol="prompt"/>
-        <entry field="true" id="40" symbol="id_monkey"/>
-        <entry id="11" object="true" symbol="BackgroundView"/>
+        <entry field="true" id="52" symbol="prompt"/>
+        <entry field="true" id="46" symbol="id_monkey"/>
+        <entry id="12" object="true" symbol="BackgroundView"/>
         <entry id="8389124" method="true" symbol="onUpdate"/>
         <entry field="true" id="8389065" symbol="locY"/>
         <entry field="true" id="8389064" symbol="locX"/>
         <entry id="8388771" module="true" object="true" symbol="Drawables"/>
         <entry id="8389348" symbol="font"/>
-        <entry id="49" symbol="item_2"/>
-        <entry id="48" symbol="item_1"/>
-        <entry id="21" module="true" symbol="Menus"/>
+        <entry id="55" symbol="item_2"/>
+        <entry id="54" symbol="item_1"/>
+        <entry id="23" module="true" symbol="Menus"/>
         <entry id="8389275" method="true" symbol="getApp"/>
         <entry id="7" module="true" symbol="globals/Rez/Layouts"/>
+        <entry id="10" module="true" symbol="globals/SessionFlow"/>
         <entry id="8389122" method="true" symbol="onLayout"/>
         <entry field="true" id="8389063" symbol="identifier"/>
         <entry id="8389349" symbol="justification"/>
-        <entry id="12" module="true" symbol="DurationLimits"/>
-        <entry field="true" id="24" symbol="loadingName"/>
-        <entry id="15" object="true" symbol="NullDelegate"/>
-        <entry id="10" module="true" symbol="BackgroundUtils"/>
-        <entry id="14" object="true" symbol="LoadingView"/>
+        <entry field="true" id="26" symbol="limits"/>
+        <entry id="13" module="true" symbol="DurationLimits"/>
+        <entry field="true" id="27" symbol="loadingName"/>
+        <entry id="16" object="true" symbol="NullDelegate"/>
+        <entry id="11" module="true" symbol="BackgroundUtils"/>
+        <entry id="15" object="true" symbol="LoadingView"/>
         <entry id="6" module="true" symbol="globals/Rez/Drawables"/>
-        <entry id="42" object="true" symbol="MainMenu"/>
-        <entry id="22" method="true" symbol="drawBackground"/>
-        <entry id="33" method="true" symbol="getDuration"/>
+        <entry id="48" object="true" symbol="MainMenu"/>
+        <entry id="25" method="true" symbol="drawBackground"/>
+        <entry id="36" method="true" symbol="getDuration"/>
+        <entry id="24" method="true" symbol="findPhaseIndex"/>
         <entry id="8388644" module="true" symbol="System"/>
-        <entry id="17" object="true" symbol="ProdActivityView"/>
+        <entry id="18" object="true" symbol="ProdActivityView"/>
         <entry id="8389619" method="true" symbol="onSelect"/>
         <entry id="8388769" module="true" object="true" symbol="Rez"/>
-        <entry id="19" object="true" symbol="SessionLengthView"/>
-        <entry field="true" id="38" symbol="line2"/>
-        <entry field="true" id="37" symbol="line1"/>
+        <entry id="21" object="true" symbol="SessionLengthView"/>
+        <entry field="true" id="43" symbol="line2"/>
+        <entry field="true" id="42" symbol="line1"/>
         <entry id="8388640" module="true" symbol="Lang"/>
-        <entry field="true" id="39" symbol="LauncherIcon"/>
+        <entry field="true" id="45" symbol="LauncherIcon"/>
         <entry id="8388610" symbol="statics"/>
         <entry id="8389123" method="true" symbol="onShow"/>
         <entry id="8389350" module="true" symbol="globals"/>
-        <entry id="23" symbol="rest"/>
         <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry field="true" id="29" symbol="_view"/>
         <entry id="8388702" method="true" symbol="initialize"/>
         <entry id="8389279" method="true" symbol="onStart"/>
-        <entry field="true" id="28" symbol="view"/>
         <entry id="3" module="true" symbol="globals/DurationLimits"/>
-        <entry id="25" method="true" symbol="switchToMain"/>
+        <entry id="28" method="true" symbol="switchToMain"/>
         <entry id="8389280" method="true" symbol="getInitialView"/>
         <entry id="8389281" method="true" symbol="onStop"/>
         <entry field="true" id="8389347" symbol="color"/>
         <entry id="8389097" method="true" symbol="onKey"/>
+        <entry id="19" module="true" symbol="SessionFlow"/>
         <entry id="8388646" module="true" object="true" symbol="Timer"/>
-        <entry id="20" module="true" symbol="Layouts"/>
-        <entry field="true" id="31" symbol="_focusDuration"/>
-        <entry id="36" method="true" symbol="invalidate"/>
-        <entry field="true" id="8389866" symbol="total"/>
+        <entry id="22" module="true" symbol="Layouts"/>
+        <entry field="true" id="34" symbol="_focusDuration"/>
+        <entry id="41" method="true" symbol="invalidate"/>
         <entry id="8389125" method="true" symbol="onHide"/>
         <entry id="8388635" module="true" symbol="Application"/>
-        <entry field="true" id="45" symbol="menu_label_2"/>
-        <entry field="true" id="44" symbol="menu_label_1"/>
+        <entry field="true" id="51" symbol="menu_label_2"/>
+        <entry field="true" id="50" symbol="menu_label_1"/>
     </symbolTable>
     <localVars>
-        <entry arg="true" endPc="268435728" name="dc" stackId="1" startPc="268435585"/>
-        <entry endPc="268435727" name="width" stackId="2" startPc="268435596"/>
-        <entry endPc="268435727" name="height" stackId="3" startPc="268435596"/>
-        <entry endPc="268435727" name="centerX" stackId="4" startPc="268435596"/>
-        <entry endPc="268435727" name="centerY" stackId="5" startPc="268435596"/>
-        <entry endPc="268435727" name="outerRadius" stackId="6" startPc="268435596"/>
-        <entry endPc="268435727" name="borderThickness" stackId="7" startPc="268435596"/>
-        <entry endPc="268435727" name="innerRadius" stackId="8" startPc="268435596"/>
-        <entry arg="true" endPc="268435765" name="dc" stackId="1" startPc="268435748"/>
-        <entry arg="true" endPc="268435914" name="dc" stackId="1" startPc="268435880"/>
-        <entry endPc="268436053" name="timer" stackId="1" startPc="268435918"/>
-        <entry endPc="268436121" name="view" stackId="1" startPc="268436061"/>
-        <entry endPc="268436121" name="delegate" stackId="2" startPc="268436061"/>
-        <entry arg="true" endPc="268436175" name="dc" stackId="1" startPc="268436142"/>
-        <entry arg="true" endPc="268436336" name="v" stackId="1" startPc="268436309"/>
-        <entry arg="true" endPc="268436544" name="keyEvent" stackId="1" startPc="268436455"/>
-        <entry arg="true" endPc="268436720" name="phase" stackId="1" startPc="268436580"/>
-        <entry arg="true" endPc="268436720" name="duration" stackId="2" startPc="268436580"/>
-        <entry arg="true" endPc="268436741" name="state" stackId="1" startPc="268436721"/>
-        <entry arg="true" endPc="268436860" name="phase" stackId="1" startPc="268436742"/>
-        <entry arg="true" endPc="268437610" name="dc" stackId="1" startPc="268437127"/>
-        <entry endPc="268437609" name="sliderX" stackId="2" startPc="268437130"/>
-        <entry endPc="268437609" name="sliderY" stackId="3" startPc="268437130"/>
-        <entry endPc="268437609" name="sliderWidth" stackId="4" startPc="268437130"/>
-        <entry endPc="268437609" name="sliderHeight" stackId="5" startPc="268437130"/>
-        <entry endPc="268437609" name="radius" stackId="6" startPc="268437130"/>
-        <entry endPc="268437609" name="percent" stackId="7" startPc="268437130"/>
-        <entry endPc="268437609" name="thumbX" stackId="8" startPc="268437130"/>
-        <entry arg="true" endPc="268437852" name="dc" stackId="1" startPc="268437611"/>
-        <entry endPc="268437852" name="rez_cmp_local_text_1193959466" stackId="2" startPc="268437622"/>
-        <entry endPc="268437852" name="rez_cmp_local_bitmap_id_monkey" stackId="3" startPc="268437622"/>
+        <entry arg="true" endPc="268435727" name="phase" stackId="1" startPc="268435658"/>
+        <entry endPc="268435724" name="i" stackId="2" startPc="268435689"/>
+        <entry arg="true" endPc="268435871" name="dc" stackId="1" startPc="268435728"/>
+        <entry endPc="268435870" name="width" stackId="2" startPc="268435739"/>
+        <entry endPc="268435870" name="height" stackId="3" startPc="268435739"/>
+        <entry endPc="268435870" name="centerX" stackId="4" startPc="268435739"/>
+        <entry endPc="268435870" name="centerY" stackId="5" startPc="268435739"/>
+        <entry endPc="268435870" name="outerRadius" stackId="6" startPc="268435739"/>
+        <entry endPc="268435870" name="borderThickness" stackId="7" startPc="268435739"/>
+        <entry endPc="268435870" name="innerRadius" stackId="8" startPc="268435739"/>
+        <entry arg="true" endPc="268435908" name="dc" stackId="1" startPc="268435891"/>
+        <entry arg="true" endPc="268436057" name="dc" stackId="1" startPc="268436023"/>
+        <entry endPc="268436196" name="timer" stackId="1" startPc="268436061"/>
+        <entry endPc="268436276" name="view" stackId="1" startPc="268436204"/>
+        <entry endPc="268436276" name="delegate" stackId="2" startPc="268436204"/>
+        <entry arg="true" endPc="268436330" name="dc" stackId="1" startPc="268436297"/>
+        <entry arg="true" endPc="268436534" name="v" stackId="1" startPc="268436507"/>
+        <entry arg="true" endPc="268436828" name="keyEvent" stackId="1" startPc="268436696"/>
+        <entry endPc="268437161" name="currentIndex" stackId="1" startPc="268436832"/>
+        <entry endPc="268437023" name="nextStep" stackId="2" startPc="268436926"/>
+        <entry endPc="268437023" name="nextView" stackId="3" startPc="268436926"/>
+        <entry arg="true" endPc="268437303" name="phase" stackId="1" startPc="268437163"/>
+        <entry arg="true" endPc="268437303" name="duration" stackId="2" startPc="268437163"/>
+        <entry arg="true" endPc="268437324" name="state" stackId="1" startPc="268437304"/>
+        <entry arg="true" endPc="268437443" name="phase" stackId="1" startPc="268437325"/>
+        <entry arg="true" endPc="268437738" name="t1" stackId="1" startPc="268437511"/>
+        <entry arg="true" endPc="268437738" name="t2" stackId="2" startPc="268437511"/>
+        <entry arg="true" endPc="268437738" name="phase" stackId="3" startPc="268437511"/>
+        <entry arg="true" endPc="268438269" name="dc" stackId="1" startPc="268437753"/>
+        <entry endPc="268438268" name="sliderX" stackId="2" startPc="268437756"/>
+        <entry endPc="268438268" name="sliderY" stackId="3" startPc="268437756"/>
+        <entry endPc="268438268" name="sliderWidth" stackId="4" startPc="268437756"/>
+        <entry endPc="268438268" name="sliderHeight" stackId="5" startPc="268437756"/>
+        <entry endPc="268438268" name="radius" stackId="6" startPc="268437756"/>
+        <entry endPc="268438268" name="percent" stackId="7" startPc="268437756"/>
+        <entry endPc="268438268" name="thumbX" stackId="8" startPc="268437756"/>
+        <entry arg="true" endPc="268438511" name="dc" stackId="1" startPc="268438270"/>
+        <entry endPc="268438511" name="rez_cmp_local_text_1193959466" stackId="2" startPc="268438281"/>
+        <entry endPc="268438511" name="rez_cmp_local_bitmap_id_monkey" stackId="3" startPc="268438281"/>
     </localVars>
     <deviceInfo deviceVersion="e209d3315b4e1fc8b664c65cc7361cadabb1d285" partNumber="006-B4536-00"/>
     <annotations>
@@ -286,23 +322,24 @@
         <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="id_monkey"/>
     </annotations>
     <dataEntryOffsetMappings>
-        <dataEntry label="globals" offset="94" parentId="" symbolId="globals" type="module"/>
-        <dataEntry label="globals/DurationType" offset="233" parentId="globals" symbolId="DurationType" type="module"/>
-        <dataEntry label="globals/Rez" offset="259" parentId="globals" symbolId="Rez" type="module"/>
-        <dataEntry label="globals/BackgroundUtils" offset="321" parentId="globals" symbolId="BackgroundUtils" type="module"/>
-        <dataEntry label="globals/BackgroundView" offset="356" parentId="globals" symbolId="BackgroundView" type="class"/>
-        <dataEntry label="globals/DurationLimits" offset="409" parentId="globals" symbolId="DurationLimits" type="module"/>
-        <dataEntry label="globals/ProdActivityView" offset="462" parentId="globals" symbolId="ProdActivityView" type="class"/>
-        <dataEntry label="globals/LoadingView" offset="542" parentId="globals" symbolId="LoadingView" type="class"/>
-        <dataEntry label="globals/NullDelegate" offset="640" parentId="globals" symbolId="NullDelegate" type="class"/>
-        <dataEntry label="globals/SessionLengthDelegate" offset="684" parentId="globals" symbolId="SessionLengthDelegate" type="class"/>
-        <dataEntry label="globals/ProdActivityApp" offset="773" parentId="globals" symbolId="ProdActivityApp" type="class"/>
-        <dataEntry label="globals/SessionLengthView" offset="898" parentId="globals" symbolId="SessionLengthView" type="class"/>
-        <dataEntry label="globals/Rez/Drawables" offset="987" parentId="Rez" symbolId="Drawables" type="module"/>
-        <dataEntry label="globals/Rez/Layouts" offset="1031" parentId="Rez" symbolId="Layouts" type="module"/>
-        <dataEntry label="globals/Rez/Menus" offset="1066" parentId="Rez" symbolId="Menus" type="module"/>
-        <dataEntry label="globals/Rez/Strings" offset="1101" parentId="Rez" symbolId="Strings" type="module"/>
-        <dataEntry label="globals/Rez/Menus/MainMenu" offset="1163" parentId="Menus" symbolId="MainMenu" type="class"/>
+        <dataEntry label="globals" offset="103" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/DurationType" offset="251" parentId="globals" symbolId="DurationType" type="module"/>
+        <dataEntry label="globals/Rez" offset="277" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/SessionFlow" offset="339" parentId="globals" symbolId="SessionFlow" type="module"/>
+        <dataEntry label="globals/BackgroundUtils" offset="383" parentId="globals" symbolId="BackgroundUtils" type="module"/>
+        <dataEntry label="globals/BackgroundView" offset="418" parentId="globals" symbolId="BackgroundView" type="class"/>
+        <dataEntry label="globals/DurationLimits" offset="471" parentId="globals" symbolId="DurationLimits" type="module"/>
+        <dataEntry label="globals/ProdActivityView" offset="506" parentId="globals" symbolId="ProdActivityView" type="class"/>
+        <dataEntry label="globals/LoadingView" offset="586" parentId="globals" symbolId="LoadingView" type="class"/>
+        <dataEntry label="globals/NullDelegate" offset="684" parentId="globals" symbolId="NullDelegate" type="class"/>
+        <dataEntry label="globals/SessionLengthDelegate" offset="728" parentId="globals" symbolId="SessionLengthDelegate" type="class"/>
+        <dataEntry label="globals/ProdActivityApp" offset="817" parentId="globals" symbolId="ProdActivityApp" type="class"/>
+        <dataEntry label="globals/SessionLengthView" offset="942" parentId="globals" symbolId="SessionLengthView" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="1058" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="1102" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/Menus" offset="1137" parentId="Rez" symbolId="Menus" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="1172" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry label="globals/Rez/Menus/MainMenu" offset="1234" parentId="Menus" symbolId="MainMenu" type="class"/>
     </dataEntryOffsetMappings>
     <functions>
         <functionEntry accessMode="public" name="&lt;init&gt;" parent="DurationType">
@@ -314,31 +351,34 @@
         <functionEntry accessMode="public" endPc="268435500" name="&lt;init&gt;" parent="Rez" startPc="268435481">
             <documentation/>
         </functionEntry>
+        <functionEntry accessMode="public" endPc="268435536" name="&lt;init&gt;" parent="SessionFlow" startPc="268435501">
+            <documentation/>
+        </functionEntry>
         <functionEntry accessMode="public" name="&lt;init&gt;" parent="BackgroundUtils">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435512" name="&lt;init&gt;" parent="BackgroundView" startPc="268435501">
+        <functionEntry accessMode="public" endPc="268435548" name="&lt;init&gt;" parent="BackgroundView" startPc="268435537">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" name="&lt;init&gt;" parent="DurationLimits">
+        <functionEntry accessMode="public" endPc="268435585" name="&lt;init&gt;" parent="DurationLimits" startPc="268435549">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435524" name="&lt;init&gt;" parent="ProdActivityView" startPc="268435513">
+        <functionEntry accessMode="public" endPc="268435597" name="&lt;init&gt;" parent="ProdActivityView" startPc="268435586">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435536" name="&lt;init&gt;" parent="LoadingView" startPc="268435525">
+        <functionEntry accessMode="public" endPc="268435609" name="&lt;init&gt;" parent="LoadingView" startPc="268435598">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435548" name="&lt;init&gt;" parent="NullDelegate" startPc="268435537">
+        <functionEntry accessMode="public" endPc="268435621" name="&lt;init&gt;" parent="NullDelegate" startPc="268435610">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435560" name="&lt;init&gt;" parent="SessionLengthDelegate" startPc="268435549">
+        <functionEntry accessMode="public" endPc="268435633" name="&lt;init&gt;" parent="SessionLengthDelegate" startPc="268435622">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435572" name="&lt;init&gt;" parent="ProdActivityApp" startPc="268435561">
+        <functionEntry accessMode="public" endPc="268435645" name="&lt;init&gt;" parent="ProdActivityApp" startPc="268435634">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435584" name="&lt;init&gt;" parent="SessionLengthView" startPc="268435573">
+        <functionEntry accessMode="public" endPc="268435657" name="&lt;init&gt;" parent="SessionLengthView" startPc="268435646">
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
@@ -353,111 +393,118 @@
         <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435728" name="drawBackground" parent="BackgroundUtils" startPc="268435585">
+        <functionEntry accessMode="public" endPc="268435727" name="findPhaseIndex" parent="SessionFlow" startPc="268435658">
+            <param id="phase"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435871" name="drawBackground" parent="BackgroundUtils" startPc="268435728">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435747" name="initialize" parent="BackgroundView" startPc="268435729">
+        <functionEntry accessMode="public" endPc="268435890" name="initialize" parent="BackgroundView" startPc="268435872">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435765" name="onUpdate" parent="BackgroundView" startPc="268435748">
+        <functionEntry accessMode="public" endPc="268435908" name="onUpdate" parent="BackgroundView" startPc="268435891">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435860" name="onShow" parent="ProdActivityView" startPc="268435766">
+        <functionEntry accessMode="public" endPc="268436003" name="onShow" parent="ProdActivityView" startPc="268435909">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435879" name="initialize" parent="ProdActivityView" startPc="268435861">
+        <functionEntry accessMode="public" endPc="268436022" name="initialize" parent="ProdActivityView" startPc="268436004">
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="public" name="onHide" parent="ProdActivityView">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435914" name="onUpdate" parent="ProdActivityView" startPc="268435880">
+        <functionEntry accessMode="public" endPc="268436057" name="onUpdate" parent="ProdActivityView" startPc="268436023">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436054" name="onShow" parent="LoadingView" startPc="268435915">
+        <functionEntry accessMode="public" endPc="268436197" name="onShow" parent="LoadingView" startPc="268436058">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436057" name="onLayout" parent="LoadingView" startPc="268436055">
+        <functionEntry accessMode="public" endPc="268436200" name="onLayout" parent="LoadingView" startPc="268436198">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436122" name="switchToMain" parent="LoadingView" startPc="268436058">
+        <functionEntry accessMode="public" endPc="268436277" name="switchToMain" parent="LoadingView" startPc="268436201">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436141" name="initialize" parent="LoadingView" startPc="268436123">
+        <functionEntry accessMode="public" endPc="268436296" name="initialize" parent="LoadingView" startPc="268436278">
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="public" name="onHide" parent="LoadingView">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436175" name="onUpdate" parent="LoadingView" startPc="268436142">
+        <functionEntry accessMode="public" endPc="268436330" name="onUpdate" parent="LoadingView" startPc="268436297">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436190" name="initialize" parent="NullDelegate" startPc="268436176">
+        <functionEntry accessMode="public" endPc="268436345" name="initialize" parent="NullDelegate" startPc="268436331">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436308" name="onDown" parent="SessionLengthDelegate" startPc="268436191">
+        <functionEntry accessMode="public" endPc="268436506" name="onDown" parent="SessionLengthDelegate" startPc="268436346">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436336" name="initialize" parent="SessionLengthDelegate" startPc="268436309">
+        <functionEntry accessMode="public" endPc="268436534" name="initialize" parent="SessionLengthDelegate" startPc="268436507">
             <param id="v"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436454" name="onUp" parent="SessionLengthDelegate" startPc="268436337">
+        <functionEntry accessMode="public" endPc="268436695" name="onUp" parent="SessionLengthDelegate" startPc="268436535">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436544" name="onKey" parent="SessionLengthDelegate" startPc="268436455">
+        <functionEntry accessMode="public" endPc="268436828" name="onKey" parent="SessionLengthDelegate" startPc="268436696">
             <param id="keyEvent"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436579" name="onSelect" parent="SessionLengthDelegate" startPc="268436545">
+        <functionEntry accessMode="public" endPc="268437162" name="onSelect" parent="SessionLengthDelegate" startPc="268436829">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436720" name="setDuration" parent="ProdActivityApp" startPc="268436580">
+        <functionEntry accessMode="public" endPc="268437303" name="setDuration" parent="ProdActivityApp" startPc="268437163">
             <param id="phase"/>
             <param id="duration"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436741" name="onStart" parent="ProdActivityApp" startPc="268436721">
+        <functionEntry accessMode="public" endPc="268437324" name="onStart" parent="ProdActivityApp" startPc="268437304">
             <param id="state"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436860" name="getDuration" parent="ProdActivityApp" startPc="268436742">
+        <functionEntry accessMode="public" endPc="268437443" name="getDuration" parent="ProdActivityApp" startPc="268437325">
             <param id="phase"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436909" name="getInitialView" parent="ProdActivityApp" startPc="268436861">
+        <functionEntry accessMode="public" endPc="268437492" name="getInitialView" parent="ProdActivityApp" startPc="268437444">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436924" name="initialize" parent="ProdActivityApp" startPc="268436910">
+        <functionEntry accessMode="public" endPc="268437507" name="initialize" parent="ProdActivityApp" startPc="268437493">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436927" name="onStop" parent="ProdActivityApp" startPc="268436925">
+        <functionEntry accessMode="public" endPc="268437510" name="onStop" parent="ProdActivityApp" startPc="268437508">
             <param id="state"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437112" name="initialize" parent="SessionLengthView" startPc="268436928">
+        <functionEntry accessMode="public" endPc="268437738" name="initialize" parent="SessionLengthView" startPc="268437511">
+            <param id="t1"/>
+            <param id="t2"/>
+            <param id="phase"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437126" name="invalidate" parent="SessionLengthView" startPc="268437113">
+        <functionEntry accessMode="public" endPc="268437752" name="invalidate" parent="SessionLengthView" startPc="268437739">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437610" name="onUpdate" parent="SessionLengthView" startPc="268437127">
+        <functionEntry accessMode="public" endPc="268438269" name="onUpdate" parent="SessionLengthView" startPc="268437753">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437852" name="MainLayout" parent="Layouts" startPc="268437611">
+        <functionEntry accessMode="public" endPc="268438511" name="MainLayout" parent="Layouts" startPc="268438270">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437864" name="&lt;init&gt;" parent="MainMenu" startPc="268437853">
+        <functionEntry accessMode="public" endPc="268438523" name="&lt;init&gt;" parent="MainMenu" startPc="268438512">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437969" name="initialize" parent="MainMenu" startPc="268437865">
+        <functionEntry accessMode="public" endPc="268438628" name="initialize" parent="MainMenu" startPc="268438524">
             <documentation/>
         </functionEntry>
     </functions>

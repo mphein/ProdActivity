@@ -140,34 +140,40 @@ C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Loadin
         symbol [ view %view.1 41 12 16 ];
         symbol [ SessionLengthView %tmp.4 41 23 40 ];
         %tmp.4 = getv ? :SessionLengthView;
-        %tmp.1 = newc %tmp.4 ();
+        %tmp.5 = "Set your ";
+        %tmp.6 = "session length:";
+        symbol [ DurationType %tmp.8 41 73 85 ];
+        %tmp.8 = getv ? :DurationType;
+        symbol [ TOTAL %tmp.9 41 86 91 ];
+        %tmp.9 = getv %tmp.8 :TOTAL;
+        %tmp.1 = newc %tmp.4 (%tmp.5, %tmp.6, %tmp.9);
         lputv %view.1 %tmp.1;
         symbol [ view %view.1 41 12 16 ];
 [ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\LoadingView.mc" 42 8 ]
         [ "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_LoadingView_mc_40_36_44_4_start" "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_LoadingView_mc_40_36_44_4_stop" ]
         %delegate.2 = local;
         symbol [ delegate %delegate.2 42 12 20 ];
-        symbol [ SessionLengthDelegate %tmp.8 42 27 48 ];
-        %tmp.8 = getv ? :SessionLengthDelegate;
-        %tmp.9 = lgetv %view.1;
-        symbol [ view %tmp.9 42 49 53 ];
-        %tmp.5 = newc %tmp.8 (%tmp.9);
-        lputv %delegate.2 %tmp.5;
+        symbol [ SessionLengthDelegate %tmp.13 42 27 48 ];
+        %tmp.13 = getv ? :SessionLengthDelegate;
+        %tmp.14 = lgetv %view.1;
+        symbol [ view %tmp.14 42 49 53 ];
+        %tmp.10 = newc %tmp.13 (%tmp.14);
+        lputv %delegate.2 %tmp.10;
         symbol [ delegate %delegate.2 42 12 20 ];
 [ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\LoadingView.mc" 43 8 ]
-        symbol [ WatchUi %tmp.10 43 8 15 ];
-        %tmp.10 = getm $.Toybox.WatchUi;
-        symbol [ switchToView %tmp.11 43 16 28 ];
-        %tmp.11 = getv function %tmp.10 :switchToView;
-        %tmp.12 = lgetv %view.1;
-        symbol [ view %tmp.12 43 29 33 ];
-        %tmp.13 = lgetv %delegate.2;
-        symbol [ delegate %tmp.13 43 35 43 ];
-        symbol [ WatchUi %tmp.14 43 45 52 ];
-        %tmp.14 = getm $.Toybox.WatchUi;
-        symbol [ SLIDE_BLINK %tmp.15 43 53 64 ];
-        %tmp.15 = getv %tmp.14 :SLIDE_BLINK;
-        invoke %tmp.10 %tmp.11(%tmp.12, %tmp.13, %tmp.15);
+        symbol [ WatchUi %tmp.15 43 8 15 ];
+        %tmp.15 = getm $.Toybox.WatchUi;
+        symbol [ switchToView %tmp.16 43 16 28 ];
+        %tmp.16 = getv function %tmp.15 :switchToView;
+        %tmp.17 = lgetv %view.1;
+        symbol [ view %tmp.17 43 29 33 ];
+        %tmp.18 = lgetv %delegate.2;
+        symbol [ delegate %tmp.18 43 35 43 ];
+        symbol [ WatchUi %tmp.19 43 45 52 ];
+        %tmp.19 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_BLINK %tmp.20 43 53 64 ];
+        %tmp.20 = getv %tmp.19 :SLIDE_BLINK;
+        invoke %tmp.15 %tmp.16(%tmp.17, %tmp.18, %tmp.20);
 C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_LoadingView_mc_40_36_44_4_stop:
     }
     [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\LoadingView.mc"; @line = 49; @symbol_functiondef = [onHide,49,13,19]; ]

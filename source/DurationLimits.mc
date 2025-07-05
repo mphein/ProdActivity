@@ -1,5 +1,9 @@
+import DurationType;
+
 module DurationLimits {
-    var total = {"min"=>30, "max"=>120}; // Total session duration in minutes
-    var focus = {"min"=>0, "max"=>5};
-    var rest = {"min"=>0, "max"=>5};
+    var limits = {
+        (DurationType.ACTIVE) => {"min" => 0, "max" => 5, "incr"=>1},
+        (DurationType.REST)  => {"min" => 0, "max" => 5, "incr"=>1},
+        (DurationType.TOTAL) => {"min" => 30, "max" => 120, "incr"=>30}
+    };
 }

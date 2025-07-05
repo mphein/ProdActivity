@@ -4,7 +4,7 @@ import Toybox.WatchUi;
 
 module DurationType {
     const FOCUS = 0; // Focus phase duration
-    const BREAK = 1; // Break phase duration
+    const ACTIVE = 1; // Break phase duration
     const REST = 2; // Rest phase duration
     const TOTAL = 3; // Total session duration
 }
@@ -12,7 +12,7 @@ module DurationType {
 class ProdActivityApp extends Application.AppBase {
     var _duration = 30; // Duration of the productivity session in minutes
     var _focusDuration = 22;
-    var _breakDuration = 3;
+    var _activeDuration = 3;
     var _restDuration = 5;
 
     function initialize() {
@@ -38,8 +38,8 @@ class ProdActivityApp extends Application.AppBase {
             case DurationType.FOCUS:
                 _focusDuration = duration;
                 break;
-            case DurationType.BREAK:
-                _breakDuration = duration;
+            case DurationType.ACTIVE:
+                _activeDuration = duration;
                 break;
             case DurationType.REST:
                 _restDuration = duration;
@@ -56,8 +56,8 @@ class ProdActivityApp extends Application.AppBase {
         switch(phase) {
             case DurationType.FOCUS:
                 return _focusDuration;
-            case DurationType.BREAK:  
-                return _breakDuration;      
+            case DurationType.ACTIVE:  
+                return _activeDuration;      
             case DurationType.REST:
                 return _restDuration;
             case DurationType.TOTAL:
