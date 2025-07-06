@@ -26,3 +26,11 @@ A productivity timer app for Garmin Connect IQ devices.
 - `source/SessionLengthView.mc` - Session duration selection view.
 - `source/SessionLengthDelegate.mc` - Handles input for session length view.
 - `source/BackgroundUtils.mc` - Shared background drawing utilities.
+
+## Future Additions
+I would like to add/change:
+  - Touch Controls
+  - Refine Styling
+  - Change hardcoded positioning of UI Elements
+    - May not work on other watches
+  

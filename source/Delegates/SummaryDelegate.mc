@@ -1,5 +1,6 @@
 import Toybox.WatchUi;
 import SessionFlow;
+import TimerFlow;
 
 class SummaryDelegate extends WatchUi.InputDelegate {
     var _view;
@@ -26,10 +27,12 @@ class SummaryDelegate extends WatchUi.InputDelegate {
         var lastSession = SessionFlow.steps[SessionFlow.steps.size() - 1];
         var lastView = new SessionLengthView(lastSession["title1"], lastSession["title2"], lastSession["phase"]);
         WatchUi.switchToView(lastView, new SessionLengthDelegate(lastView), WatchUi.SLIDE_BLINK);
+        Attention.playTone(Attention.TONE_KEY);
     }
 
     function onEnter() {
-        var nextView = new TimerView()
+        var nextView = new TimerView(TimerFlow.timers[0]);
         WatchUi.switchToView(nextView, new TimerDelegate(nextView), WatchUi.SLIDE_BLINK);  
+        Attention.playTone(Attention.TONE_SUCCESS);
     }
 }

@@ -2,6 +2,7 @@ using Toybox.System;
 using Toybox.WatchUi;
 import DurationLimits;
 import SessionFlow;
+import Toybox.Attention;
 
 class SessionLengthDelegate extends WatchUi.InputDelegate {
     var _view;
@@ -14,18 +15,22 @@ class SessionLengthDelegate extends WatchUi.InputDelegate {
     function onKey(keyEvent) {
         if (keyEvent.getKey() == WatchUi.KEY_UP) {
             System.println("onKey: KEY_UP");
+            btnPress();
             onUp();
             return true;
         } if (keyEvent.getKey() == WatchUi.KEY_DOWN) {
             System.println("onKey: KEY_DOWN");
+            btnPress();
             onDown();
             return true;
         } if (keyEvent.getKey() == WatchUi.KEY_ENTER) {
             System.println("onKey: KEY_SELECT");
+            btnPress();
             onSelect();
             return true;
         } if (keyEvent.getKey() == WatchUi.KEY_ESC) {
             System.println("onKey: KEY_ESC");
+            btnPress();
             onEsc(); // or create a separate handler if needed
             return true;
         }
@@ -85,5 +90,9 @@ class SessionLengthDelegate extends WatchUi.InputDelegate {
             WatchUi.switchToView(summaryView, summaryDelegate, WatchUi.SLIDE_BLINK);
         }
         System.println("onSelect called, switching to active session length view");
+    }
+
+    function btnPress() { 
+        Attention.playTone(Attention.TONE_KEY);
     }
 }
