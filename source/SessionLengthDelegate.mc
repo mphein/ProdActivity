@@ -24,7 +24,11 @@ class SessionLengthDelegate extends WatchUi.InputDelegate {
             System.println("onKey: KEY_SELECT");
             onSelect();
             return true;
-        } // Handle Back key functionality here
+        } if (keyEvent.getKey() == WatchUi.KEY_ESC) {
+            System.println("onKey: KEY_ESC");
+            onEsc(); // or create a separate handler if needed
+            return true;
+        }
         return false;
     }
 
@@ -49,6 +53,19 @@ class SessionLengthDelegate extends WatchUi.InputDelegate {
             return true;
         }
         return false;
+    }
+
+    function onEsc() {
+        System.println("onLeft called");
+        var currentIndex = SessionFlow.findPhaseIndex(_view.phaseId);
+        if (currentIndex > 0 && currentIndex < SessionFlow.steps.size()) {
+            var prevStep = SessionFlow.steps[currentIndex - 1];
+            var prevView = new SessionLengthView(prevStep["title1"], prevStep["title2"], prevStep["phase"]);
+            WatchUi.switchToView(prevView, new SessionLengthDelegate(prevView), WatchUi.SLIDE_BLINK);
+            return true;
+        }
+        return false;
+
     }
 
     function onSelect() {
