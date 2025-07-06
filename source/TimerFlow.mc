@@ -1,19 +1,7 @@
-import DurationType;
-
-module SessionFlow {
+module TimerFlow {
     var steps = [
         { "title1" => "Set your", "title2" => "focus duration:", "phase" => DurationType.FOCUS },
         { "title1" => "Set your", "title2" => "active session length:", "phase" => DurationType.ACTIVE},
         { "title1" => "Set your", "title2" => "rest time:", "phase" => DurationType.REST },
         { "title1" => "Set your", "title2" => "intervals:", "phase" => DurationType.INTERVALS}
     ];
-
-    function findPhaseIndex(phase) {
-        for (var i = 0; i < steps.size(); i++) {
-            if (steps[i]["phase"] == phase) {
-                return i;
-            }
-        }
-        return -1;
-    }
-}   

@@ -5,21 +5,21 @@ module SessionFlow {
     [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SessionFlow.mc"; @line = 3; ]
     <init> {
 [ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SessionFlow.mc" 4 8 ]
-        %tmp.1 = newa 3;
+        %tmp.1 = newa 4;
         %tmp.2 = newd 3;
         %tmp.3 = "title1";
         %tmp.4 = "Set your";
         %tmp.5 = dup %tmp.2;
         %tmp.6 = aputv %tmp.5 %tmp.3 %tmp.4;
         %tmp.7 = "title2";
-        %tmp.8 = "total session length:";
+        %tmp.8 = "focus duration:";
         %tmp.9 = dup %tmp.6;
         %tmp.10 = aputv %tmp.9 %tmp.7 %tmp.8;
         %tmp.11 = "phase";
-        symbol [ DurationType %tmp.12 5 82 94 ];
+        symbol [ DurationType %tmp.12 5 76 88 ];
         %tmp.12 = getm $.DurationType;
-        symbol [ TOTAL %tmp.13 5 95 100 ];
-        %tmp.13 = getv %tmp.12 :TOTAL;
+        symbol [ FOCUS %tmp.13 5 89 94 ];
+        %tmp.13 = getv %tmp.12 :FOCUS;
         %tmp.14 = dup %tmp.10;
         %tmp.15 = aputv %tmp.14 %tmp.11 %tmp.13;
         %tmp.16 = dup %tmp.1;
@@ -60,70 +60,88 @@ module SessionFlow {
         %tmp.47 = aputv %tmp.46 %tmp.43 %tmp.45;
         %tmp.48 = dup %tmp.33;
         %tmp.49 = aputv %tmp.48 2 %tmp.47;
-        putv self :steps %tmp.49;
+        %tmp.50 = newd 3;
+        %tmp.51 = "title1";
+        %tmp.52 = "Set your";
+        %tmp.53 = dup %tmp.50;
+        %tmp.54 = aputv %tmp.53 %tmp.51 %tmp.52;
+        %tmp.55 = "title2";
+        %tmp.56 = "intervals:";
+        %tmp.57 = dup %tmp.54;
+        %tmp.58 = aputv %tmp.57 %tmp.55 %tmp.56;
+        %tmp.59 = "phase";
+        symbol [ DurationType %tmp.60 8 71 83 ];
+        %tmp.60 = getm $.DurationType;
+        symbol [ INTERVALS %tmp.61 8 84 93 ];
+        %tmp.61 = getv %tmp.60 :INTERVALS;
+        %tmp.62 = dup %tmp.58;
+        %tmp.63 = aputv %tmp.62 %tmp.59 %tmp.61;
+        %tmp.64 = dup %tmp.49;
+        %tmp.65 = aputv %tmp.64 3 %tmp.63;
+        putv self :steps %tmp.65;
     }
     [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SessionFlow.mc"; @line = 4; @position = 8; @symbol_vardef = [steps,4,8,13]; ]
     var steps;
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SessionFlow.mc"; @line = 10; @symbol_functiondef = [findPhaseIndex,10,13,27]; @symbol_param<0> = [phase,10,28,33]; ]
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SessionFlow.mc"; @line = 11; @symbol_functiondef = [findPhaseIndex,11,13,27]; @symbol_param<0> = [phase,11,28,33]; ]
     function findPhaseIndex(phase) {
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionFlow_mc_10_35_17_4_start:
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SessionFlow.mc" 11 8 ]
-        for @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionFlow_mc_11_8_15_8_for_test @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionFlow_mc_11_8_15_8_for_incr @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionFlow_mc_11_8_15_8_for_end;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionFlow_mc_11_8_15_8_for_init:
-        [ "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionFlow_mc_11_8_15_8_for_begin" "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionFlow_mc_11_8_15_8_for_end" ]
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionFlow_mc_11_35_18_4_start:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SessionFlow.mc" 12 8 ]
+        for @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionFlow_mc_12_8_16_8_for_test @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionFlow_mc_12_8_16_8_for_incr @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionFlow_mc_12_8_16_8_for_end;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionFlow_mc_12_8_16_8_for_init:
+        [ "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionFlow_mc_12_8_16_8_for_begin" "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionFlow_mc_12_8_16_8_for_end" ]
         %i.1 = local;
-        symbol [ i %i.1 11 17 18 ];
+        symbol [ i %i.1 12 17 18 ];
         %tmp.1 = 0;
         lputv %i.1 %tmp.1;
-        symbol [ i %i.1 11 17 18 ];
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionFlow_mc_11_8_15_8_for_test:
+        symbol [ i %i.1 12 17 18 ];
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionFlow_mc_12_8_16_8_for_test:
         %tmp.2 = lgetv %i.1;
-        symbol [ i %tmp.2 11 24 25 ];
-        symbol [ steps %tmp.4 11 28 33 ];
+        symbol [ i %tmp.2 12 24 25 ];
+        symbol [ steps %tmp.4 12 28 33 ];
         %tmp.4 = getv ? :steps;
-        symbol [ size %tmp.5 11 34 38 ];
+        symbol [ size %tmp.5 12 34 38 ];
         %tmp.5 = getv function %tmp.4 :size;
         %tmp.6 = invoke %tmp.4 %tmp.5();
         %tmp.7 = lt %tmp.2 %tmp.6;
-        bf %tmp.7 @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionFlow_mc_11_8_15_8_for_end;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionFlow_mc_11_8_15_8_for_begin:
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionFlow_mc_11_47_15_8_start:
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SessionFlow.mc" 12 12 ]
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionFlow_mc_12_12_14_12_if_stmt:
-        symbol [ steps %tmp.9 12 16 21 ];
+        bf %tmp.7 @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionFlow_mc_12_8_16_8_for_end;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionFlow_mc_12_8_16_8_for_begin:
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionFlow_mc_12_47_16_8_start:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SessionFlow.mc" 13 12 ]
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionFlow_mc_13_12_15_12_if_stmt:
+        symbol [ steps %tmp.9 13 16 21 ];
         %tmp.9 = getv ? :steps;
         %tmp.10 = lgetv %i.1;
-        symbol [ i %tmp.10 12 22 23 ];
+        symbol [ i %tmp.10 13 22 23 ];
         %tmp.11 = agetv %tmp.9 %tmp.10;
         %tmp.12 = "phase";
         %tmp.13 = agetv %tmp.11 %tmp.12;
         %tmp.14 = lgetv %phase;
-        symbol [ phase %tmp.14 12 37 42 ];
+        symbol [ phase %tmp.14 13 37 42 ];
         %tmp.15 = eq %tmp.13 %tmp.14;
-        bf %tmp.15 @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionFlow_mc_12_12_14_12_if_end;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionFlow_mc_12_12_14_12_if_true:
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionFlow_mc_12_44_14_12_start:
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SessionFlow.mc" 13 16 ]
+        bf %tmp.15 @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionFlow_mc_13_12_15_12_if_end;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionFlow_mc_13_12_15_12_if_true:
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionFlow_mc_13_44_15_12_start:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SessionFlow.mc" 14 16 ]
         %tmp.16 = lgetv %i.1;
-        symbol [ i %tmp.16 13 23 24 ];
+        symbol [ i %tmp.16 14 23 24 ];
         ret %tmp.16;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionFlow_mc_12_44_14_12_stop:
-        goto @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionFlow_mc_12_12_14_12_if_end;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionFlow_mc_12_12_14_12_if_end:
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionFlow_mc_11_47_15_8_stop:
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionFlow_mc_11_8_15_8_for_incr:
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SessionFlow.mc" 11 ]
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionFlow_mc_13_44_15_12_stop:
+        goto @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionFlow_mc_13_12_15_12_if_end;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionFlow_mc_13_12_15_12_if_end:
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionFlow_mc_12_47_16_8_stop:
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionFlow_mc_12_8_16_8_for_incr:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SessionFlow.mc" 12 ]
         %tmp.19 = lgetv %i.1;
-        symbol [ i %tmp.19 11 42 43 ];
+        symbol [ i %tmp.19 12 42 43 ];
         %tmp.20 = add %tmp.19 1;
         lputv %i.1 %tmp.20;
-        symbol [ i %i.1 11 42 43 ];
-        goto @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionFlow_mc_11_8_15_8_for_test;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionFlow_mc_11_8_15_8_for_end:
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SessionFlow.mc" 16 8 ]
+        symbol [ i %i.1 12 42 43 ];
+        goto @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionFlow_mc_12_8_16_8_for_test;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionFlow_mc_12_8_16_8_for_end:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SessionFlow.mc" 17 8 ]
         %tmp.21 = -1;
         ret %tmp.21;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionFlow_mc_10_35_17_4_stop:
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SessionFlow_mc_11_35_18_4_stop:
     }
 }
 [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SessionFlow.mc"; @line = 1; ]

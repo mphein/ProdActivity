@@ -79,8 +79,6 @@ class SessionLengthDelegate extends WatchUi.InputDelegate {
             var nextView = new SessionLengthView(nextStep["title1"], nextStep["title2"], nextStep["phase"]);
             WatchUi.switchToView(nextView, new SessionLengthDelegate(nextView), WatchUi.SLIDE_BLINK);
         } else {
-            var rest = Application.getApp().getDuration(DurationType.TOTAL) - Application.getApp().getDuration(DurationType.ACTIVE) - Application.getApp().getDuration(DurationType.REST);
-            Application.getApp().setDuration(DurationType.FOCUS, rest);
             System.println("Focus length: " + Application.getApp().getDuration(DurationType.FOCUS));
             var summaryView = new SummaryView();
             var summaryDelegate = new SummaryDelegate(summaryView);

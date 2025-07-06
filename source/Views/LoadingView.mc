@@ -2,6 +2,7 @@ import Toybox.Graphics;
 import Toybox.WatchUi;
 import BackgroundUtils;
 import Toybox.Timer;
+import SessionFlow;
 
 class LoadingView extends WatchUi.View {
     hidden var loadingName;
@@ -38,9 +39,8 @@ class LoadingView extends WatchUi.View {
     }
 
     function switchToMain() as Void {
-        var view = new SessionLengthView("Set your ", "session length:", DurationType.TOTAL);  // 3 is the TOTAL phase
-        var delegate = new SessionLengthDelegate(view);
-        WatchUi.switchToView(view, delegate, WatchUi.SLIDE_BLINK);
+        var nextView = new SessionLengthView(SessionFlow.steps[0]["title1"], SessionFlow.steps[0]["title2"], SessionFlow.steps[0]["phase"]);
+        WatchUi.switchToView(nextView, new SessionLengthDelegate(nextView), WatchUi.SLIDE_BLINK);
     }
 
     // Called when this View is removed from the screen. Save the

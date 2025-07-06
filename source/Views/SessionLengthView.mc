@@ -61,7 +61,7 @@ class SessionLengthView extends WatchUi.View {
         var thumbX = sliderX + (sliderWidth * percent);
         dc.setColor(Graphics.COLOR_BLUE, Graphics.COLOR_TRANSPARENT);
         dc.fillCircle(thumbX, sliderY + sliderHeight/2, radius);
-        dc.drawText(dc.getWidth() / 2, sliderY + 20, Graphics.FONT_NUMBER_MILD, currentValue.toString() + " min", Graphics.TEXT_JUSTIFY_CENTER);
+        dc.drawText(dc.getWidth() / 2, sliderY + 20, Graphics.FONT_NUMBER_MILD, currentValue.toString() + DurationLimits.limits[phaseId]["str"], Graphics.TEXT_JUSTIFY_CENTER);
         dc.setColor(Graphics.COLOR_BLUE, Graphics.COLOR_TRANSPARENT);
         // Lower Limit
         dc.drawText(dc.getWidth() / 8 - 10, sliderY + 15, Graphics.FONT_XTINY, DurationLimits.limits[phaseId]["min"].toString(), Graphics.TEXT_JUSTIFY_LEFT);

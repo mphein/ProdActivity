@@ -6,12 +6,12 @@ module DurationType {
     const FOCUS = 0; // Focus phase duration
     const ACTIVE = 1; // Break phase duration
     const REST = 2; // Rest phase duration
-    const TOTAL = 3; // Total session duration
+    const INTERVALS = 3; // Total session duration
 }
 
 class ProdActivityApp extends Application.AppBase {
-    var _duration = 30; // Duration of the productivity session in minutes
-    var _focusDuration = 22;
+    var _intervals = 1; // Duration of the productivity session in minutes
+    var _focusDuration = 20;
     var _activeDuration = 3;
     var _restDuration = 5;
 
@@ -30,23 +30,22 @@ class ProdActivityApp extends Application.AppBase {
 
     // Return the initial view of your application here
     function getInitialView() as [Views] or [Views, InputDelegates] {
-        var testView = new SummaryView();
-        return [testView, new SummaryDelegate(testView)];
+        return [new LoadingView() , new NullDelegate()];
     }
 
-    function setDuration(phase as Integer, duration as Integer) as Void {
+    function setDuration(phase as Integer, num as Integer) as Void {
         switch(phase) {
             case DurationType.FOCUS:
-                _focusDuration = duration;
+                _focusDuration = num;
                 break;
             case DurationType.ACTIVE:
-                _activeDuration = duration;
+                _activeDuration = num;
                 break;
             case DurationType.REST:
-                _restDuration = duration;
+                _restDuration = num;
                 break;
-            case DurationType.TOTAL:
-                _duration = duration;
+            case DurationType.INTERVALS:
+                _intervals = num;
                 break;
             default:
                 System.print("Invalid duration type: " + phase );
@@ -61,8 +60,8 @@ class ProdActivityApp extends Application.AppBase {
                 return _activeDuration;      
             case DurationType.REST:
                 return _restDuration;
-            case DurationType.TOTAL:
-                return _duration;
+            case DurationType.INTERVALS:
+                return _intervals;
             default:
                 System.print("Invalid duration type: " + phase);
                 return 0; // Return 0 for invalid phase
