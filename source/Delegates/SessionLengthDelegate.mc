@@ -79,9 +79,12 @@ class SessionLengthDelegate extends WatchUi.InputDelegate {
             var nextView = new SessionLengthView(nextStep["title1"], nextStep["title2"], nextStep["phase"]);
             WatchUi.switchToView(nextView, new SessionLengthDelegate(nextView), WatchUi.SLIDE_BLINK);
         } else {
-            System.println("Total Session " + Application.getApp().getDuration(DurationType.TOTAL));
-            System.println("Active Session " + Application.getApp().getDuration(DurationType.ACTIVE));
-            System.println("Rest Session " + Application.getApp().getDuration(DurationType.REST));
+            var rest = Application.getApp().getDuration(DurationType.TOTAL) - Application.getApp().getDuration(DurationType.ACTIVE) - Application.getApp().getDuration(DurationType.REST);
+            Application.getApp().setDuration(DurationType.FOCUS, rest);
+            System.println("Focus length: " + Application.getApp().getDuration(DurationType.FOCUS));
+            var summaryView = new SummaryView();
+            var summaryDelegate = new SummaryDelegate(summaryView);
+            WatchUi.switchToView(summaryView, summaryDelegate, WatchUi.SLIDE_BLINK);
         }
         System.println("onSelect called, switching to active session length view");
     }

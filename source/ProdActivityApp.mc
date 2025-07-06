@@ -30,7 +30,8 @@ class ProdActivityApp extends Application.AppBase {
 
     // Return the initial view of your application here
     function getInitialView() as [Views] or [Views, InputDelegates] {
-        return [new LoadingView(), new NullDelegate()];
+        var testView = new SummaryView();
+        return [testView, new SummaryDelegate(testView)];
     }
 
     function setDuration(phase as Integer, duration as Integer) as Void {
