@@ -3,6 +3,7 @@ import Toybox.Attention;
 
 class TimerDelegate extends WatchUi.InputDelegate {
     var _view;
+
     function initialize(v) {
         WatchUi.InputDelegate.initialize();
         _view = v;
@@ -17,17 +18,21 @@ class TimerDelegate extends WatchUi.InputDelegate {
             System.println("TIMER TIME");
             start();
             return true;
+        } if (keyEvent.getKey() == WatchUi.KEY_DOWN) {
+            Attention.playTone(Attention.TONE_KEY);
+            _view._duration = 5;
+            return true;
         }
         return false;
     }
 
     function pause() {
         Attention.playTone(Attention.TONE_STOP);
-        _view._play = false;
+        _view.togglePlay(false);
     }
 
     function start() {
         Attention.playTone(Attention.TONE_START);
-        _view._play = true;
+        _view.togglePlay(true);
     }
 }

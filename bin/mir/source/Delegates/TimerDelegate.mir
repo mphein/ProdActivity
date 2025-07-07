@@ -13,121 +13,137 @@ class TimerDelegate extends WatchUi.InputDelegate {
     }
     [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Delegates\TimerDelegate.mc"; @line = 5; @position = 8; @symbol_vardef = [_view,5,8,13]; ]
     var _view;
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Delegates\TimerDelegate.mc"; @line = 6; @symbol_functiondef = [initialize,6,13,23]; @symbol_param<0> = [v,6,24,25]; ]
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Delegates\TimerDelegate.mc"; @line = 7; @symbol_functiondef = [initialize,7,13,23]; @symbol_param<0> = [v,7,24,25]; ]
     function initialize(v) as Void {
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Delegates_TimerDelegate_mc_6_27_9_4_start:
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Delegates\TimerDelegate.mc" 7 8 ]
-        symbol [ WatchUi %tmp.1 7 8 15 ];
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Delegates_TimerDelegate_mc_7_27_10_4_start:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Delegates\TimerDelegate.mc" 8 8 ]
+        symbol [ WatchUi %tmp.1 8 8 15 ];
         %tmp.1 = getm $.Toybox.WatchUi;
-        symbol [ InputDelegate %tmp.2 7 16 29 ];
+        symbol [ InputDelegate %tmp.2 8 16 29 ];
         %tmp.2 = getv %tmp.1 :InputDelegate;
-        symbol [ initialize %tmp.3 7 30 40 ];
+        symbol [ initialize %tmp.3 8 30 40 ];
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Delegates\TimerDelegate.mc" 8 8 ]
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Delegates\TimerDelegate.mc" 9 8 ]
         %tmp.4 = lgetv %v;
-        symbol [ v %tmp.4 8 16 17 ];
-        symbol [ _view ? 8 8 13 ];
+        symbol [ v %tmp.4 9 16 17 ];
+        symbol [ _view ? 9 8 13 ];
         putv self :_view %tmp.4;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Delegates_TimerDelegate_mc_6_27_9_4_stop:
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Delegates_TimerDelegate_mc_7_27_10_4_stop:
     }
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Delegates\TimerDelegate.mc"; @line = 11; @symbol_functiondef = [onKey,11,14,19]; @symbol_param<0> = [keyEvent,11,20,28]; ]
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Delegates\TimerDelegate.mc"; @line = 12; @symbol_functiondef = [onKey,12,14,19]; @symbol_param<0> = [keyEvent,12,20,28]; ]
     function onKey(keyEvent) {
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Delegates_TimerDelegate_mc_11_30_22_4_start:
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Delegates\TimerDelegate.mc" 12 8 ]
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Delegates_TimerDelegate_mc_12_8_16_8_if_stmt:
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Delegates_TimerDelegate_mc_12_30_27_4_start:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Delegates\TimerDelegate.mc" 13 8 ]
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Delegates_TimerDelegate_mc_13_8_17_8_if_stmt:
         %tmp.1 = lgetv %keyEvent;
-        symbol [ keyEvent %tmp.1 12 12 20 ];
-        symbol [ getKey %tmp.2 12 21 27 ];
+        symbol [ keyEvent %tmp.1 13 12 20 ];
+        symbol [ getKey %tmp.2 13 21 27 ];
         %tmp.2 = getv function %tmp.1 :getKey;
         %tmp.3 = invoke %tmp.1 %tmp.2();
-        symbol [ WatchUi %tmp.4 12 33 40 ];
+        symbol [ WatchUi %tmp.4 13 33 40 ];
         %tmp.4 = getm $.Toybox.WatchUi;
-        symbol [ KEY_ESC %tmp.5 12 41 48 ];
+        symbol [ KEY_ESC %tmp.5 13 41 48 ];
         %tmp.5 = getv %tmp.4 :KEY_ESC;
         %tmp.6 = eq %tmp.3 %tmp.5;
-        bf %tmp.6 @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Delegates_TimerDelegate_mc_12_8_16_8_if_end;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Delegates_TimerDelegate_mc_12_8_16_8_if_true:
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Delegates_TimerDelegate_mc_12_50_16_8_start:
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Delegates\TimerDelegate.mc" 13 12 ]
-        symbol [ System %tmp.8 13 12 18 ];
+        bf %tmp.6 @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Delegates_TimerDelegate_mc_13_8_17_8_if_end;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Delegates_TimerDelegate_mc_13_8_17_8_if_true:
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Delegates_TimerDelegate_mc_13_50_17_8_start:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Delegates\TimerDelegate.mc" 14 12 ]
+        symbol [ System %tmp.8 14 12 18 ];
         %tmp.8 = getv ? :System;
-        symbol [ println %tmp.9 13 19 26 ];
+        symbol [ println %tmp.9 14 19 26 ];
         %tmp.9 = getv function %tmp.8 :println;
         %tmp.10 = "GO back to selection";
         invoke %tmp.8 %tmp.9(%tmp.10);
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Delegates\TimerDelegate.mc" 14 12 ]
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Delegates\TimerDelegate.mc" 15 12 ]
         %tmp.11 = self;
-        symbol [ pause %tmp.12 14 12 17 ];
+        symbol [ pause %tmp.12 15 12 17 ];
         %tmp.12 = getv function %tmp.11 :pause;
         invoke %tmp.11 %tmp.12();
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Delegates\TimerDelegate.mc" 15 12 ]
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Delegates\TimerDelegate.mc" 16 12 ]
         %tmp.13 = true;
         ret %tmp.13;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Delegates_TimerDelegate_mc_12_50_16_8_stop:
-        goto @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Delegates_TimerDelegate_mc_12_8_16_8_if_end;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Delegates_TimerDelegate_mc_12_8_16_8_if_end:
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Delegates\TimerDelegate.mc" 16 10 ]
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Delegates_TimerDelegate_mc_16_10_20_8_if_stmt:
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Delegates_TimerDelegate_mc_13_50_17_8_stop:
+        goto @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Delegates_TimerDelegate_mc_13_8_17_8_if_end;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Delegates_TimerDelegate_mc_13_8_17_8_if_end:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Delegates\TimerDelegate.mc" 17 10 ]
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Delegates_TimerDelegate_mc_17_10_21_8_if_stmt:
         %tmp.14 = lgetv %keyEvent;
-        symbol [ keyEvent %tmp.14 16 14 22 ];
-        symbol [ getKey %tmp.15 16 23 29 ];
+        symbol [ keyEvent %tmp.14 17 14 22 ];
+        symbol [ getKey %tmp.15 17 23 29 ];
         %tmp.15 = getv function %tmp.14 :getKey;
         %tmp.16 = invoke %tmp.14 %tmp.15();
-        symbol [ WatchUi %tmp.17 16 35 42 ];
+        symbol [ WatchUi %tmp.17 17 35 42 ];
         %tmp.17 = getm $.Toybox.WatchUi;
-        symbol [ KEY_ENTER %tmp.18 16 43 52 ];
+        symbol [ KEY_ENTER %tmp.18 17 43 52 ];
         %tmp.18 = getv %tmp.17 :KEY_ENTER;
         %tmp.19 = eq %tmp.16 %tmp.18;
-        bf %tmp.19 @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Delegates_TimerDelegate_mc_16_10_20_8_if_end;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Delegates_TimerDelegate_mc_16_10_20_8_if_true:
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Delegates_TimerDelegate_mc_16_54_20_8_start:
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Delegates\TimerDelegate.mc" 17 12 ]
-        symbol [ System %tmp.21 17 12 18 ];
+        bf %tmp.19 @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Delegates_TimerDelegate_mc_17_10_21_8_if_end;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Delegates_TimerDelegate_mc_17_10_21_8_if_true:
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Delegates_TimerDelegate_mc_17_54_21_8_start:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Delegates\TimerDelegate.mc" 18 12 ]
+        symbol [ System %tmp.21 18 12 18 ];
         %tmp.21 = getv ? :System;
-        symbol [ println %tmp.22 17 19 26 ];
+        symbol [ println %tmp.22 18 19 26 ];
         %tmp.22 = getv function %tmp.21 :println;
         %tmp.23 = "TIMER TIME";
         invoke %tmp.21 %tmp.22(%tmp.23);
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Delegates\TimerDelegate.mc" 18 12 ]
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Delegates\TimerDelegate.mc" 19 12 ]
         %tmp.24 = self;
-        symbol [ start %tmp.25 18 12 17 ];
+        symbol [ start %tmp.25 19 12 17 ];
         %tmp.25 = getv function %tmp.24 :start;
         invoke %tmp.24 %tmp.25();
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Delegates\TimerDelegate.mc" 19 12 ]
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Delegates\TimerDelegate.mc" 20 12 ]
         %tmp.26 = true;
         ret %tmp.26;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Delegates_TimerDelegate_mc_16_54_20_8_stop:
-        goto @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Delegates_TimerDelegate_mc_16_10_20_8_if_end;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Delegates_TimerDelegate_mc_16_10_20_8_if_end:
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Delegates\TimerDelegate.mc" 21 8 ]
-        %tmp.27 = false;
-        ret %tmp.27;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Delegates_TimerDelegate_mc_11_30_22_4_stop:
-    }
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Delegates\TimerDelegate.mc"; @line = 24; @symbol_functiondef = [pause,24,13,18]; ]
-    function pause() {
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Delegates_TimerDelegate_mc_24_21_27_4_start:
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Delegates\TimerDelegate.mc" 25 8 ]
-        symbol [ Attention %tmp.1 25 8 17 ];
-        %tmp.1 = getm $.Toybox.Attention;
-        symbol [ playTone %tmp.2 25 18 26 ];
-        %tmp.2 = getv function %tmp.1 :playTone;
-        symbol [ Attention %tmp.3 25 27 36 ];
-        %tmp.3 = getm $.Toybox.Attention;
-        symbol [ TONE_STOP %tmp.4 25 37 46 ];
-        %tmp.4 = getv %tmp.3 :TONE_STOP;
-        invoke %tmp.1 %tmp.2(%tmp.4);
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Delegates_TimerDelegate_mc_17_54_21_8_stop:
+        goto @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Delegates_TimerDelegate_mc_17_10_21_8_if_end;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Delegates_TimerDelegate_mc_17_10_21_8_if_end:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Delegates\TimerDelegate.mc" 21 10 ]
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Delegates_TimerDelegate_mc_21_10_25_8_if_stmt:
+        %tmp.27 = lgetv %keyEvent;
+        symbol [ keyEvent %tmp.27 21 14 22 ];
+        symbol [ getKey %tmp.28 21 23 29 ];
+        %tmp.28 = getv function %tmp.27 :getKey;
+        %tmp.29 = invoke %tmp.27 %tmp.28();
+        symbol [ WatchUi %tmp.30 21 35 42 ];
+        %tmp.30 = getm $.Toybox.WatchUi;
+        symbol [ KEY_DOWN %tmp.31 21 43 51 ];
+        %tmp.31 = getv %tmp.30 :KEY_DOWN;
+        %tmp.32 = eq %tmp.29 %tmp.31;
+        bf %tmp.32 @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Delegates_TimerDelegate_mc_21_10_25_8_if_end;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Delegates_TimerDelegate_mc_21_10_25_8_if_true:
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Delegates_TimerDelegate_mc_21_53_25_8_start:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Delegates\TimerDelegate.mc" 22 12 ]
+        symbol [ Attention %tmp.33 22 12 21 ];
+        %tmp.33 = getm $.Toybox.Attention;
+        symbol [ playTone %tmp.34 22 22 30 ];
+        %tmp.34 = getv function %tmp.33 :playTone;
+        symbol [ Attention %tmp.35 22 31 40 ];
+        %tmp.35 = getm $.Toybox.Attention;
+        symbol [ TONE_KEY %tmp.36 22 41 49 ];
+        %tmp.36 = getv %tmp.35 :TONE_KEY;
+        invoke %tmp.33 %tmp.34(%tmp.36);
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Delegates\TimerDelegate.mc" 23 12 ]
+        symbol [ _view %tmp.37 23 12 17 ];
+        %tmp.37 = getv self :_view;
+        %tmp.38 = 5;
+        symbol [ _duration ? 23 18 27 ];
+        putv %tmp.37 :_duration %tmp.38;
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Delegates\TimerDelegate.mc" 24 12 ]
+        %tmp.39 = true;
+        ret %tmp.39;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Delegates_TimerDelegate_mc_21_53_25_8_stop:
+        goto @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Delegates_TimerDelegate_mc_21_10_25_8_if_end;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Delegates_TimerDelegate_mc_21_10_25_8_if_end:
 [ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Delegates\TimerDelegate.mc" 26 8 ]
-        symbol [ _view %tmp.5 26 8 13 ];
-        %tmp.5 = getv self :_view;
-        %tmp.6 = false;
-        symbol [ _play ? 26 14 19 ];
-        putv %tmp.5 :_play %tmp.6;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Delegates_TimerDelegate_mc_24_21_27_4_stop:
+        %tmp.40 = false;
+        ret %tmp.40;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Delegates_TimerDelegate_mc_12_30_27_4_stop:
     }
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Delegates\TimerDelegate.mc"; @line = 29; @symbol_functiondef = [start,29,13,18]; ]
-    function start() {
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Delegates\TimerDelegate.mc"; @line = 29; @symbol_functiondef = [pause,29,13,18]; ]
+    function pause() {
 C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Delegates_TimerDelegate_mc_29_21_32_4_start:
 [ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Delegates\TimerDelegate.mc" 30 8 ]
         symbol [ Attention %tmp.1 30 8 17 ];
@@ -136,16 +152,39 @@ C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Delega
         %tmp.2 = getv function %tmp.1 :playTone;
         symbol [ Attention %tmp.3 30 27 36 ];
         %tmp.3 = getm $.Toybox.Attention;
-        symbol [ TONE_START %tmp.4 30 37 47 ];
-        %tmp.4 = getv %tmp.3 :TONE_START;
+        symbol [ TONE_STOP %tmp.4 30 37 46 ];
+        %tmp.4 = getv %tmp.3 :TONE_STOP;
         invoke %tmp.1 %tmp.2(%tmp.4);
 [ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Delegates\TimerDelegate.mc" 31 8 ]
-        symbol [ _view %tmp.5 31 8 13 ];
-        %tmp.5 = getv self :_view;
-        %tmp.6 = true;
-        symbol [ _play ? 31 14 19 ];
-        putv %tmp.5 :_play %tmp.6;
+        symbol [ _view %tmp.6 31 8 13 ];
+        %tmp.6 = getv ? :_view;
+        symbol [ togglePlay %tmp.7 31 14 24 ];
+        %tmp.7 = getv function %tmp.6 :togglePlay;
+        %tmp.8 = false;
+        invoke %tmp.6 %tmp.7(%tmp.8);
 C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Delegates_TimerDelegate_mc_29_21_32_4_stop:
+    }
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Delegates\TimerDelegate.mc"; @line = 34; @symbol_functiondef = [start,34,13,18]; ]
+    function start() {
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Delegates_TimerDelegate_mc_34_21_37_4_start:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Delegates\TimerDelegate.mc" 35 8 ]
+        symbol [ Attention %tmp.1 35 8 17 ];
+        %tmp.1 = getm $.Toybox.Attention;
+        symbol [ playTone %tmp.2 35 18 26 ];
+        %tmp.2 = getv function %tmp.1 :playTone;
+        symbol [ Attention %tmp.3 35 27 36 ];
+        %tmp.3 = getm $.Toybox.Attention;
+        symbol [ TONE_START %tmp.4 35 37 47 ];
+        %tmp.4 = getv %tmp.3 :TONE_START;
+        invoke %tmp.1 %tmp.2(%tmp.4);
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Delegates\TimerDelegate.mc" 36 8 ]
+        symbol [ _view %tmp.6 36 8 13 ];
+        %tmp.6 = getv ? :_view;
+        symbol [ togglePlay %tmp.7 36 14 24 ];
+        %tmp.7 = getv function %tmp.6 :togglePlay;
+        %tmp.8 = true;
+        invoke %tmp.6 %tmp.7(%tmp.8);
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Delegates_TimerDelegate_mc_34_21_37_4_stop:
     }
 }
 [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Delegates\TimerDelegate.mc"; @line = 1; ]

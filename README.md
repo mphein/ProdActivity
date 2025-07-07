@@ -33,4 +33,5 @@ I would like to add/change:
   - Refine Styling
   - Change hardcoded positioning of UI Elements
     - May not work on other watches
-  
+  - Track Avg HeartRate during Focus, Active, Rest
+    - Can make sure you are getting higher Active HR than Focus HR.

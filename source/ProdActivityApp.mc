@@ -12,7 +12,7 @@ module DurationType {
 class ProdActivityApp extends Application.AppBase {
     var _intervals = 1; // Duration of the productivity session in minutes
     var _focusDuration = 20;
-    var _activeDuration = 3;
+    var _activeDuration = 5;
     var _restDuration = 5;
 
     function initialize() {

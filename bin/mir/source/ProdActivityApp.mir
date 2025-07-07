@@ -32,7 +32,7 @@ class ProdActivityApp extends Application.AppBase {
     [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc"; @line = 14; @position = 8; @symbol_vardef = [_focusDuration,14,8,22]; ]
     var _focusDuration = 20;
     [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc"; @line = 15; @position = 8; @symbol_vardef = [_activeDuration,15,8,23]; ]
-    var _activeDuration = 3;
+    var _activeDuration = 5;
     [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc"; @line = 16; @position = 8; @symbol_vardef = [_restDuration,16,8,21]; ]
     var _restDuration = 5;
     [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc"; @line = 18; @symbol_functiondef = [initialize,18,13,23]; ]

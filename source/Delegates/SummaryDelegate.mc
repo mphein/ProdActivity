@@ -31,8 +31,8 @@ class SummaryDelegate extends WatchUi.InputDelegate {
     }
 
     function onEnter() {
-        var nextView = new TimerView(TimerFlow.timers[0]);
+        var nextView = new TimerView(TimerFlow.timers[0], Application.getApp().getDuration(DurationType.INTERVALS));
         WatchUi.switchToView(nextView, new TimerDelegate(nextView), WatchUi.SLIDE_BLINK);  
-        Attention.playTone(Attention.TONE_SUCCESS);
+        Attention.playTone(Attention.TONE_START);
     }
 }
