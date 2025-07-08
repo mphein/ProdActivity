@@ -1,0 +1,35 @@
+[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SummaryDelegate.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [WatchUi,1,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SummaryDelegate.mc"; @line = 3; @symbol_classdef = [SummaryDelegate,3,6,21]; @symbol_extends<0> = [WatchUi,3,30,37]; @symbol_extends<1> = [InputDelegate,3,38,51]; ]
+class SummaryDelegate extends WatchUi.InputDelegate {
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SummaryDelegate.mc"; @line = 3; ]
+    <init> {
+    }
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SummaryDelegate.mc"; @line = 3; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SummaryDelegate.mc"; @line = 4; @position = 8; @symbol_vardef = [_view,4,8,13]; ]
+    var _view;
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SummaryDelegate.mc"; @line = 5; @symbol_functiondef = [initialize,5,13,23]; @symbol_param<0> = [v,5,24,25]; ]
+    function initialize(v) as Void {
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SummaryDelegate_mc_5_27_8_4_start:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SummaryDelegate.mc" 6 8 ]
+        symbol [ WatchUi %tmp.1 6 8 15 ];
+        %tmp.1 = getm $.Toybox.WatchUi;
+        symbol [ InputDelegate %tmp.2 6 16 29 ];
+        %tmp.2 = getv %tmp.1 :InputDelegate;
+        symbol [ initialize %tmp.3 6 30 40 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SummaryDelegate.mc" 7 8 ]
+        %tmp.4 = lgetv %v;
+        symbol [ v %tmp.4 7 16 17 ];
+        symbol [ _view ? 7 8 13 ];
+        putv self :_view %tmp.4;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_SummaryDelegate_mc_5_27_8_4_stop:
+    }
+}
+[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\SummaryDelegate.mc"; @line = 1; ]
+<init> {
+}

@@ -4,278 +4,268 @@ import Toybox.Application;
 import Toybox.Lang;
 [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [WatchUi,3,14,21]; ]
 import Toybox.WatchUi;
-[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc"; @line = 5; @symbol_moduledef = [DurationType,5,7,19]; ]
-module DurationType {
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc"; @line = 5; ]
-    <init> {
-    }
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc"; @line = 6; @position = 10; @symbol_constdef = [FOCUS,6,10,15]; ]
-    const FOCUS = 0;
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc"; @line = 7; @position = 10; @symbol_constdef = [ACTIVE,7,10,16]; ]
-    const ACTIVE = 1;
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc"; @line = 8; @position = 10; @symbol_constdef = [REST,8,10,14]; ]
-    const REST = 2;
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc"; @line = 9; @position = 10; @symbol_constdef = [TOTAL,9,10,15]; ]
-    const TOTAL = 3;
-}
-[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc"; @line = 12; @symbol_classdef = [ProdActivityApp,12,6,21]; @symbol_extends<0> = [Application,12,30,41]; @symbol_extends<1> = [AppBase,12,42,49]; ]
+[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc"; @line = 4; @symbol_importdef<0> = [DurationType,4,7,19]; ]
+import DurationType;
+//! Main application class for managing productivity activity sessions.
+//! Handles focus, active, rest durations, and interval counts.
+[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc"; @line = 8; @symbol_classdef = [ProdActivityApp,8,6,21]; @symbol_extends<0> = [Application,8,30,41]; @symbol_extends<1> = [AppBase,8,42,49]; ]
 class ProdActivityApp extends Application.AppBase {
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc"; @line = 12; ]
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc"; @line = 8; ]
     <init> {
     }
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc"; @line = 12; ]
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc"; @line = 8; ]
     static
     <init> {
     }
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc"; @line = 13; @position = 8; @symbol_vardef = [_duration,13,8,17]; ]
-    var _duration = 30;
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc"; @line = 14; @position = 8; @symbol_vardef = [_focusDuration,14,8,22]; ]
-    var _focusDuration = 22;
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc"; @line = 15; @position = 8; @symbol_vardef = [_activeDuration,15,8,23]; ]
-    var _activeDuration = 3;
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc"; @line = 16; @position = 8; @symbol_vardef = [_restDuration,16,8,21]; ]
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc"; @line = 9; @position = 8; @symbol_vardef = [_intervals,9,8,18]; ]
+    var _intervals = 1;
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc"; @line = 10; @position = 8; @symbol_vardef = [_focusDuration,10,8,22]; ]
+    var _focusDuration = 20;
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc"; @line = 11; @position = 8; @symbol_vardef = [_activeDuration,11,8,23]; ]
+    var _activeDuration = 5;
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc"; @line = 12; @position = 8; @symbol_vardef = [_restDuration,12,8,21]; ]
     var _restDuration = 5;
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc"; @line = 18; @symbol_functiondef = [initialize,18,13,23]; ]
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc"; @line = 15; @symbol_functiondef = [initialize,15,13,23]; ]
     function initialize() as Void {
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_18_26_20_4_start:
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc" 19 8 ]
-        symbol [ AppBase %tmp.2 19 8 15 ];
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_15_26_17_4_start:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc" 16 8 ]
+        symbol [ AppBase %tmp.2 16 8 15 ];
         %tmp.2 = getv ? :AppBase;
-        symbol [ initialize %tmp.3 19 16 26 ];
+        symbol [ initialize %tmp.3 16 16 26 ];
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_18_26_20_4_stop:
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_15_26_17_4_stop:
     }
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc"; @line = 23; @symbol_functiondef = [onStart,23,13,20]; @symbol_param<0> = [state,23,21,26]; @symbol_param<0>_type<0> = [Dictionary,23,30,40]; ]
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc"; @line = 20; @symbol_functiondef = [onStart,20,13,20]; @symbol_param<0> = [state,20,21,26]; @symbol_param<0>_type<0> = [Dictionary,20,30,40]; ]
     function onStart(state as Dictionary or Null) as Void {
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_23_51_25_4_start:
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc" 24 8 ]
-        symbol [ System %tmp.2 24 8 14 ];
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_20_51_22_4_start:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc" 21 8 ]
+        symbol [ System %tmp.2 21 8 14 ];
         %tmp.2 = getv ? :System;
-        symbol [ println %tmp.3 24 15 22 ];
+        symbol [ println %tmp.3 21 15 22 ];
         %tmp.3 = getv function %tmp.2 :println;
         %tmp.4 = "ProdActivityApp started";
         invoke %tmp.2 %tmp.3(%tmp.4);
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_23_51_25_4_stop:
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_20_51_22_4_stop:
     }
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc"; @line = 28; @symbol_functiondef = [onStop,28,13,19]; @symbol_param<0> = [state,28,20,25]; @symbol_param<0>_type<0> = [Dictionary,28,29,39]; ]
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc"; @line = 25; @symbol_functiondef = [onStop,25,13,19]; @symbol_param<0> = [state,25,20,25]; @symbol_param<0>_type<0> = [Dictionary,25,29,39]; ]
     function onStop(state as Dictionary or Null) as Void {
     }
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc"; @line = 32; @symbol_functiondef = [getInitialView,32,13,27]; @symbol_return<0> = [Views,32,34,39]; @symbol_return<1> = [Views,32,45,50]; @symbol_return<2> = [InputDelegates,32,52,66]; ]
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc"; @line = 30; @symbol_functiondef = [getInitialView,30,13,27]; @symbol_return<0> = [Views,30,34,39]; @symbol_return<1> = [Views,30,45,50]; @symbol_return<2> = [InputDelegates,30,52,66]; ]
     function getInitialView() as [Views] or [Views, InputDelegates] {
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_32_68_34_4_start:
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc" 33 8 ]
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_30_68_32_4_start:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc" 31 8 ]
         %tmp.1 = newa 2;
-        symbol [ LoadingView %tmp.5 33 20 31 ];
+        symbol [ LoadingView %tmp.5 31 20 31 ];
         %tmp.5 = getv ? :LoadingView;
         %tmp.2 = newc %tmp.5 ();
         %tmp.6 = dup %tmp.1;
         %tmp.7 = aputv %tmp.6 0 %tmp.2;
-        symbol [ NullDelegate %tmp.11 33 39 51 ];
+        symbol [ NullDelegate %tmp.11 31 40 52 ];
         %tmp.11 = getv ? :NullDelegate;
         %tmp.8 = newc %tmp.11 ();
         %tmp.12 = dup %tmp.7;
         %tmp.13 = aputv %tmp.12 1 %tmp.8;
         ret %tmp.13;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_32_68_34_4_stop:
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_30_68_32_4_stop:
     }
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc"; @line = 36; @symbol_functiondef = [setDuration,36,13,24]; @symbol_param<0> = [phase,36,25,30]; @symbol_param<0>_type<0> = [Integer,36,34,41]; @symbol_param<1> = [duration,36,43,51]; @symbol_param<1>_type<0> = [Integer,36,55,62]; ]
-    function setDuration(phase as Integer, duration as Integer) as Void {
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_36_72_53_4_start:
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc" 37 8 ]
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc"; @line = 37; @symbol_functiondef = [setDuration,37,13,24]; @symbol_param<0> = [phase,37,25,30]; @symbol_param<1> = [num,37,32,35]; @symbol_param<1>_type<0> = [Integer,37,39,46]; ]
+    function setDuration(phase, num as Integer) as Void {
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_37_56_54_4_start:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc" 38 8 ]
         %tmp.1 = lgetv %phase;
-        symbol [ phase %tmp.1 37 15 20 ];
+        symbol [ phase %tmp.1 38 15 20 ];
         push %tmp.1;
-        switch %tmp.1 @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_37_8_52_8_switchStmtEnd;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_37_8_52_8_switchStmtBegin:
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc" 38 12 ]
+        switch %tmp.1 @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_38_8_53_8_switchStmtEnd;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_38_8_53_8_switchStmtBegin:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc" 39 12 ]
         %tmp.2 = dup %tmp.1;
-        symbol [ DurationType %tmp.4 38 17 29 ];
-        %tmp.4 = getv ? :DurationType;
-        symbol [ FOCUS %tmp.5 38 30 35 ];
-        %tmp.5 = getv %tmp.4 :FOCUS;
-        %tmp.6 = getv function %tmp.2 :equals;
-        %tmp.7 = invoke %tmp.2 %tmp.6 (%tmp.5);
-        bt %tmp.7 @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_38_12_40_21_switchCase;
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc" 41 12 ]
-        %tmp.8 = dup %tmp.1;
-        symbol [ DurationType %tmp.10 41 17 29 ];
-        %tmp.10 = getv ? :DurationType;
-        symbol [ ACTIVE %tmp.11 41 30 36 ];
-        %tmp.11 = getv %tmp.10 :ACTIVE;
-        %tmp.12 = getv function %tmp.8 :equals;
-        %tmp.13 = invoke %tmp.8 %tmp.12 (%tmp.11);
-        bt %tmp.13 @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_41_12_43_21_switchCase;
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc" 44 12 ]
-        %tmp.14 = dup %tmp.1;
-        symbol [ DurationType %tmp.16 44 17 29 ];
-        %tmp.16 = getv ? :DurationType;
-        symbol [ REST %tmp.17 44 30 34 ];
-        %tmp.17 = getv %tmp.16 :REST;
-        %tmp.18 = getv function %tmp.14 :equals;
-        %tmp.19 = invoke %tmp.14 %tmp.18 (%tmp.17);
-        bt %tmp.19 @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_44_12_46_21_switchCase;
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc" 47 12 ]
-        %tmp.20 = dup %tmp.1;
-        symbol [ DurationType %tmp.22 47 17 29 ];
-        %tmp.22 = getv ? :DurationType;
-        symbol [ TOTAL %tmp.23 47 30 35 ];
-        %tmp.23 = getv %tmp.22 :TOTAL;
-        %tmp.24 = getv function %tmp.20 :equals;
-        %tmp.25 = invoke %tmp.20 %tmp.24 (%tmp.23);
-        bt %tmp.25 @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_47_12_49_21_switchCase;
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc" 50 12 ]
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_37_8_52_8_switchStmtDefault:
-        goto @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_37_8_52_8_defaultCodeBegin;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_38_12_40_21_switchCase:
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc" 39 16 ]
-        %tmp.26 = lgetv %duration;
-        symbol [ duration %tmp.26 39 33 41 ];
-        symbol [ _focusDuration ? 39 16 30 ];
-        putv self :_focusDuration %tmp.26;
+        symbol [ DurationType %tmp.3 39 17 29 ];
+        %tmp.3 = getm $.DurationType;
+        symbol [ FOCUS %tmp.4 39 30 35 ];
+        %tmp.4 = getv %tmp.3 :FOCUS;
+        %tmp.5 = getv function %tmp.2 :equals;
+        %tmp.6 = invoke %tmp.2 %tmp.5 (%tmp.4);
+        bt %tmp.6 @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_39_12_41_21_switchCase;
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc" 42 12 ]
+        %tmp.7 = dup %tmp.1;
+        symbol [ DurationType %tmp.8 42 17 29 ];
+        %tmp.8 = getm $.DurationType;
+        symbol [ ACTIVE %tmp.9 42 30 36 ];
+        %tmp.9 = getv %tmp.8 :ACTIVE;
+        %tmp.10 = getv function %tmp.7 :equals;
+        %tmp.11 = invoke %tmp.7 %tmp.10 (%tmp.9);
+        bt %tmp.11 @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_42_12_44_21_switchCase;
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc" 45 12 ]
+        %tmp.12 = dup %tmp.1;
+        symbol [ DurationType %tmp.13 45 17 29 ];
+        %tmp.13 = getm $.DurationType;
+        symbol [ REST %tmp.14 45 30 34 ];
+        %tmp.14 = getv %tmp.13 :REST;
+        %tmp.15 = getv function %tmp.12 :equals;
+        %tmp.16 = invoke %tmp.12 %tmp.15 (%tmp.14);
+        bt %tmp.16 @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_45_12_47_21_switchCase;
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc" 48 12 ]
+        %tmp.17 = dup %tmp.1;
+        symbol [ DurationType %tmp.18 48 17 29 ];
+        %tmp.18 = getm $.DurationType;
+        symbol [ INTERVALS %tmp.19 48 30 39 ];
+        %tmp.19 = getv %tmp.18 :INTERVALS;
+        %tmp.20 = getv function %tmp.17 :equals;
+        %tmp.21 = invoke %tmp.17 %tmp.20 (%tmp.19);
+        bt %tmp.21 @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_48_12_50_21_switchCase;
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc" 51 12 ]
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_38_8_53_8_switchStmtDefault:
+        goto @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_38_8_53_8_defaultCodeBegin;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_39_12_41_21_switchCase:
 [ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc" 40 16 ]
-        goto break @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_37_8_52_8_switchStmtEnd;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_41_12_43_21_switchCase:
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc" 42 16 ]
-        %tmp.27 = lgetv %duration;
-        symbol [ duration %tmp.27 42 34 42 ];
-        symbol [ _activeDuration ? 42 16 31 ];
-        putv self :_activeDuration %tmp.27;
+        %tmp.22 = lgetv %num;
+        symbol [ num %tmp.22 40 33 36 ];
+        symbol [ _focusDuration ? 40 16 30 ];
+        putv self :_focusDuration %tmp.22;
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc" 41 16 ]
+        goto break @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_38_8_53_8_switchStmtEnd;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_42_12_44_21_switchCase:
 [ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc" 43 16 ]
-        goto break @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_37_8_52_8_switchStmtEnd;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_44_12_46_21_switchCase:
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc" 45 16 ]
-        %tmp.28 = lgetv %duration;
-        symbol [ duration %tmp.28 45 32 40 ];
-        symbol [ _restDuration ? 45 16 29 ];
-        putv self :_restDuration %tmp.28;
+        %tmp.23 = lgetv %num;
+        symbol [ num %tmp.23 43 34 37 ];
+        symbol [ _activeDuration ? 43 16 31 ];
+        putv self :_activeDuration %tmp.23;
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc" 44 16 ]
+        goto break @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_38_8_53_8_switchStmtEnd;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_45_12_47_21_switchCase:
 [ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc" 46 16 ]
-        goto break @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_37_8_52_8_switchStmtEnd;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_47_12_49_21_switchCase:
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc" 48 16 ]
-        %tmp.29 = lgetv %duration;
-        symbol [ duration %tmp.29 48 28 36 ];
-        symbol [ _duration ? 48 16 25 ];
-        putv self :_duration %tmp.29;
+        %tmp.24 = lgetv %num;
+        symbol [ num %tmp.24 46 32 35 ];
+        symbol [ _restDuration ? 46 16 29 ];
+        putv self :_restDuration %tmp.24;
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc" 47 16 ]
+        goto break @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_38_8_53_8_switchStmtEnd;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_48_12_50_21_switchCase:
 [ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc" 49 16 ]
-        goto break @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_37_8_52_8_switchStmtEnd;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_50_12_51_64_switchCase:
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_37_8_52_8_defaultCodeBegin:
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc" 51 16 ]
-        symbol [ System %tmp.31 51 16 22 ];
+        %tmp.25 = lgetv %num;
+        symbol [ num %tmp.25 49 29 32 ];
+        symbol [ _intervals ? 49 16 26 ];
+        putv self :_intervals %tmp.25;
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc" 50 16 ]
+        goto break @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_38_8_53_8_switchStmtEnd;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_51_12_52_64_switchCase:
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_38_8_53_8_defaultCodeBegin:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc" 52 16 ]
+        symbol [ System %tmp.27 52 16 22 ];
+        %tmp.27 = getv ? :System;
+        symbol [ print %tmp.28 52 23 28 ];
+        %tmp.28 = getv function %tmp.27 :print;
+        %tmp.29 = "Invalid duration type: ";
+        %tmp.30 = lgetv %phase;
+        symbol [ phase %tmp.30 52 57 62 ];
+        %tmp.31 = add %tmp.29 %tmp.30;
+        invoke %tmp.27 %tmp.28(%tmp.31);
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_38_8_53_8_switchStmtEnd:
+        pop;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_37_56_54_4_stop:
+    }
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc"; @line = 59; @symbol_functiondef = [getDuration,59,13,24]; @symbol_param<0> = [phase,59,25,30]; @symbol_param<0>_type<0> = [Integer,59,34,41]; @symbol_return<0> = [Integer,59,46,53]; ]
+    function getDuration(phase as Integer) as Integer {
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_59_54_73_4_start:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc" 60 8 ]
+        %tmp.1 = lgetv %phase;
+        symbol [ phase %tmp.1 60 15 20 ];
+        push %tmp.1;
+        switch %tmp.1 @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_60_8_72_8_switchStmtEnd;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_60_8_72_8_switchStmtBegin:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc" 61 12 ]
+        %tmp.2 = dup %tmp.1;
+        symbol [ DurationType %tmp.3 61 17 29 ];
+        %tmp.3 = getm $.DurationType;
+        symbol [ FOCUS %tmp.4 61 30 35 ];
+        %tmp.4 = getv %tmp.3 :FOCUS;
+        %tmp.5 = getv function %tmp.2 :equals;
+        %tmp.6 = invoke %tmp.2 %tmp.5 (%tmp.4);
+        bt %tmp.6 @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_61_12_62_37_switchCase;
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc" 63 12 ]
+        %tmp.7 = dup %tmp.1;
+        symbol [ DurationType %tmp.8 63 17 29 ];
+        %tmp.8 = getm $.DurationType;
+        symbol [ ACTIVE %tmp.9 63 30 36 ];
+        %tmp.9 = getv %tmp.8 :ACTIVE;
+        %tmp.10 = getv function %tmp.7 :equals;
+        %tmp.11 = invoke %tmp.7 %tmp.10 (%tmp.9);
+        bt %tmp.11 @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_63_12_64_38_switchCase;
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc" 65 12 ]
+        %tmp.12 = dup %tmp.1;
+        symbol [ DurationType %tmp.13 65 17 29 ];
+        %tmp.13 = getm $.DurationType;
+        symbol [ REST %tmp.14 65 30 34 ];
+        %tmp.14 = getv %tmp.13 :REST;
+        %tmp.15 = getv function %tmp.12 :equals;
+        %tmp.16 = invoke %tmp.12 %tmp.15 (%tmp.14);
+        bt %tmp.16 @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_65_12_66_36_switchCase;
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc" 67 12 ]
+        %tmp.17 = dup %tmp.1;
+        symbol [ DurationType %tmp.18 67 17 29 ];
+        %tmp.18 = getm $.DurationType;
+        symbol [ INTERVALS %tmp.19 67 30 39 ];
+        %tmp.19 = getv %tmp.18 :INTERVALS;
+        %tmp.20 = getv function %tmp.17 :equals;
+        %tmp.21 = invoke %tmp.17 %tmp.20 (%tmp.19);
+        bt %tmp.21 @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_67_12_68_33_switchCase;
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc" 69 12 ]
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_60_8_72_8_switchStmtDefault:
+        goto @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_60_8_72_8_defaultCodeBegin;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_61_12_62_37_switchCase:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc" 62 16 ]
+        symbol [ _focusDuration %tmp.23 62 23 37 ];
+        %tmp.23 = getv ? :_focusDuration;
+        ret %tmp.23;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_63_12_64_38_switchCase:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc" 64 16 ]
+        symbol [ _activeDuration %tmp.25 64 23 38 ];
+        %tmp.25 = getv ? :_activeDuration;
+        ret %tmp.25;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_65_12_66_36_switchCase:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc" 66 16 ]
+        symbol [ _restDuration %tmp.27 66 23 36 ];
+        %tmp.27 = getv ? :_restDuration;
+        ret %tmp.27;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_67_12_68_33_switchCase:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc" 68 16 ]
+        symbol [ _intervals %tmp.29 68 23 33 ];
+        %tmp.29 = getv ? :_intervals;
+        ret %tmp.29;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_69_12_71_24_switchCase:
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_60_8_72_8_defaultCodeBegin:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc" 70 16 ]
+        symbol [ System %tmp.31 70 16 22 ];
         %tmp.31 = getv ? :System;
-        symbol [ print %tmp.32 51 23 28 ];
+        symbol [ print %tmp.32 70 23 28 ];
         %tmp.32 = getv function %tmp.31 :print;
         %tmp.33 = "Invalid duration type: ";
         %tmp.34 = lgetv %phase;
-        symbol [ phase %tmp.34 51 57 62 ];
+        symbol [ phase %tmp.34 70 57 62 ];
         %tmp.35 = add %tmp.33 %tmp.34;
         invoke %tmp.31 %tmp.32(%tmp.35);
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_37_8_52_8_switchStmtEnd:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc" 71 16 ]
+        %tmp.36 = 0;
+        ret %tmp.36;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_60_8_72_8_switchStmtEnd:
         pop;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_36_72_53_4_stop:
-    }
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc"; @line = 55; @symbol_functiondef = [getDuration,55,13,24]; @symbol_param<0> = [phase,55,25,30]; @symbol_param<0>_type<0> = [Integer,55,34,41]; @symbol_return<0> = [Integer,55,46,53]; ]
-    function getDuration(phase as Integer) as Integer {
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_55_54_69_4_start:
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc" 56 8 ]
-        %tmp.1 = lgetv %phase;
-        symbol [ phase %tmp.1 56 15 20 ];
-        push %tmp.1;
-        switch %tmp.1 @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_56_8_68_8_switchStmtEnd;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_56_8_68_8_switchStmtBegin:
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc" 57 12 ]
-        %tmp.2 = dup %tmp.1;
-        symbol [ DurationType %tmp.4 57 17 29 ];
-        %tmp.4 = getv ? :DurationType;
-        symbol [ FOCUS %tmp.5 57 30 35 ];
-        %tmp.5 = getv %tmp.4 :FOCUS;
-        %tmp.6 = getv function %tmp.2 :equals;
-        %tmp.7 = invoke %tmp.2 %tmp.6 (%tmp.5);
-        bt %tmp.7 @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_57_12_58_37_switchCase;
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc" 59 12 ]
-        %tmp.8 = dup %tmp.1;
-        symbol [ DurationType %tmp.10 59 17 29 ];
-        %tmp.10 = getv ? :DurationType;
-        symbol [ ACTIVE %tmp.11 59 30 36 ];
-        %tmp.11 = getv %tmp.10 :ACTIVE;
-        %tmp.12 = getv function %tmp.8 :equals;
-        %tmp.13 = invoke %tmp.8 %tmp.12 (%tmp.11);
-        bt %tmp.13 @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_59_12_60_38_switchCase;
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc" 61 12 ]
-        %tmp.14 = dup %tmp.1;
-        symbol [ DurationType %tmp.16 61 17 29 ];
-        %tmp.16 = getv ? :DurationType;
-        symbol [ REST %tmp.17 61 30 34 ];
-        %tmp.17 = getv %tmp.16 :REST;
-        %tmp.18 = getv function %tmp.14 :equals;
-        %tmp.19 = invoke %tmp.14 %tmp.18 (%tmp.17);
-        bt %tmp.19 @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_61_12_62_36_switchCase;
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc" 63 12 ]
-        %tmp.20 = dup %tmp.1;
-        symbol [ DurationType %tmp.22 63 17 29 ];
-        %tmp.22 = getv ? :DurationType;
-        symbol [ TOTAL %tmp.23 63 30 35 ];
-        %tmp.23 = getv %tmp.22 :TOTAL;
-        %tmp.24 = getv function %tmp.20 :equals;
-        %tmp.25 = invoke %tmp.20 %tmp.24 (%tmp.23);
-        bt %tmp.25 @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_63_12_64_32_switchCase;
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc" 65 12 ]
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_56_8_68_8_switchStmtDefault:
-        goto @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_56_8_68_8_defaultCodeBegin;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_57_12_58_37_switchCase:
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc" 58 16 ]
-        symbol [ _focusDuration %tmp.27 58 23 37 ];
-        %tmp.27 = getv ? :_focusDuration;
-        ret %tmp.27;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_59_12_60_38_switchCase:
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc" 60 16 ]
-        symbol [ _activeDuration %tmp.29 60 23 38 ];
-        %tmp.29 = getv ? :_activeDuration;
-        ret %tmp.29;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_61_12_62_36_switchCase:
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc" 62 16 ]
-        symbol [ _restDuration %tmp.31 62 23 36 ];
-        %tmp.31 = getv ? :_restDuration;
-        ret %tmp.31;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_63_12_64_32_switchCase:
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc" 64 16 ]
-        symbol [ _duration %tmp.33 64 23 32 ];
-        %tmp.33 = getv ? :_duration;
-        ret %tmp.33;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_65_12_67_24_switchCase:
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_56_8_68_8_defaultCodeBegin:
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc" 66 16 ]
-        symbol [ System %tmp.35 66 16 22 ];
-        %tmp.35 = getv ? :System;
-        symbol [ print %tmp.36 66 23 28 ];
-        %tmp.36 = getv function %tmp.35 :print;
-        %tmp.37 = "Invalid duration type: ";
-        %tmp.38 = lgetv %phase;
-        symbol [ phase %tmp.38 66 57 62 ];
-        %tmp.39 = add %tmp.37 %tmp.38;
-        invoke %tmp.35 %tmp.36(%tmp.39);
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc" 67 16 ]
-        %tmp.40 = 0;
-        ret %tmp.40;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_56_8_68_8_switchStmtEnd:
-        pop;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_55_54_69_4_stop:
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_59_54_73_4_stop:
     }
 }
-[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc"; @line = 73; @symbol_functiondef = [getApp,73,9,15]; @symbol_return<0> = [ProdActivityApp,73,21,36]; ]
+[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc"; @line = 79; @symbol_functiondef = [getApp,79,9,15]; @symbol_return<0> = [ProdActivityApp,79,21,36]; ]
 function getApp() as ProdActivityApp {
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_73_37_75_0_start:
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc" 74 4 ]
-    symbol [ Application %tmp.1 74 11 22 ];
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_79_37_81_0_start:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc" 80 4 ]
+    symbol [ Application %tmp.1 80 11 22 ];
     %tmp.1 = getm $.Toybox.Application;
-    symbol [ getApp %tmp.2 74 23 29 ];
+    symbol [ getApp %tmp.2 80 23 29 ];
     %tmp.2 = getv function %tmp.1 :getApp;
     %tmp.3 = invoke %tmp.1 %tmp.2();
     %tmp.4 = as %tmp.3 ProdActivityApp;
-    symbol [ ProdActivityApp %tmp.4 74 35 50 ];
+    symbol [ ProdActivityApp %tmp.4 80 35 50 ];
     ret %tmp.4;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_73_37_75_0_stop:
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_ProdActivityApp_mc_79_37_81_0_stop:
 }
 [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\ProdActivityApp.mc"; @line = 1; ]
 <init> {

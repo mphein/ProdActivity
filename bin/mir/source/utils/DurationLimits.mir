@@ -1,14 +1,18 @@
-[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\DurationLimits.mc"; @line = 1; @symbol_importdef<0> = [DurationType,1,7,19]; ]
+[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\utils\DurationLimits.mc"; @line = 1; @symbol_importdef<0> = [DurationType,1,7,19]; ]
 import DurationType;
-[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\DurationLimits.mc"; @line = 3; @symbol_moduledef = [DurationLimits,3,7,21]; ]
+[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\utils\DurationLimits.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Lang,2,14,18]; ]
+import Toybox.Lang;
+//! DurationLimits defines the attributes of each timer phase,
+//! including min/max values, increment steps, and display suffixes.
+[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\utils\DurationLimits.mc"; @line = 6; @symbol_moduledef = [DurationLimits,6,7,21]; ]
 module DurationLimits {
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\DurationLimits.mc"; @line = 3; ]
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\utils\DurationLimits.mc"; @line = 6; ]
     <init> {
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\DurationLimits.mc" 4 8 ]
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\utils\DurationLimits.mc" 7 8 ]
         %tmp.1 = newd 4;
-        symbol [ DurationType %tmp.2 5 9 21 ];
+        symbol [ DurationType %tmp.2 8 9 21 ];
         %tmp.2 = getm $.DurationType;
-        symbol [ ACTIVE %tmp.3 5 22 28 ];
+        symbol [ ACTIVE %tmp.3 8 22 28 ];
         %tmp.3 = getv %tmp.2 :ACTIVE;
         %tmp.4 = newd 4;
         %tmp.5 = "min";
@@ -29,9 +33,9 @@ module DurationLimits {
         %tmp.20 = aputv %tmp.19 %tmp.17 %tmp.18;
         %tmp.21 = dup %tmp.1;
         %tmp.22 = aputv %tmp.21 %tmp.3 %tmp.20;
-        symbol [ DurationType %tmp.23 6 9 21 ];
+        symbol [ DurationType %tmp.23 9 9 21 ];
         %tmp.23 = getm $.DurationType;
-        symbol [ REST %tmp.24 6 22 26 ];
+        symbol [ REST %tmp.24 9 22 26 ];
         %tmp.24 = getv %tmp.23 :REST;
         %tmp.25 = newd 4;
         %tmp.26 = "min";
@@ -52,9 +56,9 @@ module DurationLimits {
         %tmp.41 = aputv %tmp.40 %tmp.38 %tmp.39;
         %tmp.42 = dup %tmp.22;
         %tmp.43 = aputv %tmp.42 %tmp.24 %tmp.41;
-        symbol [ DurationType %tmp.44 7 9 21 ];
+        symbol [ DurationType %tmp.44 10 9 21 ];
         %tmp.44 = getm $.DurationType;
-        symbol [ FOCUS %tmp.45 7 22 27 ];
+        symbol [ FOCUS %tmp.45 10 22 27 ];
         %tmp.45 = getv %tmp.44 :FOCUS;
         %tmp.46 = newd 4;
         %tmp.47 = "min";
@@ -75,9 +79,9 @@ module DurationLimits {
         %tmp.62 = aputv %tmp.61 %tmp.59 %tmp.60;
         %tmp.63 = dup %tmp.43;
         %tmp.64 = aputv %tmp.63 %tmp.45 %tmp.62;
-        symbol [ DurationType %tmp.65 8 9 21 ];
+        symbol [ DurationType %tmp.65 11 9 21 ];
         %tmp.65 = getm $.DurationType;
-        symbol [ INTERVALS %tmp.66 8 22 31 ];
+        symbol [ INTERVALS %tmp.66 11 22 31 ];
         %tmp.66 = getv %tmp.65 :INTERVALS;
         %tmp.67 = newd 4;
         %tmp.68 = "min";
@@ -100,9 +104,9 @@ module DurationLimits {
         %tmp.85 = aputv %tmp.84 %tmp.66 %tmp.83;
         putv self :limits %tmp.85;
     }
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\DurationLimits.mc"; @line = 4; @position = 8; @symbol_vardef = [limits,4,8,14]; ]
-    var limits;
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\utils\DurationLimits.mc"; @line = 7; @position = 8; @symbol_vardef = [limits,7,8,14]; @symbol_type<0> = [Dictionary,7,18,28]; ]
+    var limits as Dictionary;
 }
-[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\DurationLimits.mc"; @line = 1; ]
+[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\utils\DurationLimits.mc"; @line = 1; ]
 <init> {
 }

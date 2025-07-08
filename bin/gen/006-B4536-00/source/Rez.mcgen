@@ -6,6 +6,9 @@ using Toybox.Graphics as Gfx;
 
 module Rez {
     module Drawables {
+        (:initialized) var clock as ResourceId;
+        (:initialized) var pause as ResourceId;
+        (:initialized) var play as ResourceId;
         (:initialized) var id_monkey as ResourceId;
         (:initialized) var LauncherIcon as ResourceId;
     } // Drawables

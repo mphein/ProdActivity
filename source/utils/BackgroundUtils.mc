@@ -1,6 +1,10 @@
 import Toybox.Graphics;
 
+//! BackgroundUtils provides a utility function to draw
+//! a persistent circular background with a white border.
 module BackgroundUtils {
+
+    // Draws a centered circular background with a white border.
     function drawBackground(dc as Dc) as Void {
         var width = dc.getWidth();
         var height = dc.getHeight();

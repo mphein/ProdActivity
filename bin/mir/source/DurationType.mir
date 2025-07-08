@@ -1,0 +1,17 @@
+[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\DurationType.mc"; @line = 1; @symbol_moduledef = [DurationType,1,7,19]; ]
+module DurationType {
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\DurationType.mc"; @line = 1; ]
+    <init> {
+    }
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\DurationType.mc"; @line = 2; @position = 10; @symbol_constdef = [FOCUS,2,10,15]; ]
+    const FOCUS = 0;
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\DurationType.mc"; @line = 3; @position = 10; @symbol_constdef = [ACTIVE,3,10,16]; ]
+    const ACTIVE = 1;
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\DurationType.mc"; @line = 4; @position = 10; @symbol_constdef = [REST,4,10,14]; ]
+    const REST = 2;
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\DurationType.mc"; @line = 5; @position = 10; @symbol_constdef = [INTERVALS,5,10,19]; ]
+    const INTERVALS = 3;
+}
+[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\DurationType.mc"; @line = 1; ]
+<init> {
+}

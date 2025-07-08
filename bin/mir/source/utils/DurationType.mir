@@ -1,0 +1,19 @@
+//! DurationType is a module that defines constants representing
+//! different phases of the productivity timer.
+[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\utils\DurationType.mc"; @line = 3; @symbol_moduledef = [DurationType,3,7,19]; ]
+module DurationType {
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\utils\DurationType.mc"; @line = 3; ]
+    <init> {
+    }
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\utils\DurationType.mc"; @line = 4; @position = 10; @symbol_constdef = [FOCUS,4,10,15]; ]
+    const FOCUS = 0;
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\utils\DurationType.mc"; @line = 5; @position = 10; @symbol_constdef = [ACTIVE,5,10,16]; ]
+    const ACTIVE = 1;
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\utils\DurationType.mc"; @line = 6; @position = 10; @symbol_constdef = [REST,6,10,14]; ]
+    const REST = 2;
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\utils\DurationType.mc"; @line = 7; @position = 10; @symbol_constdef = [INTERVALS,7,10,19]; ]
+    const INTERVALS = 3;
+}
+[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\utils\DurationType.mc"; @line = 3; ]
+<init> {
+}
