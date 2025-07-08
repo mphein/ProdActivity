@@ -29,6 +29,7 @@ I designed the initial layout in Figma before coding to visualize the flow and e
 - Press Enter to confirm selection.
 - Use Back button to cancel or go back.
 - Use Back and Enter to pause/resume Timers.
+- Use Down during Timer phases to set remaining Time = 5 seconds. (Helps with debugging and Testing!)
 
 ## Features
 
