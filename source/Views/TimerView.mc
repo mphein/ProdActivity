@@ -166,9 +166,9 @@ class TimerView extends WatchUi.View {
         }
         if (_intervals <= 0) {
             // Done with all intervals go back to setup.
-            var view = new SessionLengthView(SessionFlow.steps[0]);
+            var view = new SummaryView();
             Attention.playTone(Attention.TONE_SUCCESS);
-            WatchUi.switchToView(view, new SessionLengthDelegate(view), WatchUi.SLIDE_BLINK);
+            WatchUi.switchToView(view, new SummaryDelegate(view), WatchUi.SLIDE_BLINK);
         } else {
             // Switch to next phase Timer View.
             var phase = TimerFlow.timers[index];
