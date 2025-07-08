@@ -1,540 +1,587 @@
-[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\SessionLengthView.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [WatchUi,1,13,20]; ]
+[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\SessionLengthView.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [WatchUi,1,13,20]; ]
 using Toybox.WatchUi;
-[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\SessionLengthView.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Graphics,2,14,22]; ]
+[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\SessionLengthView.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Graphics,2,14,22]; ]
 import Toybox.Graphics;
-[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\SessionLengthView.mc"; @line = 3; @symbol_importdef<0> = [DurationLimits,3,7,21]; ]
+[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\SessionLengthView.mc"; @line = 3; @symbol_importdef<0> = [DurationLimits,3,7,21]; ]
 import DurationLimits;
-[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\SessionLengthView.mc"; @line = 4; @symbol_importdef<0> = [BackgroundUtils,4,7,22]; ]
+[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\SessionLengthView.mc"; @line = 4; @symbol_importdef<0> = [BackgroundUtils,4,7,22]; ]
 import BackgroundUtils;
-[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\SessionLengthView.mc"; @line = 6; @symbol_classdef = [SessionLengthView,6,6,23]; @symbol_extends<0> = [WatchUi,6,32,39]; @symbol_extends<1> = [View,6,40,44]; ]
+[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\SessionLengthView.mc"; @line = 5; @symbol_importdef<0> = [Toybox,5,7,13]; @symbol_importdef<1> = [Lang,5,14,18]; ]
+import Toybox.Lang;
+//! SessionLengthView manages the UI for setting durations for different workout phases.
+//! It displays titles, renders a slider with current value, and allows interaction
+//! through button input to adjust session settings.
+[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\SessionLengthView.mc"; @line = 10; @symbol_classdef = [SessionLengthView,10,6,23]; @symbol_extends<0> = [WatchUi,10,32,39]; @symbol_extends<1> = [View,10,40,44]; ]
 class SessionLengthView extends WatchUi.View {
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\SessionLengthView.mc"; @line = 6; ]
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\SessionLengthView.mc"; @line = 10; ]
     <init> {
     }
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\SessionLengthView.mc"; @line = 6; ]
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\SessionLengthView.mc"; @line = 10; ]
     static
     <init> {
     }
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\SessionLengthView.mc"; @line = 7; @position = 8; @symbol_vardef = [currentValue,7,8,20]; ]
-    var currentValue;
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\SessionLengthView.mc"; @line = 8; @position = 8; @symbol_vardef = [line1,8,8,13]; ]
-    var line1;
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\SessionLengthView.mc"; @line = 9; @position = 8; @symbol_vardef = [line2,9,8,13]; ]
-    var line2;
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\SessionLengthView.mc"; @line = 10; @position = 8; @symbol_vardef = [phaseId,10,8,15]; ]
-    var phaseId;
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\SessionLengthView.mc"; @line = 11; @position = 8; @symbol_vardef = [_title1,11,8,15]; ]
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\SessionLengthView.mc"; @line = 11; @position = 8; @symbol_vardef = [_titleLine1,11,8,19]; ]
+    var _titleLine1;
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\SessionLengthView.mc"; @line = 12; @position = 8; @symbol_vardef = [_titleLine2,12,8,19]; ]
+    var _titleLine2;
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\SessionLengthView.mc"; @line = 13; @position = 8; @symbol_vardef = [_phaseId,13,8,16]; ]
+    var _phaseId;
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\SessionLengthView.mc"; @line = 14; @position = 8; @symbol_vardef = [_title1,14,8,15]; ]
     var _title1;
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\SessionLengthView.mc"; @line = 12; @position = 8; @symbol_vardef = [_title2,12,8,15]; ]
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\SessionLengthView.mc"; @line = 15; @position = 8; @symbol_vardef = [_title2,15,8,15]; ]
     var _title2;
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\SessionLengthView.mc"; @line = 14; @symbol_functiondef = [initialize,14,13,23]; @symbol_param<0> = [t1,14,24,26]; @symbol_param<1> = [t2,14,28,30]; @symbol_param<2> = [phase,14,32,37]; ]
-    function initialize(t1, t2, phase) as Void {
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_SessionLengthView_mc_14_39_35_4_start:
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\SessionLengthView.mc" 15 8 ]
-        %tmp.1 = lgetv %phase;
-        symbol [ phase %tmp.1 15 18 23 ];
-        symbol [ phaseId ? 15 8 15 ];
-        putv self :phaseId %tmp.1;
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\SessionLengthView.mc" 16 8 ]
-        %tmp.2 = lgetv %t1;
-        symbol [ t1 %tmp.2 16 18 20 ];
-        symbol [ _title1 ? 16 8 15 ];
-        putv self :_title1 %tmp.2;
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\SessionLengthView.mc" 17 8 ]
-        %tmp.3 = lgetv %t2;
-        symbol [ t2 %tmp.3 17 18 20 ];
-        symbol [ _title2 ? 17 8 15 ];
-        putv self :_title2 %tmp.3;
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\SessionLengthView.mc" 18 8 ]
-        symbol [ WatchUi %tmp.4 18 8 15 ];
-        %tmp.4 = getm $.Toybox.WatchUi;
-        symbol [ View %tmp.5 18 16 20 ];
-        %tmp.5 = getv %tmp.4 :View;
-        symbol [ initialize %tmp.6 18 21 31 ];
-        %tmp.6 = getv function %tmp.5 :initialize;
-        invoke %tmp.5 %tmp.6();
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\SessionLengthView.mc" 19 8 ]
-        symbol [ WatchUi %tmp.9 19 20 27 ];
-        %tmp.9 = getm $.Toybox.WatchUi;
-        symbol [ Text %tmp.10 19 28 32 ];
-        %tmp.10 = getv function ? %tmp.9 :Text;
-        %tmp.11 = newd 6;
-        %tmp.13 = const :text;
-        symbol [ text %tmp.13 20 13 17 const ];
-        symbol [ _title1 %tmp.15 20 19 26 ];
-        %tmp.15 = getv ? :_title1;
-        %tmp.16 = dup %tmp.11;
-        %tmp.17 = aputv %tmp.16 %tmp.13 %tmp.15;
-        %tmp.19 = const :color;
-        symbol [ color %tmp.19 21 13 18 const ];
-        symbol [ Graphics %tmp.20 21 20 28 ];
-        %tmp.20 = getm $.Toybox.Graphics;
-        symbol [ COLOR_WHITE %tmp.21 21 29 40 ];
-        %tmp.21 = getv %tmp.20 :COLOR_WHITE;
-        %tmp.22 = dup %tmp.17;
-        %tmp.23 = aputv %tmp.22 %tmp.19 %tmp.21;
-        %tmp.25 = const :font;
-        symbol [ font %tmp.25 22 13 17 const ];
-        symbol [ Graphics %tmp.26 22 19 27 ];
-        %tmp.26 = getm $.Toybox.Graphics;
-        symbol [ FONT_TINY %tmp.27 22 28 37 ];
-        %tmp.27 = getv %tmp.26 :FONT_TINY;
-        %tmp.28 = dup %tmp.23;
-        %tmp.29 = aputv %tmp.28 %tmp.25 %tmp.27;
-        %tmp.31 = const :locX;
-        symbol [ locX %tmp.31 23 13 17 const ];
-        symbol [ WatchUi %tmp.32 23 19 26 ];
-        %tmp.32 = getm $.Toybox.WatchUi;
-        symbol [ LAYOUT_HALIGN_CENTER %tmp.33 23 27 47 ];
-        %tmp.33 = getv %tmp.32 :LAYOUT_HALIGN_CENTER;
-        %tmp.34 = dup %tmp.29;
-        %tmp.35 = aputv %tmp.34 %tmp.31 %tmp.33;
-        %tmp.37 = const :locY;
-        symbol [ locY %tmp.37 24 13 17 const ];
-        %tmp.38 = 70;
-        %tmp.39 = dup %tmp.35;
-        %tmp.40 = aputv %tmp.39 %tmp.37 %tmp.38;
-        %tmp.42 = const :textAlign;
-        symbol [ textAlign %tmp.42 25 13 22 const ];
-        symbol [ Graphics %tmp.43 25 24 32 ];
-        %tmp.43 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.44 25 33 52 ];
-        %tmp.44 = getv %tmp.43 :TEXT_JUSTIFY_CENTER;
-        %tmp.45 = dup %tmp.40;
-        %tmp.46 = aputv %tmp.45 %tmp.42 %tmp.44;
-        %tmp.7 = newc %tmp.10 (%tmp.46);
-        symbol [ line1 ? 19 8 13 ];
-        putv self :line1 %tmp.7;
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\SessionLengthView.mc" 27 8 ]
-        symbol [ WatchUi %tmp.49 27 20 27 ];
-        %tmp.49 = getm $.Toybox.WatchUi;
-        symbol [ Text %tmp.50 27 28 32 ];
-        %tmp.50 = getv function ? %tmp.49 :Text;
-        %tmp.51 = newd 6;
-        %tmp.53 = const :text;
-        symbol [ text %tmp.53 28 13 17 const ];
-        symbol [ _title2 %tmp.55 28 19 26 ];
-        %tmp.55 = getv ? :_title2;
-        %tmp.56 = dup %tmp.51;
-        %tmp.57 = aputv %tmp.56 %tmp.53 %tmp.55;
-        %tmp.59 = const :color;
-        symbol [ color %tmp.59 29 13 18 const ];
-        symbol [ Graphics %tmp.60 29 20 28 ];
-        %tmp.60 = getm $.Toybox.Graphics;
-        symbol [ COLOR_WHITE %tmp.61 29 29 40 ];
-        %tmp.61 = getv %tmp.60 :COLOR_WHITE;
-        %tmp.62 = dup %tmp.57;
-        %tmp.63 = aputv %tmp.62 %tmp.59 %tmp.61;
-        %tmp.65 = const :font;
-        symbol [ font %tmp.65 30 13 17 const ];
-        symbol [ Graphics %tmp.66 30 19 27 ];
-        %tmp.66 = getm $.Toybox.Graphics;
-        symbol [ FONT_TINY %tmp.67 30 28 37 ];
-        %tmp.67 = getv %tmp.66 :FONT_TINY;
-        %tmp.68 = dup %tmp.63;
-        %tmp.69 = aputv %tmp.68 %tmp.65 %tmp.67;
-        %tmp.71 = const :locX;
-        symbol [ locX %tmp.71 31 13 17 const ];
-        symbol [ WatchUi %tmp.72 31 19 26 ];
-        %tmp.72 = getm $.Toybox.WatchUi;
-        symbol [ LAYOUT_HALIGN_CENTER %tmp.73 31 27 47 ];
-        %tmp.73 = getv %tmp.72 :LAYOUT_HALIGN_CENTER;
-        %tmp.74 = dup %tmp.69;
-        %tmp.75 = aputv %tmp.74 %tmp.71 %tmp.73;
-        %tmp.77 = const :locY;
-        symbol [ locY %tmp.77 32 13 17 const ];
-        %tmp.78 = 110;
-        %tmp.79 = dup %tmp.75;
-        %tmp.80 = aputv %tmp.79 %tmp.77 %tmp.78;
-        %tmp.82 = const :textAlign;
-        symbol [ textAlign %tmp.82 33 13 22 const ];
-        symbol [ Graphics %tmp.83 33 24 32 ];
-        %tmp.83 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.84 33 33 52 ];
-        %tmp.84 = getv %tmp.83 :TEXT_JUSTIFY_CENTER;
-        %tmp.85 = dup %tmp.80;
-        %tmp.86 = aputv %tmp.85 %tmp.82 %tmp.84;
-        %tmp.47 = newc %tmp.50 (%tmp.86);
-        symbol [ line2 ? 27 8 13 ];
-        putv self :line2 %tmp.47;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_SessionLengthView_mc_14_39_35_4_stop:
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\SessionLengthView.mc"; @line = 17; @symbol_functiondef = [initialize,17,13,23]; @symbol_param<0> = [session,17,24,31]; @symbol_param<0>_type<0> = [Dictionary,17,35,45]; ]
+    function initialize(session as Dictionary) as Void {
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_SessionLengthView_mc_17_47_26_4_start:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\SessionLengthView.mc" 18 8 ]
+        %tmp.1 = lgetv %session;
+        symbol [ session %tmp.1 18 19 26 ];
+        %tmp.2 = "phase";
+        %tmp.3 = agetv %tmp.1 %tmp.2;
+        symbol [ _phaseId ? 18 8 16 ];
+        putv self :_phaseId %tmp.3;
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\SessionLengthView.mc" 19 8 ]
+        %tmp.4 = lgetv %session;
+        symbol [ session %tmp.4 19 18 25 ];
+        %tmp.5 = "title1";
+        %tmp.6 = agetv %tmp.4 %tmp.5;
+        symbol [ _title1 ? 19 8 15 ];
+        putv self :_title1 %tmp.6;
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\SessionLengthView.mc" 20 8 ]
+        %tmp.7 = lgetv %session;
+        symbol [ session %tmp.7 20 18 25 ];
+        %tmp.8 = "title2";
+        %tmp.9 = agetv %tmp.7 %tmp.8;
+        symbol [ _title2 ? 20 8 15 ];
+        putv self :_title2 %tmp.9;
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\SessionLengthView.mc" 21 8 ]
+        symbol [ WatchUi %tmp.10 21 8 15 ];
+        %tmp.10 = getm $.Toybox.WatchUi;
+        symbol [ View %tmp.11 21 16 20 ];
+        %tmp.11 = getv %tmp.10 :View;
+        symbol [ initialize %tmp.12 21 21 31 ];
+        %tmp.12 = getv function %tmp.11 :initialize;
+        invoke %tmp.11 %tmp.12();
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\SessionLengthView.mc" 24 8 ]
+        %tmp.13 = self;
+        symbol [ initText %tmp.14 24 22 30 ];
+        %tmp.14 = getv function %tmp.13 :initText;
+        symbol [ _title1 %tmp.16 24 31 38 ];
+        %tmp.16 = getv ? :_title1;
+        %tmp.17 = 70;
+        %tmp.18 = invoke %tmp.13 %tmp.14(%tmp.16, %tmp.17);
+        symbol [ _titleLine1 ? 24 8 19 ];
+        putv self :_titleLine1 %tmp.18;
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\SessionLengthView.mc" 25 8 ]
+        %tmp.19 = self;
+        symbol [ initText %tmp.20 25 22 30 ];
+        %tmp.20 = getv function %tmp.19 :initText;
+        symbol [ _title2 %tmp.22 25 31 38 ];
+        %tmp.22 = getv ? :_title2;
+        %tmp.23 = 110;
+        %tmp.24 = invoke %tmp.19 %tmp.20(%tmp.22, %tmp.23);
+        symbol [ _titleLine2 ? 25 8 19 ];
+        putv self :_titleLine2 %tmp.24;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_SessionLengthView_mc_17_47_26_4_stop:
     }
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\SessionLengthView.mc"; @line = 37; @symbol_functiondef = [onUpdate,37,13,21]; @symbol_param<0> = [dc,37,22,24]; @symbol_param<0>_type<0> = [Dc,37,28,30]; ]
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\SessionLengthView.mc"; @line = 29; @symbol_functiondef = [onUpdate,29,13,21]; @symbol_param<0> = [dc,29,22,24]; @symbol_param<0>_type<0> = [Dc,29,28,30]; ]
     function onUpdate(dc as Dc) as Void {
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_SessionLengthView_mc_37_40_71_4_start:
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\SessionLengthView.mc" 38 8 ]
-        symbol [ Application %tmp.2 38 23 34 ];
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_SessionLengthView_mc_29_40_37_4_start:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\SessionLengthView.mc" 30 8 ]
+        [ "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_SessionLengthView_mc_29_40_37_4_start" "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_SessionLengthView_mc_29_40_37_4_stop" ]
+        %currentValue.1 = local;
+        symbol [ currentValue %currentValue.1 30 12 24 ];
+        symbol [ Application %tmp.2 30 27 38 ];
         %tmp.2 = getv ? :Application;
-        symbol [ getApp %tmp.3 38 35 41 ];
+        symbol [ getApp %tmp.3 30 39 45 ];
         %tmp.3 = getv function %tmp.2 :getApp;
         %tmp.4 = invoke %tmp.2 %tmp.3();
-        symbol [ getDuration %tmp.5 38 44 55 ];
+        symbol [ getDuration %tmp.5 30 48 59 ];
         %tmp.5 = getv function %tmp.4 :getDuration;
-        symbol [ phaseId %tmp.7 38 56 63 ];
-        %tmp.7 = getv ? :phaseId;
+        symbol [ _phaseId %tmp.7 30 60 68 ];
+        %tmp.7 = getv ? :_phaseId;
         %tmp.8 = invoke %tmp.4 %tmp.5(%tmp.7);
-        symbol [ currentValue ? 38 8 20 ];
-        putv self :currentValue %tmp.8;
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\SessionLengthView.mc" 39 8 ]
+        lputv %currentValue.1 %tmp.8;
+        symbol [ currentValue %currentValue.1 30 12 24 ];
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\SessionLengthView.mc" 31 8 ]
         %tmp.9 = lgetv %dc;
-        symbol [ dc %tmp.9 39 8 10 ];
-        symbol [ clear %tmp.10 39 11 16 ];
+        symbol [ dc %tmp.9 31 8 10 ];
+        symbol [ clear %tmp.10 31 11 16 ];
         %tmp.10 = getv function %tmp.9 :clear;
         invoke %tmp.9 %tmp.10();
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\SessionLengthView.mc" 42 8 ]
-        symbol [ BackgroundUtils %tmp.11 42 8 23 ];
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\SessionLengthView.mc" 32 8 ]
+        symbol [ BackgroundUtils %tmp.11 32 8 23 ];
         %tmp.11 = getm $.BackgroundUtils;
-        symbol [ drawBackground %tmp.12 42 24 38 ];
+        symbol [ drawBackground %tmp.12 32 24 38 ];
         %tmp.12 = getv function %tmp.11 :drawBackground;
         %tmp.13 = lgetv %dc;
-        symbol [ dc %tmp.13 42 39 41 ];
+        symbol [ dc %tmp.13 32 39 41 ];
         invoke %tmp.11 %tmp.12(%tmp.13);
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\SessionLengthView.mc" 44 8 ]
-        symbol [ line1 %tmp.15 44 8 13 ];
-        %tmp.15 = getv ? :line1;
-        symbol [ draw %tmp.16 44 14 18 ];
-        %tmp.16 = getv function %tmp.15 :draw;
-        %tmp.17 = lgetv %dc;
-        symbol [ dc %tmp.17 44 19 21 ];
-        invoke %tmp.15 %tmp.16(%tmp.17);
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\SessionLengthView.mc" 45 8 ]
-        symbol [ line2 %tmp.19 45 8 13 ];
-        %tmp.19 = getv ? :line2;
-        symbol [ draw %tmp.20 45 14 18 ];
-        %tmp.20 = getv function %tmp.19 :draw;
-        %tmp.21 = lgetv %dc;
-        symbol [ dc %tmp.21 45 19 21 ];
-        invoke %tmp.19 %tmp.20(%tmp.21);
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\SessionLengthView.mc" 46 8 ]
-        %tmp.22 = lgetv %dc;
-        symbol [ dc %tmp.22 46 8 10 ];
-        symbol [ setColor %tmp.23 46 11 19 ];
-        %tmp.23 = getv function %tmp.22 :setColor;
-        symbol [ Graphics %tmp.24 46 20 28 ];
-        %tmp.24 = getm $.Toybox.Graphics;
-        symbol [ COLOR_WHITE %tmp.25 46 29 40 ];
-        %tmp.25 = getv %tmp.24 :COLOR_WHITE;
-        symbol [ Graphics %tmp.26 46 42 50 ];
-        %tmp.26 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.27 46 51 68 ];
-        %tmp.27 = getv %tmp.26 :COLOR_TRANSPARENT;
-        invoke %tmp.22 %tmp.23(%tmp.25, %tmp.27);
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\SessionLengthView.mc" 47 8 ]
-        [ "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_SessionLengthView_mc_37_40_71_4_start" "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_SessionLengthView_mc_37_40_71_4_stop" ]
-        %sliderX.1 = local;
-        symbol [ sliderX %sliderX.1 47 12 19 ];
-        %tmp.28 = lgetv %dc;
-        symbol [ dc %tmp.28 47 22 24 ];
-        symbol [ getWidth %tmp.29 47 25 33 ];
-        %tmp.29 = getv function %tmp.28 :getWidth;
-        %tmp.30 = invoke %tmp.28 %tmp.29();
-        %tmp.31 = 8;
-        %tmp.32 = div %tmp.30 %tmp.31;
-        lputv %sliderX.1 %tmp.32;
-        symbol [ sliderX %sliderX.1 47 12 19 ];
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\SessionLengthView.mc" 48 8 ]
-        [ "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_SessionLengthView_mc_37_40_71_4_start" "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_SessionLengthView_mc_37_40_71_4_stop" ]
-        %sliderY.2 = local;
-        symbol [ sliderY %sliderY.2 48 12 19 ];
-        %tmp.33 = lgetv %dc;
-        symbol [ dc %tmp.33 48 22 24 ];
-        symbol [ getHeight %tmp.34 48 25 34 ];
-        %tmp.34 = getv function %tmp.33 :getHeight;
-        %tmp.35 = invoke %tmp.33 %tmp.34();
-        %tmp.36 = 2;
-        %tmp.37 = div %tmp.35 %tmp.36;
-        lputv %sliderY.2 %tmp.37;
-        symbol [ sliderY %sliderY.2 48 12 19 ];
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\SessionLengthView.mc" 49 8 ]
-        [ "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_SessionLengthView_mc_37_40_71_4_start" "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_SessionLengthView_mc_37_40_71_4_stop" ]
-        %sliderWidth.3 = local;
-        symbol [ sliderWidth %sliderWidth.3 49 12 23 ];
-        %tmp.38 = lgetv %dc;
-        symbol [ dc %tmp.38 49 26 28 ];
-        symbol [ getWidth %tmp.39 49 29 37 ];
-        %tmp.39 = getv function %tmp.38 :getWidth;
-        %tmp.40 = invoke %tmp.38 %tmp.39();
-        %tmp.41 = 1.33;
-        %tmp.42 = div %tmp.40 %tmp.41;
-        lputv %sliderWidth.3 %tmp.42;
-        symbol [ sliderWidth %sliderWidth.3 49 12 23 ];
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\SessionLengthView.mc" 50 8 ]
-        [ "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_SessionLengthView_mc_37_40_71_4_start" "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_SessionLengthView_mc_37_40_71_4_stop" ]
-        %sliderHeight.4 = local;
-        symbol [ sliderHeight %sliderHeight.4 50 12 24 ];
-        %tmp.43 = 4;
-        lputv %sliderHeight.4 %tmp.43;
-        symbol [ sliderHeight %sliderHeight.4 50 12 24 ];
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\SessionLengthView.mc" 51 8 ]
-        [ "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_SessionLengthView_mc_37_40_71_4_start" "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_SessionLengthView_mc_37_40_71_4_stop" ]
-        %radius.5 = local;
-        symbol [ radius %radius.5 51 12 18 ];
-        %tmp.44 = 8;
-        lputv %radius.5 %tmp.44;
-        symbol [ radius %radius.5 51 12 18 ];
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\SessionLengthView.mc" 54 8 ]
-        %tmp.45 = lgetv %dc;
-        symbol [ dc %tmp.45 54 8 10 ];
-        symbol [ fillRectangle %tmp.46 54 11 24 ];
-        %tmp.46 = getv function %tmp.45 :fillRectangle;
-        %tmp.47 = lgetv %sliderX.1;
-        symbol [ sliderX %tmp.47 54 25 32 ];
-        %tmp.48 = lgetv %sliderY.2;
-        symbol [ sliderY %tmp.48 54 34 41 ];
-        %tmp.49 = lgetv %sliderWidth.3;
-        symbol [ sliderWidth %tmp.49 54 43 54 ];
-        %tmp.50 = lgetv %sliderHeight.4;
-        symbol [ sliderHeight %tmp.50 54 56 68 ];
-        invoke %tmp.45 %tmp.46(%tmp.47, %tmp.48, %tmp.49, %tmp.50);
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\SessionLengthView.mc" 57 8 ]
-        symbol [ System %tmp.52 57 8 14 ];
-        %tmp.52 = getv ? :System;
-        symbol [ println %tmp.53 57 15 22 ];
-        %tmp.53 = getv function %tmp.52 :println;
-        symbol [ currentValue %tmp.55 57 23 35 ];
-        %tmp.55 = getv ? :currentValue;
-        invoke %tmp.52 %tmp.53(%tmp.55);
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\SessionLengthView.mc" 59 8 ]
-        [ "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_SessionLengthView_mc_37_40_71_4_start" "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_SessionLengthView_mc_37_40_71_4_stop" ]
-        %percent.6 = local;
-        symbol [ percent %percent.6 59 12 19 ];
-        symbol [ currentValue %tmp.57 59 23 35 ];
-        %tmp.57 = getv ? :currentValue;
-        symbol [ DurationLimits %tmp.58 59 38 52 ];
-        %tmp.58 = getm $.DurationLimits;
-        symbol [ limits %tmp.59 59 53 59 ];
-        %tmp.59 = getv %tmp.58 :limits;
-        symbol [ phaseId %tmp.61 59 60 67 ];
-        %tmp.61 = getv ? :phaseId;
-        %tmp.62 = agetv %tmp.59 %tmp.61;
-        %tmp.63 = "min";
-        %tmp.64 = agetv %tmp.62 %tmp.63;
-        %tmp.65 = sub %tmp.57 %tmp.64;
-        %tmp.66 = 1.0;
-        %tmp.67 = mul %tmp.65 %tmp.66;
-        symbol [ DurationLimits %tmp.68 59 86 100 ];
-        %tmp.68 = getm $.DurationLimits;
-        symbol [ limits %tmp.69 59 101 107 ];
-        %tmp.69 = getv %tmp.68 :limits;
-        symbol [ phaseId %tmp.71 59 108 115 ];
-        %tmp.71 = getv ? :phaseId;
-        %tmp.72 = agetv %tmp.69 %tmp.71;
-        %tmp.73 = "max";
-        %tmp.74 = agetv %tmp.72 %tmp.73;
-        symbol [ DurationLimits %tmp.75 59 126 140 ];
-        %tmp.75 = getm $.DurationLimits;
-        symbol [ limits %tmp.76 59 141 147 ];
-        %tmp.76 = getv %tmp.75 :limits;
-        symbol [ phaseId %tmp.78 59 148 155 ];
-        %tmp.78 = getv ? :phaseId;
-        %tmp.79 = agetv %tmp.76 %tmp.78;
-        %tmp.80 = "min";
-        %tmp.81 = agetv %tmp.79 %tmp.80;
-        %tmp.82 = sub %tmp.74 %tmp.81;
-        %tmp.83 = div %tmp.67 %tmp.82;
-        lputv %percent.6 %tmp.83;
-        symbol [ percent %percent.6 59 12 19 ];
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\SessionLengthView.mc" 60 8 ]
-        symbol [ System %tmp.85 60 8 14 ];
-        %tmp.85 = getv ? :System;
-        symbol [ println %tmp.86 60 15 22 ];
-        %tmp.86 = getv function %tmp.85 :println;
-        %tmp.87 = lgetv %percent.6;
-        symbol [ percent %tmp.87 60 23 30 ];
-        %tmp.88 = "%";
-        %tmp.89 = add %tmp.87 %tmp.88;
-        invoke %tmp.85 %tmp.86(%tmp.89);
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\SessionLengthView.mc" 61 8 ]
-        [ "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_SessionLengthView_mc_37_40_71_4_start" "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_SessionLengthView_mc_37_40_71_4_stop" ]
-        %thumbX.7 = local;
-        symbol [ thumbX %thumbX.7 61 12 18 ];
-        %tmp.90 = lgetv %sliderX.1;
-        symbol [ sliderX %tmp.90 61 21 28 ];
-        %tmp.91 = lgetv %sliderWidth.3;
-        symbol [ sliderWidth %tmp.91 61 32 43 ];
-        %tmp.92 = lgetv %percent.6;
-        symbol [ percent %tmp.92 61 46 53 ];
-        %tmp.93 = mul %tmp.91 %tmp.92;
-        %tmp.94 = add %tmp.90 %tmp.93;
-        lputv %thumbX.7 %tmp.94;
-        symbol [ thumbX %thumbX.7 61 12 18 ];
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\SessionLengthView.mc" 62 8 ]
-        %tmp.95 = lgetv %dc;
-        symbol [ dc %tmp.95 62 8 10 ];
-        symbol [ setColor %tmp.96 62 11 19 ];
-        %tmp.96 = getv function %tmp.95 :setColor;
-        symbol [ Graphics %tmp.97 62 20 28 ];
-        %tmp.97 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLUE %tmp.98 62 29 39 ];
-        %tmp.98 = getv %tmp.97 :COLOR_BLUE;
-        symbol [ Graphics %tmp.99 62 41 49 ];
-        %tmp.99 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.100 62 50 67 ];
-        %tmp.100 = getv %tmp.99 :COLOR_TRANSPARENT;
-        invoke %tmp.95 %tmp.96(%tmp.98, %tmp.100);
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\SessionLengthView.mc" 63 8 ]
-        %tmp.101 = lgetv %dc;
-        symbol [ dc %tmp.101 63 8 10 ];
-        symbol [ fillCircle %tmp.102 63 11 21 ];
-        %tmp.102 = getv function %tmp.101 :fillCircle;
-        %tmp.103 = lgetv %thumbX.7;
-        symbol [ thumbX %tmp.103 63 22 28 ];
-        %tmp.104 = lgetv %sliderY.2;
-        symbol [ sliderY %tmp.104 63 30 37 ];
-        %tmp.105 = lgetv %sliderHeight.4;
-        symbol [ sliderHeight %tmp.105 63 40 52 ];
-        %tmp.106 = 2;
-        %tmp.107 = div %tmp.105 %tmp.106;
-        %tmp.108 = add %tmp.104 %tmp.107;
-        %tmp.109 = lgetv %radius.5;
-        symbol [ radius %tmp.109 63 56 62 ];
-        invoke %tmp.101 %tmp.102(%tmp.103, %tmp.108, %tmp.109);
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\SessionLengthView.mc" 64 8 ]
-        %tmp.110 = lgetv %dc;
-        symbol [ dc %tmp.110 64 8 10 ];
-        symbol [ drawText %tmp.111 64 11 19 ];
-        %tmp.111 = getv function %tmp.110 :drawText;
-        %tmp.112 = lgetv %dc;
-        symbol [ dc %tmp.112 64 20 22 ];
-        symbol [ getWidth %tmp.113 64 23 31 ];
-        %tmp.113 = getv function %tmp.112 :getWidth;
-        %tmp.114 = invoke %tmp.112 %tmp.113();
-        %tmp.115 = 2;
-        %tmp.116 = div %tmp.114 %tmp.115;
-        %tmp.117 = lgetv %sliderY.2;
-        symbol [ sliderY %tmp.117 64 39 46 ];
-        %tmp.118 = 20;
-        %tmp.119 = add %tmp.117 %tmp.118;
-        symbol [ Graphics %tmp.120 64 53 61 ];
-        %tmp.120 = getm $.Toybox.Graphics;
-        symbol [ FONT_NUMBER_MILD %tmp.121 64 62 78 ];
-        %tmp.121 = getv %tmp.120 :FONT_NUMBER_MILD;
-        symbol [ currentValue %tmp.123 64 80 92 ];
-        %tmp.123 = getv ? :currentValue;
-        symbol [ toString %tmp.124 64 93 101 ];
-        %tmp.124 = getv function %tmp.123 :toString;
-        %tmp.125 = invoke %tmp.123 %tmp.124();
-        symbol [ DurationLimits %tmp.126 64 106 120 ];
-        %tmp.126 = getm $.DurationLimits;
-        symbol [ limits %tmp.127 64 121 127 ];
-        %tmp.127 = getv %tmp.126 :limits;
-        symbol [ phaseId %tmp.129 64 128 135 ];
-        %tmp.129 = getv ? :phaseId;
-        %tmp.130 = agetv %tmp.127 %tmp.129;
-        %tmp.131 = "str";
-        %tmp.132 = agetv %tmp.130 %tmp.131;
-        %tmp.133 = add %tmp.125 %tmp.132;
-        symbol [ Graphics %tmp.134 64 145 153 ];
-        %tmp.134 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.135 64 154 173 ];
-        %tmp.135 = getv %tmp.134 :TEXT_JUSTIFY_CENTER;
-        invoke %tmp.110 %tmp.111(%tmp.116, %tmp.119, %tmp.121, %tmp.133, %tmp.135);
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\SessionLengthView.mc" 65 8 ]
-        %tmp.136 = lgetv %dc;
-        symbol [ dc %tmp.136 65 8 10 ];
-        symbol [ setColor %tmp.137 65 11 19 ];
-        %tmp.137 = getv function %tmp.136 :setColor;
-        symbol [ Graphics %tmp.138 65 20 28 ];
-        %tmp.138 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLUE %tmp.139 65 29 39 ];
-        %tmp.139 = getv %tmp.138 :COLOR_BLUE;
-        symbol [ Graphics %tmp.140 65 41 49 ];
-        %tmp.140 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.141 65 50 67 ];
-        %tmp.141 = getv %tmp.140 :COLOR_TRANSPARENT;
-        invoke %tmp.136 %tmp.137(%tmp.139, %tmp.141);
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\SessionLengthView.mc" 67 8 ]
-        %tmp.142 = lgetv %dc;
-        symbol [ dc %tmp.142 67 8 10 ];
-        symbol [ drawText %tmp.143 67 11 19 ];
-        %tmp.143 = getv function %tmp.142 :drawText;
-        %tmp.144 = lgetv %dc;
-        symbol [ dc %tmp.144 67 20 22 ];
-        symbol [ getWidth %tmp.145 67 23 31 ];
-        %tmp.145 = getv function %tmp.144 :getWidth;
-        %tmp.146 = invoke %tmp.144 %tmp.145();
-        %tmp.147 = 8;
-        %tmp.148 = div %tmp.146 %tmp.147;
-        %tmp.149 = 10;
-        %tmp.150 = sub %tmp.148 %tmp.149;
-        %tmp.151 = lgetv %sliderY.2;
-        symbol [ sliderY %tmp.151 67 44 51 ];
-        %tmp.152 = 15;
-        %tmp.153 = add %tmp.151 %tmp.152;
-        symbol [ Graphics %tmp.154 67 58 66 ];
-        %tmp.154 = getm $.Toybox.Graphics;
-        symbol [ FONT_XTINY %tmp.155 67 67 77 ];
-        %tmp.155 = getv %tmp.154 :FONT_XTINY;
-        symbol [ DurationLimits %tmp.156 67 79 93 ];
-        %tmp.156 = getm $.DurationLimits;
-        symbol [ limits %tmp.157 67 94 100 ];
-        %tmp.157 = getv %tmp.156 :limits;
-        symbol [ phaseId %tmp.159 67 101 108 ];
-        %tmp.159 = getv ? :phaseId;
-        %tmp.160 = agetv %tmp.157 %tmp.159;
-        %tmp.161 = "min";
-        %tmp.162 = agetv %tmp.160 %tmp.161;
-        symbol [ toString %tmp.163 67 117 125 ];
-        %tmp.163 = getv function %tmp.162 :toString;
-        %tmp.164 = invoke %tmp.162 %tmp.163();
-        symbol [ Graphics %tmp.165 67 129 137 ];
-        %tmp.165 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_LEFT %tmp.166 67 138 155 ];
-        %tmp.166 = getv %tmp.165 :TEXT_JUSTIFY_LEFT;
-        invoke %tmp.142 %tmp.143(%tmp.150, %tmp.153, %tmp.155, %tmp.164, %tmp.166);
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\SessionLengthView.mc" 69 8 ]
-        %tmp.167 = lgetv %dc;
-        symbol [ dc %tmp.167 69 8 10 ];
-        symbol [ drawText %tmp.168 69 11 19 ];
-        %tmp.168 = getv function %tmp.167 :drawText;
-        %tmp.169 = lgetv %dc;
-        symbol [ dc %tmp.169 69 20 22 ];
-        symbol [ getWidth %tmp.170 69 23 31 ];
-        %tmp.170 = getv function %tmp.169 :getWidth;
-        %tmp.171 = invoke %tmp.169 %tmp.170();
-        %tmp.172 = 0.9;
-        %tmp.173 = mul %tmp.171 %tmp.172;
-        %tmp.174 = 10;
-        %tmp.175 = add %tmp.173 %tmp.174;
-        %tmp.176 = lgetv %sliderY.2;
-        symbol [ sliderY %tmp.176 69 46 53 ];
-        %tmp.177 = 15;
-        %tmp.178 = add %tmp.176 %tmp.177;
-        symbol [ Graphics %tmp.179 69 60 68 ];
-        %tmp.179 = getm $.Toybox.Graphics;
-        symbol [ FONT_XTINY %tmp.180 69 69 79 ];
-        %tmp.180 = getv %tmp.179 :FONT_XTINY;
-        symbol [ DurationLimits %tmp.181 69 81 95 ];
-        %tmp.181 = getm $.DurationLimits;
-        symbol [ limits %tmp.182 69 96 102 ];
-        %tmp.182 = getv %tmp.181 :limits;
-        symbol [ phaseId %tmp.184 69 103 110 ];
-        %tmp.184 = getv ? :phaseId;
-        %tmp.185 = agetv %tmp.182 %tmp.184;
-        %tmp.186 = "max";
-        %tmp.187 = agetv %tmp.185 %tmp.186;
-        symbol [ toString %tmp.188 69 119 127 ];
-        %tmp.188 = getv function %tmp.187 :toString;
-        %tmp.189 = invoke %tmp.187 %tmp.188();
-        symbol [ Graphics %tmp.190 69 131 139 ];
-        %tmp.190 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_RIGHT %tmp.191 69 140 158 ];
-        %tmp.191 = getv %tmp.190 :TEXT_JUSTIFY_RIGHT;
-        invoke %tmp.167 %tmp.168(%tmp.175, %tmp.178, %tmp.180, %tmp.189, %tmp.191);
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_SessionLengthView_mc_37_40_71_4_stop:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\SessionLengthView.mc" 34 8 ]
+        %tmp.14 = self;
+        symbol [ drawTextHeaders %tmp.15 34 8 23 ];
+        %tmp.15 = getv function %tmp.14 :drawTextHeaders;
+        %tmp.16 = lgetv %dc;
+        symbol [ dc %tmp.16 34 24 26 ];
+        invoke %tmp.14 %tmp.15(%tmp.16);
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\SessionLengthView.mc" 35 8 ]
+        %tmp.17 = self;
+        symbol [ drawSlider %tmp.18 35 8 18 ];
+        %tmp.18 = getv function %tmp.17 :drawSlider;
+        %tmp.19 = lgetv %dc;
+        symbol [ dc %tmp.19 35 19 21 ];
+        %tmp.20 = lgetv %currentValue.1;
+        symbol [ currentValue %tmp.20 35 23 35 ];
+        invoke %tmp.17 %tmp.18(%tmp.19, %tmp.20);
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\SessionLengthView.mc" 36 8 ]
+        %tmp.21 = self;
+        symbol [ drawSliderLimits %tmp.22 36 8 24 ];
+        %tmp.22 = getv function %tmp.21 :drawSliderLimits;
+        %tmp.23 = lgetv %dc;
+        symbol [ dc %tmp.23 36 25 27 ];
+        invoke %tmp.21 %tmp.22(%tmp.23);
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_SessionLengthView_mc_29_40_37_4_stop:
     }
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\SessionLengthView.mc"; @line = 73; @symbol_functiondef = [invalidate,73,13,23]; ]
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\SessionLengthView.mc"; @line = 39; @symbol_functiondef = [drawTextHeaders,39,13,28]; @symbol_param<0> = [dc,39,29,31]; @symbol_param<0>_type<0> = [Dc,39,35,37]; ]
+    function drawTextHeaders(dc as Dc) {
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_SessionLengthView_mc_39_39_42_4_start:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\SessionLengthView.mc" 40 8 ]
+        symbol [ _titleLine1 %tmp.2 40 8 19 ];
+        %tmp.2 = getv ? :_titleLine1;
+        symbol [ draw %tmp.3 40 20 24 ];
+        %tmp.3 = getv function %tmp.2 :draw;
+        %tmp.4 = lgetv %dc;
+        symbol [ dc %tmp.4 40 25 27 ];
+        invoke %tmp.2 %tmp.3(%tmp.4);
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\SessionLengthView.mc" 41 8 ]
+        symbol [ _titleLine2 %tmp.6 41 8 19 ];
+        %tmp.6 = getv ? :_titleLine2;
+        symbol [ draw %tmp.7 41 20 24 ];
+        %tmp.7 = getv function %tmp.6 :draw;
+        %tmp.8 = lgetv %dc;
+        symbol [ dc %tmp.8 41 25 27 ];
+        invoke %tmp.6 %tmp.7(%tmp.8);
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_SessionLengthView_mc_39_39_42_4_stop:
+    }
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\SessionLengthView.mc"; @line = 45; @symbol_functiondef = [drawSlider,45,13,23]; @symbol_param<0> = [dc,45,24,26]; @symbol_param<0>_type<0> = [Dc,45,30,32]; @symbol_param<1> = [currentValue,45,34,46]; @symbol_param<1>_type<0> = [Number,45,50,56]; ]
+    function drawSlider(dc as Dc, currentValue as Number) {
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_SessionLengthView_mc_45_58_64_4_start:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\SessionLengthView.mc" 46 8 ]
+        [ "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_SessionLengthView_mc_45_58_64_4_start" "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_SessionLengthView_mc_45_58_64_4_stop" ]
+        %sliderX.1 = local;
+        symbol [ sliderX %sliderX.1 46 12 19 ];
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 46 22 24 ];
+        symbol [ getWidth %tmp.2 46 25 33 ];
+        %tmp.2 = getv function %tmp.1 :getWidth;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        %tmp.4 = 8;
+        %tmp.5 = div %tmp.3 %tmp.4;
+        lputv %sliderX.1 %tmp.5;
+        symbol [ sliderX %sliderX.1 46 12 19 ];
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\SessionLengthView.mc" 47 8 ]
+        [ "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_SessionLengthView_mc_45_58_64_4_start" "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_SessionLengthView_mc_45_58_64_4_stop" ]
+        %sliderY.2 = local;
+        symbol [ sliderY %sliderY.2 47 12 19 ];
+        %tmp.6 = lgetv %dc;
+        symbol [ dc %tmp.6 47 22 24 ];
+        symbol [ getHeight %tmp.7 47 25 34 ];
+        %tmp.7 = getv function %tmp.6 :getHeight;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        %tmp.9 = 2;
+        %tmp.10 = div %tmp.8 %tmp.9;
+        lputv %sliderY.2 %tmp.10;
+        symbol [ sliderY %sliderY.2 47 12 19 ];
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\SessionLengthView.mc" 48 8 ]
+        [ "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_SessionLengthView_mc_45_58_64_4_start" "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_SessionLengthView_mc_45_58_64_4_stop" ]
+        %sliderWidth.3 = local;
+        symbol [ sliderWidth %sliderWidth.3 48 12 23 ];
+        %tmp.11 = lgetv %dc;
+        symbol [ dc %tmp.11 48 26 28 ];
+        symbol [ getWidth %tmp.12 48 29 37 ];
+        %tmp.12 = getv function %tmp.11 :getWidth;
+        %tmp.13 = invoke %tmp.11 %tmp.12();
+        %tmp.14 = 1.33;
+        %tmp.15 = div %tmp.13 %tmp.14;
+        lputv %sliderWidth.3 %tmp.15;
+        symbol [ sliderWidth %sliderWidth.3 48 12 23 ];
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\SessionLengthView.mc" 49 8 ]
+        [ "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_SessionLengthView_mc_45_58_64_4_start" "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_SessionLengthView_mc_45_58_64_4_stop" ]
+        %sliderHeight.4 = local;
+        symbol [ sliderHeight %sliderHeight.4 49 12 24 ];
+        %tmp.16 = 4;
+        lputv %sliderHeight.4 %tmp.16;
+        symbol [ sliderHeight %sliderHeight.4 49 12 24 ];
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\SessionLengthView.mc" 50 8 ]
+        [ "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_SessionLengthView_mc_45_58_64_4_start" "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_SessionLengthView_mc_45_58_64_4_stop" ]
+        %radius.5 = local;
+        symbol [ radius %radius.5 50 12 18 ];
+        %tmp.17 = 8;
+        lputv %radius.5 %tmp.17;
+        symbol [ radius %radius.5 50 12 18 ];
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\SessionLengthView.mc" 53 8 ]
+        [ "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_SessionLengthView_mc_45_58_64_4_start" "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_SessionLengthView_mc_45_58_64_4_stop" ]
+        %limits.6 = local;
+        symbol [ limits %limits.6 53 12 18 ];
+        symbol [ DurationLimits %tmp.18 53 21 35 ];
+        %tmp.18 = getm $.DurationLimits;
+        symbol [ limits %tmp.19 53 36 42 ];
+        %tmp.19 = getv %tmp.18 :limits;
+        symbol [ _phaseId %tmp.21 53 43 51 ];
+        %tmp.21 = getv ? :_phaseId;
+        %tmp.22 = agetv %tmp.19 %tmp.21;
+        %tmp.23 = as %tmp.22 Dictionary;
+        symbol [ Dictionary %tmp.23 53 56 66 ];
+        lputv %limits.6 %tmp.23;
+        symbol [ limits %limits.6 53 12 18 ];
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\SessionLengthView.mc" 54 8 ]
+        [ "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_SessionLengthView_mc_45_58_64_4_start" "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_SessionLengthView_mc_45_58_64_4_stop" ]
+        %range.7 = local;
+        symbol [ range %range.7 54 12 17 ];
+        %tmp.24 = lgetv %limits.6;
+        symbol [ limits %tmp.24 54 20 26 ];
+        %tmp.25 = "max";
+        %tmp.26 = agetv %tmp.24 %tmp.25;
+        %tmp.27 = lgetv %limits.6;
+        symbol [ limits %tmp.27 54 36 42 ];
+        %tmp.28 = "min";
+        %tmp.29 = agetv %tmp.27 %tmp.28;
+        %tmp.30 = sub %tmp.26 %tmp.29;
+        lputv %range.7 %tmp.30;
+        symbol [ range %range.7 54 12 17 ];
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\SessionLengthView.mc" 55 8 ]
+        [ "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_SessionLengthView_mc_45_58_64_4_start" "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_SessionLengthView_mc_45_58_64_4_stop" ]
+        %percent.8 = local;
+        symbol [ percent %percent.8 55 12 19 ];
+        %tmp.31 = lgetv %currentValue;
+        symbol [ currentValue %tmp.31 55 23 35 ];
+        %tmp.32 = lgetv %limits.6;
+        symbol [ limits %tmp.32 55 38 44 ];
+        %tmp.33 = "min";
+        %tmp.34 = agetv %tmp.32 %tmp.33;
+        %tmp.35 = sub %tmp.31 %tmp.34;
+        %tmp.36 = 1.0;
+        %tmp.37 = mul %tmp.35 %tmp.36;
+        %tmp.38 = lgetv %range.7;
+        symbol [ range %tmp.38 55 61 66 ];
+        %tmp.39 = div %tmp.37 %tmp.38;
+        lputv %percent.8 %tmp.39;
+        symbol [ percent %percent.8 55 12 19 ];
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\SessionLengthView.mc" 57 8 ]
+        [ "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_SessionLengthView_mc_45_58_64_4_start" "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_SessionLengthView_mc_45_58_64_4_stop" ]
+        %thumbX.9 = local;
+        symbol [ thumbX %thumbX.9 57 12 18 ];
+        %tmp.40 = lgetv %sliderX.1;
+        symbol [ sliderX %tmp.40 57 21 28 ];
+        %tmp.41 = lgetv %sliderWidth.3;
+        symbol [ sliderWidth %tmp.41 57 32 43 ];
+        %tmp.42 = lgetv %percent.8;
+        symbol [ percent %tmp.42 57 46 53 ];
+        %tmp.43 = mul %tmp.41 %tmp.42;
+        %tmp.44 = add %tmp.40 %tmp.43;
+        lputv %thumbX.9 %tmp.44;
+        symbol [ thumbX %thumbX.9 57 12 18 ];
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\SessionLengthView.mc" 58 8 ]
+        %tmp.45 = lgetv %dc;
+        symbol [ dc %tmp.45 58 8 10 ];
+        symbol [ setColor %tmp.46 58 11 19 ];
+        %tmp.46 = getv function %tmp.45 :setColor;
+        symbol [ Graphics %tmp.47 58 20 28 ];
+        %tmp.47 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLUE %tmp.48 58 29 39 ];
+        %tmp.48 = getv %tmp.47 :COLOR_BLUE;
+        symbol [ Graphics %tmp.49 58 41 49 ];
+        %tmp.49 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.50 58 50 67 ];
+        %tmp.50 = getv %tmp.49 :COLOR_TRANSPARENT;
+        invoke %tmp.45 %tmp.46(%tmp.48, %tmp.50);
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\SessionLengthView.mc" 59 8 ]
+        %tmp.51 = lgetv %dc;
+        symbol [ dc %tmp.51 59 8 10 ];
+        symbol [ fillRectangle %tmp.52 59 11 24 ];
+        %tmp.52 = getv function %tmp.51 :fillRectangle;
+        %tmp.53 = lgetv %sliderX.1;
+        symbol [ sliderX %tmp.53 59 25 32 ];
+        %tmp.54 = lgetv %sliderY.2;
+        symbol [ sliderY %tmp.54 59 34 41 ];
+        %tmp.55 = lgetv %sliderWidth.3;
+        symbol [ sliderWidth %tmp.55 59 43 54 ];
+        %tmp.56 = lgetv %sliderHeight.4;
+        symbol [ sliderHeight %tmp.56 59 56 68 ];
+        invoke %tmp.51 %tmp.52(%tmp.53, %tmp.54, %tmp.55, %tmp.56);
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\SessionLengthView.mc" 61 8 ]
+        %tmp.57 = lgetv %dc;
+        symbol [ dc %tmp.57 61 8 10 ];
+        symbol [ setColor %tmp.58 61 11 19 ];
+        %tmp.58 = getv function %tmp.57 :setColor;
+        symbol [ Graphics %tmp.59 61 20 28 ];
+        %tmp.59 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLUE %tmp.60 61 29 39 ];
+        %tmp.60 = getv %tmp.59 :COLOR_BLUE;
+        symbol [ Graphics %tmp.61 61 41 49 ];
+        %tmp.61 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.62 61 50 67 ];
+        %tmp.62 = getv %tmp.61 :COLOR_TRANSPARENT;
+        invoke %tmp.57 %tmp.58(%tmp.60, %tmp.62);
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\SessionLengthView.mc" 62 8 ]
+        %tmp.63 = lgetv %dc;
+        symbol [ dc %tmp.63 62 8 10 ];
+        symbol [ fillCircle %tmp.64 62 11 21 ];
+        %tmp.64 = getv function %tmp.63 :fillCircle;
+        %tmp.65 = lgetv %thumbX.9;
+        symbol [ thumbX %tmp.65 62 22 28 ];
+        %tmp.66 = lgetv %sliderY.2;
+        symbol [ sliderY %tmp.66 62 30 37 ];
+        %tmp.67 = lgetv %sliderHeight.4;
+        symbol [ sliderHeight %tmp.67 62 40 52 ];
+        %tmp.68 = 2;
+        %tmp.69 = div %tmp.67 %tmp.68;
+        %tmp.70 = add %tmp.66 %tmp.69;
+        %tmp.71 = lgetv %radius.5;
+        symbol [ radius %tmp.71 62 56 62 ];
+        invoke %tmp.63 %tmp.64(%tmp.65, %tmp.70, %tmp.71);
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\SessionLengthView.mc" 63 8 ]
+        %tmp.72 = lgetv %dc;
+        symbol [ dc %tmp.72 63 8 10 ];
+        symbol [ drawText %tmp.73 63 11 19 ];
+        %tmp.73 = getv function %tmp.72 :drawText;
+        %tmp.74 = lgetv %dc;
+        symbol [ dc %tmp.74 63 20 22 ];
+        symbol [ getWidth %tmp.75 63 23 31 ];
+        %tmp.75 = getv function %tmp.74 :getWidth;
+        %tmp.76 = invoke %tmp.74 %tmp.75();
+        %tmp.77 = 2;
+        %tmp.78 = div %tmp.76 %tmp.77;
+        %tmp.79 = lgetv %sliderY.2;
+        symbol [ sliderY %tmp.79 63 39 46 ];
+        %tmp.80 = 20;
+        %tmp.81 = add %tmp.79 %tmp.80;
+        symbol [ Graphics %tmp.82 63 53 61 ];
+        %tmp.82 = getm $.Toybox.Graphics;
+        symbol [ FONT_NUMBER_MILD %tmp.83 63 62 78 ];
+        %tmp.83 = getv %tmp.82 :FONT_NUMBER_MILD;
+        %tmp.84 = lgetv %currentValue;
+        symbol [ currentValue %tmp.84 63 80 92 ];
+        symbol [ toString %tmp.85 63 93 101 ];
+        %tmp.85 = getv function %tmp.84 :toString;
+        %tmp.86 = invoke %tmp.84 %tmp.85();
+        %tmp.87 = lgetv %limits.6;
+        symbol [ limits %tmp.87 63 106 112 ];
+        %tmp.88 = "str";
+        %tmp.89 = agetv %tmp.87 %tmp.88;
+        %tmp.90 = add %tmp.86 %tmp.89;
+        symbol [ Graphics %tmp.91 63 122 130 ];
+        %tmp.91 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.92 63 131 150 ];
+        %tmp.92 = getv %tmp.91 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.72 %tmp.73(%tmp.78, %tmp.81, %tmp.83, %tmp.90, %tmp.92);
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_SessionLengthView_mc_45_58_64_4_stop:
+    }
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\SessionLengthView.mc"; @line = 67; @symbol_functiondef = [drawSliderLimits,67,13,29]; @symbol_param<0> = [dc,67,30,32]; @symbol_param<0>_type<0> = [Dc,67,36,38]; ]
+    function drawSliderLimits(dc as Dc) {
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_SessionLengthView_mc_67_40_73_4_start:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\SessionLengthView.mc" 68 8 ]
+        [ "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_SessionLengthView_mc_67_40_73_4_start" "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_SessionLengthView_mc_67_40_73_4_stop" ]
+        %sliderY.1 = local;
+        symbol [ sliderY %sliderY.1 68 12 19 ];
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 68 22 24 ];
+        symbol [ getHeight %tmp.2 68 25 34 ];
+        %tmp.2 = getv function %tmp.1 :getHeight;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        %tmp.4 = 2;
+        %tmp.5 = div %tmp.3 %tmp.4;
+        lputv %sliderY.1 %tmp.5;
+        symbol [ sliderY %sliderY.1 68 12 19 ];
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\SessionLengthView.mc" 69 8 ]
+        [ "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_SessionLengthView_mc_67_40_73_4_start" "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_SessionLengthView_mc_67_40_73_4_stop" ]
+        %limits.2 = local;
+        symbol [ limits %limits.2 69 12 18 ];
+        symbol [ DurationLimits %tmp.6 69 21 35 ];
+        %tmp.6 = getm $.DurationLimits;
+        symbol [ limits %tmp.7 69 36 42 ];
+        %tmp.7 = getv %tmp.6 :limits;
+        symbol [ _phaseId %tmp.9 69 43 51 ];
+        %tmp.9 = getv ? :_phaseId;
+        %tmp.10 = agetv %tmp.7 %tmp.9;
+        %tmp.11 = as %tmp.10 Dictionary;
+        symbol [ Dictionary %tmp.11 69 56 66 ];
+        lputv %limits.2 %tmp.11;
+        symbol [ limits %limits.2 69 12 18 ];
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\SessionLengthView.mc" 70 8 ]
+        %tmp.12 = lgetv %dc;
+        symbol [ dc %tmp.12 70 8 10 ];
+        symbol [ setColor %tmp.13 70 11 19 ];
+        %tmp.13 = getv function %tmp.12 :setColor;
+        symbol [ Graphics %tmp.14 70 20 28 ];
+        %tmp.14 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLUE %tmp.15 70 29 39 ];
+        %tmp.15 = getv %tmp.14 :COLOR_BLUE;
+        symbol [ Graphics %tmp.16 70 41 49 ];
+        %tmp.16 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.17 70 50 67 ];
+        %tmp.17 = getv %tmp.16 :COLOR_TRANSPARENT;
+        invoke %tmp.12 %tmp.13(%tmp.15, %tmp.17);
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\SessionLengthView.mc" 71 8 ]
+        %tmp.18 = lgetv %dc;
+        symbol [ dc %tmp.18 71 8 10 ];
+        symbol [ drawText %tmp.19 71 11 19 ];
+        %tmp.19 = getv function %tmp.18 :drawText;
+        %tmp.20 = lgetv %dc;
+        symbol [ dc %tmp.20 71 20 22 ];
+        symbol [ getWidth %tmp.21 71 23 31 ];
+        %tmp.21 = getv function %tmp.20 :getWidth;
+        %tmp.22 = invoke %tmp.20 %tmp.21();
+        %tmp.23 = 8;
+        %tmp.24 = div %tmp.22 %tmp.23;
+        %tmp.25 = 10;
+        %tmp.26 = sub %tmp.24 %tmp.25;
+        %tmp.27 = lgetv %sliderY.1;
+        symbol [ sliderY %tmp.27 71 44 51 ];
+        %tmp.28 = 15;
+        %tmp.29 = add %tmp.27 %tmp.28;
+        symbol [ Graphics %tmp.30 71 58 66 ];
+        %tmp.30 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.31 71 67 77 ];
+        %tmp.31 = getv %tmp.30 :FONT_XTINY;
+        %tmp.32 = lgetv %limits.2;
+        symbol [ limits %tmp.32 71 79 85 ];
+        %tmp.33 = "min";
+        %tmp.34 = agetv %tmp.32 %tmp.33;
+        symbol [ toString %tmp.35 71 93 101 ];
+        %tmp.35 = getv function %tmp.34 :toString;
+        %tmp.36 = invoke %tmp.34 %tmp.35();
+        symbol [ Graphics %tmp.37 71 105 113 ];
+        %tmp.37 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.38 71 114 131 ];
+        %tmp.38 = getv %tmp.37 :TEXT_JUSTIFY_LEFT;
+        invoke %tmp.18 %tmp.19(%tmp.26, %tmp.29, %tmp.31, %tmp.36, %tmp.38);
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\SessionLengthView.mc" 72 8 ]
+        %tmp.39 = lgetv %dc;
+        symbol [ dc %tmp.39 72 8 10 ];
+        symbol [ drawText %tmp.40 72 11 19 ];
+        %tmp.40 = getv function %tmp.39 :drawText;
+        %tmp.41 = lgetv %dc;
+        symbol [ dc %tmp.41 72 20 22 ];
+        symbol [ getWidth %tmp.42 72 23 31 ];
+        %tmp.42 = getv function %tmp.41 :getWidth;
+        %tmp.43 = invoke %tmp.41 %tmp.42();
+        %tmp.44 = 0.9;
+        %tmp.45 = mul %tmp.43 %tmp.44;
+        %tmp.46 = 10;
+        %tmp.47 = add %tmp.45 %tmp.46;
+        %tmp.48 = lgetv %sliderY.1;
+        symbol [ sliderY %tmp.48 72 46 53 ];
+        %tmp.49 = 15;
+        %tmp.50 = add %tmp.48 %tmp.49;
+        symbol [ Graphics %tmp.51 72 60 68 ];
+        %tmp.51 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.52 72 69 79 ];
+        %tmp.52 = getv %tmp.51 :FONT_XTINY;
+        %tmp.53 = lgetv %limits.2;
+        symbol [ limits %tmp.53 72 81 87 ];
+        %tmp.54 = "max";
+        %tmp.55 = agetv %tmp.53 %tmp.54;
+        symbol [ toString %tmp.56 72 95 103 ];
+        %tmp.56 = getv function %tmp.55 :toString;
+        %tmp.57 = invoke %tmp.55 %tmp.56();
+        symbol [ Graphics %tmp.58 72 107 115 ];
+        %tmp.58 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_RIGHT %tmp.59 72 116 134 ];
+        %tmp.59 = getv %tmp.58 :TEXT_JUSTIFY_RIGHT;
+        invoke %tmp.39 %tmp.40(%tmp.47, %tmp.50, %tmp.52, %tmp.57, %tmp.59);
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_SessionLengthView_mc_67_40_73_4_stop:
+    }
+    //! Requests a screen redraw for this view.
+    //! Typically called by the delegate after a user interaction.
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\SessionLengthView.mc"; @line = 77; @symbol_functiondef = [invalidate,77,13,23]; ]
     function invalidate() as Void {
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_SessionLengthView_mc_73_34_75_4_start:
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\SessionLengthView.mc" 74 8 ]
-        symbol [ WatchUi %tmp.1 74 8 15 ];
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_SessionLengthView_mc_77_34_79_4_start:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\SessionLengthView.mc" 78 8 ]
+        symbol [ WatchUi %tmp.1 78 8 15 ];
         %tmp.1 = getm $.Toybox.WatchUi;
-        symbol [ requestUpdate %tmp.2 74 16 29 ];
+        symbol [ requestUpdate %tmp.2 78 16 29 ];
         %tmp.2 = getv function %tmp.1 :requestUpdate;
         invoke %tmp.1 %tmp.2();
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_SessionLengthView_mc_73_34_75_4_stop:
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_SessionLengthView_mc_77_34_79_4_stop:
+    }
+    //! Returns the current DurationType (phase) for this view.
+    //! @return The phase ID (e.g., FOCUS, ACTIVE, etc.)
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\SessionLengthView.mc"; @line = 83; @symbol_functiondef = [getPhaseId,83,13,23]; ]
+    function getPhaseId() {
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_SessionLengthView_mc_83_26_85_4_start:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\SessionLengthView.mc" 84 8 ]
+        symbol [ _phaseId %tmp.2 84 15 23 ];
+        %tmp.2 = getv ? :_phaseId;
+        ret %tmp.2;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_SessionLengthView_mc_83_26_85_4_stop:
+    }
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\SessionLengthView.mc"; @line = 91; @symbol_functiondef = [initText,91,13,21]; @symbol_param<0> = [str,91,22,25]; @symbol_param<1> = [yPos,91,27,31]; @symbol_return<0> = [WatchUi,91,36,43]; @symbol_return<1> = [Text,91,44,48]; ]
+    function initText(str, yPos) as WatchUi.Text {
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_SessionLengthView_mc_91_49_101_4_start:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\SessionLengthView.mc" 92 7 ]
+        [ "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_SessionLengthView_mc_91_49_101_4_start" "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_SessionLengthView_mc_91_49_101_4_stop" ]
+        %text.1 = local;
+        symbol [ text %text.1 92 11 15 ];
+        symbol [ WatchUi %tmp.3 92 22 29 ];
+        %tmp.3 = getm $.Toybox.WatchUi;
+        symbol [ Text %tmp.4 92 30 34 ];
+        %tmp.4 = getv function ? %tmp.3 :Text;
+        %tmp.5 = newd 6;
+        %tmp.7 = const :text;
+        symbol [ text %tmp.7 93 13 17 const ];
+        %tmp.8 = lgetv %str;
+        symbol [ str %tmp.8 93 19 22 ];
+        %tmp.9 = dup %tmp.5;
+        %tmp.10 = aputv %tmp.9 %tmp.7 %tmp.8;
+        %tmp.12 = const :color;
+        symbol [ color %tmp.12 94 13 18 const ];
+        symbol [ Graphics %tmp.13 94 20 28 ];
+        %tmp.13 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.14 94 29 40 ];
+        %tmp.14 = getv %tmp.13 :COLOR_WHITE;
+        %tmp.15 = dup %tmp.10;
+        %tmp.16 = aputv %tmp.15 %tmp.12 %tmp.14;
+        %tmp.18 = const :font;
+        symbol [ font %tmp.18 95 13 17 const ];
+        symbol [ Graphics %tmp.19 95 19 27 ];
+        %tmp.19 = getm $.Toybox.Graphics;
+        symbol [ FONT_TINY %tmp.20 95 28 37 ];
+        %tmp.20 = getv %tmp.19 :FONT_TINY;
+        %tmp.21 = dup %tmp.16;
+        %tmp.22 = aputv %tmp.21 %tmp.18 %tmp.20;
+        %tmp.24 = const :locX;
+        symbol [ locX %tmp.24 96 13 17 const ];
+        symbol [ WatchUi %tmp.25 96 19 26 ];
+        %tmp.25 = getm $.Toybox.WatchUi;
+        symbol [ LAYOUT_HALIGN_CENTER %tmp.26 96 27 47 ];
+        %tmp.26 = getv %tmp.25 :LAYOUT_HALIGN_CENTER;
+        %tmp.27 = dup %tmp.22;
+        %tmp.28 = aputv %tmp.27 %tmp.24 %tmp.26;
+        %tmp.30 = const :locY;
+        symbol [ locY %tmp.30 97 13 17 const ];
+        %tmp.31 = lgetv %yPos;
+        symbol [ yPos %tmp.31 97 19 23 ];
+        %tmp.32 = dup %tmp.28;
+        %tmp.33 = aputv %tmp.32 %tmp.30 %tmp.31;
+        %tmp.35 = const :textAlign;
+        symbol [ textAlign %tmp.35 98 13 22 const ];
+        symbol [ Graphics %tmp.36 98 24 32 ];
+        %tmp.36 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.37 98 33 52 ];
+        %tmp.37 = getv %tmp.36 :TEXT_JUSTIFY_CENTER;
+        %tmp.38 = dup %tmp.33;
+        %tmp.39 = aputv %tmp.38 %tmp.35 %tmp.37;
+        %tmp.1 = newc %tmp.4 (%tmp.39);
+        lputv %text.1 %tmp.1;
+        symbol [ text %text.1 92 11 15 ];
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\SessionLengthView.mc" 100 8 ]
+        %tmp.40 = lgetv %text.1;
+        symbol [ text %tmp.40 100 15 19 ];
+        ret %tmp.40;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_SessionLengthView_mc_91_49_101_4_stop:
     }
 }
-[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\SessionLengthView.mc"; @line = 1; ]
+[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\SessionLengthView.mc"; @line = 1; ]
 <init> {
 }

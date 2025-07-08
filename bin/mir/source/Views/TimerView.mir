@@ -1,955 +1,962 @@
-[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [WatchUi,1,14,21]; ]
+[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [WatchUi,1,14,21]; ]
 import Toybox.WatchUi;
-[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Graphics,2,14,22]; ]
+[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Graphics,2,14,22]; ]
 import Toybox.Graphics;
-[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [Timer,3,14,19]; ]
+[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [Timer,3,14,19]; ]
 import Toybox.Timer;
-[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc"; @line = 4; @symbol_importdef<0> = [Toybox,4,7,13]; @symbol_importdef<1> = [Lang,4,14,18]; ]
+[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc"; @line = 4; @symbol_importdef<0> = [Toybox,4,7,13]; @symbol_importdef<1> = [Lang,4,14,18]; ]
 import Toybox.Lang;
-[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc"; @line = 5; @symbol_importdef<0> = [BackgroundUtils,5,7,22]; ]
+[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc"; @line = 5; @symbol_importdef<0> = [BackgroundUtils,5,7,22]; ]
 import BackgroundUtils;
-[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc"; @line = 6; @symbol_importdef<0> = [Toybox,6,7,13]; @symbol_importdef<1> = [Attention,6,14,23]; ]
+[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc"; @line = 6; @symbol_importdef<0> = [Toybox,6,7,13]; @symbol_importdef<1> = [Attention,6,14,23]; ]
 import Toybox.Attention;
-[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc"; @line = 7; @symbol_importdef<0> = [Toybox,7,7,13]; @symbol_importdef<1> = [System,7,14,20]; ]
+[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc"; @line = 7; @symbol_importdef<0> = [Toybox,7,7,13]; @symbol_importdef<1> = [System,7,14,20]; ]
 import Toybox.System;
-[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc"; @line = 9; @symbol_classdef = [TimerView,9,6,15]; @symbol_extends<0> = [WatchUi,9,24,31]; @symbol_extends<1> = [View,9,32,36]; ]
+//! TimerView displays timer countdown, current time, and icons during each phase
+[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc"; @line = 10; @symbol_classdef = [TimerView,10,6,15]; @symbol_extends<0> = [WatchUi,10,24,31]; @symbol_extends<1> = [View,10,32,36]; ]
 class TimerView extends WatchUi.View {
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc"; @line = 9; ]
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc"; @line = 10; ]
     <init> {
     }
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc"; @line = 9; ]
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc"; @line = 10; ]
     static
     <init> {
     }
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc"; @line = 10; @position = 8; @symbol_vardef = [_duration,10,8,17]; ]
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc"; @line = 11; @position = 8; @symbol_vardef = [_duration,11,8,17]; ]
     var _duration;
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc"; @line = 11; @position = 8; @symbol_vardef = [_title,11,8,14]; @symbol_type<0> = [String,11,18,24]; ]
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc"; @line = 12; @position = 8; @symbol_vardef = [_title,12,8,14]; @symbol_type<0> = [String,12,18,24]; ]
     var _title as String = "";
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc"; @line = 12; @position = 8; @symbol_vardef = [_headline,12,8,17]; @symbol_type<0> = [String,12,21,27]; ]
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc"; @line = 13; @position = 8; @symbol_vardef = [_headline,13,8,17]; @symbol_type<0> = [String,13,21,27]; ]
     var _headline as String = "";
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc"; @line = 13; @position = 8; @symbol_vardef = [_phase,13,8,14]; ]
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc"; @line = 14; @position = 8; @symbol_vardef = [_phase,14,8,14]; ]
     var _phase;
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc"; @line = 14; @position = 8; @symbol_vardef = [_play,14,8,13]; ]
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc"; @line = 15; @position = 8; @symbol_vardef = [_play,15,8,13]; ]
     var _play = false;
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc"; @line = 15; @position = 8; @symbol_vardef = [_currentTime,15,8,20]; ]
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc"; @line = 16; @position = 8; @symbol_vardef = [_currentTime,16,8,20]; ]
     var _currentTime;
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc"; @line = 16; @position = 8; @symbol_vardef = [_timer,16,8,14]; ]
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc"; @line = 17; @position = 8; @symbol_vardef = [_timer,17,8,14]; ]
     var _timer;
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc"; @line = 17; @position = 8; @symbol_vardef = [_intervals,17,8,18]; ]
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc"; @line = 18; @position = 8; @symbol_vardef = [_intervals,18,8,18]; ]
     var _intervals;
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc"; @line = 20; @position = 8; @symbol_vardef = [_timeRemaining,20,8,22]; ]
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc"; @line = 21; @position = 8; @symbol_vardef = [_timeRemaining,21,8,22]; ]
     var _timeRemaining;
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc"; @line = 21; @position = 8; @symbol_vardef = [_clock,21,8,14]; ]
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc"; @line = 22; @position = 8; @symbol_vardef = [_clock,22,8,14]; ]
     var _clock;
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc"; @line = 22; @position = 8; @symbol_vardef = [_pauseBtn,22,8,17]; ]
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc"; @line = 23; @position = 8; @symbol_vardef = [_pauseBtn,23,8,17]; ]
     var _pauseBtn;
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc"; @line = 23; @position = 8; @symbol_vardef = [_playBtn,23,8,16]; ]
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc"; @line = 24; @position = 8; @symbol_vardef = [_playBtn,24,8,16]; ]
     var _playBtn;
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc"; @line = 24; @position = 8; @symbol_vardef = [_timeDisplay,24,8,20]; ]
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc"; @line = 25; @position = 8; @symbol_vardef = [_timeDisplay,25,8,20]; ]
     var _timeDisplay;
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc"; @line = 25; @position = 8; @symbol_vardef = [_titleTxt,25,8,17]; ]
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc"; @line = 26; @position = 8; @symbol_vardef = [_titleTxt,26,8,17]; ]
     var _titleTxt;
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc"; @line = 26; @position = 8; @symbol_vardef = [_headlineTxt,26,8,20]; ]
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc"; @line = 27; @position = 8; @symbol_vardef = [_headlineTxt,27,8,20]; ]
     var _headlineTxt;
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc"; @line = 29; @symbol_functiondef = [initialize,29,13,23]; @symbol_param<0> = [timerDict,29,24,33]; @symbol_param<0>_type<0> = [Dictionary,29,37,47]; @symbol_param<1> = [intervals,29,49,58]; ]
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc"; @line = 30; @symbol_functiondef = [initialize,30,13,23]; @symbol_param<0> = [timerDict,30,24,33]; @symbol_param<0>_type<0> = [Dictionary,30,37,47]; @symbol_param<1> = [intervals,30,49,58]; ]
     function initialize(timerDict as Dictionary, intervals) as Void {
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_29_60_39_4_start:
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc" 30 8 ]
-        symbol [ WatchUi %tmp.1 30 8 15 ];
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_30_60_39_4_start:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc" 31 8 ]
+        symbol [ WatchUi %tmp.1 31 8 15 ];
         %tmp.1 = getm $.Toybox.WatchUi;
-        symbol [ View %tmp.2 30 16 20 ];
+        symbol [ View %tmp.2 31 16 20 ];
         %tmp.2 = getv %tmp.1 :View;
-        symbol [ initialize %tmp.3 30 21 31 ];
+        symbol [ initialize %tmp.3 31 21 31 ];
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc" 32 8 ]
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc" 33 8 ]
         %tmp.4 = lgetv %timerDict;
-        symbol [ timerDict %tmp.4 32 17 26 ];
+        symbol [ timerDict %tmp.4 33 17 26 ];
         %tmp.5 = "phase";
         %tmp.6 = agetv %tmp.4 %tmp.5;
-        symbol [ _phase ? 32 8 14 ];
+        symbol [ _phase ? 33 8 14 ];
         putv self :_phase %tmp.6;
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc" 33 8 ]
-        symbol [ Application %tmp.8 33 20 31 ];
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc" 34 8 ]
+        symbol [ Application %tmp.8 34 20 31 ];
         %tmp.8 = getv ? :Application;
-        symbol [ getApp %tmp.9 33 32 38 ];
+        symbol [ getApp %tmp.9 34 32 38 ];
         %tmp.9 = getv function %tmp.8 :getApp;
         %tmp.10 = invoke %tmp.8 %tmp.9();
-        symbol [ getDuration %tmp.11 33 41 52 ];
+        symbol [ getDuration %tmp.11 34 41 52 ];
         %tmp.11 = getv function %tmp.10 :getDuration;
-        symbol [ _phase %tmp.13 33 53 59 ];
+        symbol [ _phase %tmp.13 34 53 59 ];
         %tmp.13 = getv ? :_phase;
         %tmp.14 = invoke %tmp.10 %tmp.11(%tmp.13);
         %tmp.15 = 60;
         %tmp.16 = mul %tmp.14 %tmp.15;
-        symbol [ _duration ? 33 8 17 ];
+        symbol [ _duration ? 34 8 17 ];
         putv self :_duration %tmp.16;
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc" 34 8 ]
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc" 35 8 ]
         %tmp.17 = lgetv %intervals;
-        symbol [ intervals %tmp.17 34 21 30 ];
-        symbol [ _intervals ? 34 8 18 ];
+        symbol [ intervals %tmp.17 35 21 30 ];
+        symbol [ _intervals ? 35 8 18 ];
         putv self :_intervals %tmp.17;
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc" 35 8 ]
-        symbol [ System %tmp.18 35 8 14 ];
-        %tmp.18 = getm $.Toybox.System;
-        symbol [ println %tmp.19 35 15 22 ];
-        %tmp.19 = getv function %tmp.18 :println;
-        symbol [ _duration %tmp.21 35 23 32 ];
-        %tmp.21 = getv ? :_duration;
-        invoke %tmp.18 %tmp.19(%tmp.21);
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc" 38 8 ]
-        %tmp.22 = self;
-        symbol [ initializeUi %tmp.23 38 8 20 ];
-        %tmp.23 = getv function %tmp.22 :initializeUi;
-        %tmp.24 = lgetv %timerDict;
-        symbol [ timerDict %tmp.24 38 21 30 ];
-        invoke %tmp.22 %tmp.23(%tmp.24);
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_29_60_39_4_stop:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc" 38 8 ]
+        %tmp.18 = self;
+        symbol [ initializeUi %tmp.19 38 8 20 ];
+        %tmp.19 = getv function %tmp.18 :initializeUi;
+        %tmp.20 = lgetv %timerDict;
+        symbol [ timerDict %tmp.20 38 21 30 ];
+        invoke %tmp.18 %tmp.19(%tmp.20);
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_30_60_39_4_stop:
     }
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc"; @line = 41; @symbol_functiondef = [initializeUi,41,13,25]; @symbol_param<0> = [timerDict,41,26,35]; @symbol_param<0>_type<0> = [Dictionary,41,39,49]; ]
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc"; @line = 44; @symbol_functiondef = [initializeUi,44,13,25]; @symbol_param<0> = [timerDict,44,26,35]; @symbol_param<0>_type<0> = [Dictionary,44,39,49]; ]
     function initializeUi(timerDict as Dictionary) {
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_41_51_100_4_start:
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc" 42 8 ]
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_44_51_104_4_start:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc" 45 8 ]
         %tmp.1 = lgetv %timerDict;
-        symbol [ timerDict %tmp.1 42 17 26 ];
+        symbol [ timerDict %tmp.1 45 17 26 ];
         %tmp.2 = "title";
         %tmp.3 = agetv %tmp.1 %tmp.2;
-        symbol [ _title ? 42 8 14 ];
+        symbol [ _title ? 45 8 14 ];
         putv self :_title %tmp.3;
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc" 43 8 ]
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc" 46 8 ]
         %tmp.4 = lgetv %timerDict;
-        symbol [ timerDict %tmp.4 43 20 29 ];
+        symbol [ timerDict %tmp.4 46 20 29 ];
         %tmp.5 = "headline";
         %tmp.6 = agetv %tmp.4 %tmp.5;
-        symbol [ _headline ? 43 8 17 ];
+        symbol [ _headline ? 46 8 17 ];
         putv self :_headline %tmp.6;
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc" 45 8 ]
-        symbol [ WatchUi %tmp.9 45 29 36 ];
-        %tmp.9 = getm $.Toybox.WatchUi;
-        symbol [ Text %tmp.10 45 37 41 ];
-        %tmp.10 = getv function ? %tmp.9 :Text;
-        %tmp.11 = newd 6;
-        %tmp.13 = const :text;
-        symbol [ text %tmp.13 46 13 17 const ];
-        %tmp.14 = self;
-        symbol [ durationToClock %tmp.15 46 19 34 ];
-        %tmp.15 = getv function %tmp.14 :durationToClock;
-        symbol [ _duration %tmp.17 46 35 44 ];
-        %tmp.17 = getv ? :_duration;
-        %tmp.18 = invoke %tmp.14 %tmp.15(%tmp.17);
-        %tmp.19 = dup %tmp.11;
-        %tmp.20 = aputv %tmp.19 %tmp.13 %tmp.18;
-        %tmp.22 = const :color;
-        symbol [ color %tmp.22 47 13 18 const ];
-        symbol [ Graphics %tmp.23 47 20 28 ];
-        %tmp.23 = getm $.Toybox.Graphics;
-        symbol [ COLOR_WHITE %tmp.24 47 29 40 ];
-        %tmp.24 = getv %tmp.23 :COLOR_WHITE;
-        %tmp.25 = dup %tmp.20;
-        %tmp.26 = aputv %tmp.25 %tmp.22 %tmp.24;
-        %tmp.28 = const :font;
-        symbol [ font %tmp.28 48 13 17 const ];
-        symbol [ Graphics %tmp.29 48 19 27 ];
-        %tmp.29 = getm $.Toybox.Graphics;
-        symbol [ FONT_NUMBER_MEDIUM %tmp.30 48 28 46 ];
-        %tmp.30 = getv %tmp.29 :FONT_NUMBER_MEDIUM;
-        %tmp.31 = dup %tmp.26;
-        %tmp.32 = aputv %tmp.31 %tmp.28 %tmp.30;
-        %tmp.34 = const :locX;
-        symbol [ locX %tmp.34 49 13 17 const ];
-        symbol [ WatchUi %tmp.35 49 19 26 ];
-        %tmp.35 = getm $.Toybox.WatchUi;
-        symbol [ LAYOUT_HALIGN_CENTER %tmp.36 49 27 47 ];
-        %tmp.36 = getv %tmp.35 :LAYOUT_HALIGN_CENTER;
-        %tmp.37 = 150;
-        %tmp.38 = add %tmp.36 %tmp.37;
-        %tmp.39 = dup %tmp.32;
-        %tmp.40 = aputv %tmp.39 %tmp.34 %tmp.38;
-        %tmp.42 = const :locY;
-        symbol [ locY %tmp.42 50 13 17 const ];
-        symbol [ WatchUi %tmp.43 50 19 26 ];
-        %tmp.43 = getm $.Toybox.WatchUi;
-        symbol [ LAYOUT_VALIGN_CENTER %tmp.44 50 27 47 ];
-        %tmp.44 = getv %tmp.43 :LAYOUT_VALIGN_CENTER;
-        %tmp.45 = dup %tmp.40;
-        %tmp.46 = aputv %tmp.45 %tmp.42 %tmp.44;
-        %tmp.48 = const :textAlign;
-        symbol [ textAlign %tmp.48 51 13 22 const ];
-        symbol [ Graphics %tmp.49 51 24 32 ];
-        %tmp.49 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.50 51 33 52 ];
-        %tmp.50 = getv %tmp.49 :TEXT_JUSTIFY_CENTER;
-        %tmp.51 = dup %tmp.46;
-        %tmp.52 = aputv %tmp.51 %tmp.48 %tmp.50;
-        %tmp.7 = newc %tmp.10 (%tmp.52);
-        symbol [ _timeRemaining ? 45 8 22 ];
-        putv self :_timeRemaining %tmp.7;
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc" 54 8 ]
-        symbol [ WatchUi %tmp.55 54 21 28 ];
-        %tmp.55 = getm $.Toybox.WatchUi;
-        symbol [ Bitmap %tmp.56 54 29 35 ];
-        %tmp.56 = getv function ? %tmp.55 :Bitmap;
-        %tmp.57 = newd 3;
-        %tmp.59 = const :rezId;
-        symbol [ rezId %tmp.59 55 13 18 const ];
-        symbol [ Rez %tmp.61 55 20 23 ];
-        %tmp.61 = getv ? :Rez;
-        symbol [ Drawables %tmp.62 55 24 33 ];
-        %tmp.62 = getv %tmp.61 :Drawables;
-        symbol [ clock %tmp.63 55 34 39 ];
-        %tmp.63 = getv %tmp.62 :clock;
-        %tmp.64 = dup %tmp.57;
-        %tmp.65 = aputv %tmp.64 %tmp.59 %tmp.63;
-        %tmp.67 = const :locX;
-        symbol [ locX %tmp.67 56 13 17 const ];
-        %tmp.68 = 40;
-        %tmp.69 = dup %tmp.65;
-        %tmp.70 = aputv %tmp.69 %tmp.67 %tmp.68;
-        %tmp.72 = const :locY;
-        symbol [ locY %tmp.72 57 13 17 const ];
-        %tmp.73 = 174;
-        %tmp.74 = dup %tmp.70;
-        %tmp.75 = aputv %tmp.74 %tmp.72 %tmp.73;
-        %tmp.53 = newc %tmp.56 (%tmp.75);
-        symbol [ _clock ? 54 8 14 ];
-        putv self :_clock %tmp.53;
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc" 60 8 ]
-        symbol [ WatchUi %tmp.78 60 24 31 ];
-        %tmp.78 = getm $.Toybox.WatchUi;
-        symbol [ Bitmap %tmp.79 60 32 38 ];
-        %tmp.79 = getv function ? %tmp.78 :Bitmap;
-        %tmp.80 = newd 3;
-        %tmp.82 = const :rezId;
-        symbol [ rezId %tmp.82 61 13 18 const ];
-        symbol [ Rez %tmp.84 61 20 23 ];
-        %tmp.84 = getv ? :Rez;
-        symbol [ Drawables %tmp.85 61 24 33 ];
-        %tmp.85 = getv %tmp.84 :Drawables;
-        symbol [ pause %tmp.86 61 34 39 ];
-        %tmp.86 = getv %tmp.85 :pause;
-        %tmp.87 = dup %tmp.80;
-        %tmp.88 = aputv %tmp.87 %tmp.82 %tmp.86;
-        %tmp.90 = const :locX;
-        symbol [ locX %tmp.90 62 13 17 const ];
-        symbol [ WatchUi %tmp.91 62 19 26 ];
-        %tmp.91 = getm $.Toybox.WatchUi;
-        symbol [ LAYOUT_HALIGN_CENTER %tmp.92 62 27 47 ];
-        %tmp.92 = getv %tmp.91 :LAYOUT_HALIGN_CENTER;
-        %tmp.93 = dup %tmp.88;
-        %tmp.94 = aputv %tmp.93 %tmp.90 %tmp.92;
-        %tmp.96 = const :locY;
-        symbol [ locY %tmp.96 63 13 17 const ];
-        symbol [ WatchUi %tmp.97 63 19 26 ];
-        %tmp.97 = getm $.Toybox.WatchUi;
-        symbol [ LAYOUT_VALIGN_CENTER %tmp.98 63 27 47 ];
-        %tmp.98 = getv %tmp.97 :LAYOUT_VALIGN_CENTER;
-        %tmp.99 = 360;
-        %tmp.100 = add %tmp.98 %tmp.99;
-        %tmp.101 = dup %tmp.94;
-        %tmp.102 = aputv %tmp.101 %tmp.96 %tmp.100;
-        %tmp.76 = newc %tmp.79 (%tmp.102);
-        symbol [ _pauseBtn ? 60 8 17 ];
-        putv self :_pauseBtn %tmp.76;
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc" 66 8 ]
-        symbol [ WatchUi %tmp.105 66 23 30 ];
-        %tmp.105 = getm $.Toybox.WatchUi;
-        symbol [ Bitmap %tmp.106 66 31 37 ];
-        %tmp.106 = getv function ? %tmp.105 :Bitmap;
-        %tmp.107 = newd 3;
-        %tmp.109 = const :rezId;
-        symbol [ rezId %tmp.109 67 13 18 const ];
-        symbol [ Rez %tmp.111 67 20 23 ];
-        %tmp.111 = getv ? :Rez;
-        symbol [ Drawables %tmp.112 67 24 33 ];
-        %tmp.112 = getv %tmp.111 :Drawables;
-        symbol [ play %tmp.113 67 34 38 ];
-        %tmp.113 = getv %tmp.112 :play;
-        %tmp.114 = dup %tmp.107;
-        %tmp.115 = aputv %tmp.114 %tmp.109 %tmp.113;
-        %tmp.117 = const :locX;
-        symbol [ locX %tmp.117 68 13 17 const ];
-        symbol [ WatchUi %tmp.118 68 19 26 ];
-        %tmp.118 = getm $.Toybox.WatchUi;
-        symbol [ LAYOUT_HALIGN_CENTER %tmp.119 68 27 47 ];
-        %tmp.119 = getv %tmp.118 :LAYOUT_HALIGN_CENTER;
-        %tmp.120 = dup %tmp.115;
-        %tmp.121 = aputv %tmp.120 %tmp.117 %tmp.119;
-        %tmp.123 = const :locY;
-        symbol [ locY %tmp.123 69 13 17 const ];
-        symbol [ WatchUi %tmp.124 69 19 26 ];
-        %tmp.124 = getm $.Toybox.WatchUi;
-        symbol [ LAYOUT_VALIGN_CENTER %tmp.125 69 27 47 ];
-        %tmp.125 = getv %tmp.124 :LAYOUT_VALIGN_CENTER;
-        %tmp.126 = 360;
-        %tmp.127 = add %tmp.125 %tmp.126;
-        %tmp.128 = dup %tmp.121;
-        %tmp.129 = aputv %tmp.128 %tmp.123 %tmp.127;
-        %tmp.103 = newc %tmp.106 (%tmp.129);
-        symbol [ _playBtn ? 66 8 16 ];
-        putv self :_playBtn %tmp.103;
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc" 72 8 ]
-        symbol [ System %tmp.130 72 23 29 ];
-        %tmp.130 = getm $.Toybox.System;
-        symbol [ getClockTime %tmp.131 72 30 42 ];
-        %tmp.131 = getv function %tmp.130 :getClockTime;
-        %tmp.132 = invoke %tmp.130 %tmp.131();
-        symbol [ _currentTime ? 72 8 20 ];
-        putv self :_currentTime %tmp.132;
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc" 74 8 ]
-        symbol [ WatchUi %tmp.135 74 27 34 ];
-        %tmp.135 = getm $.Toybox.WatchUi;
-        symbol [ Text %tmp.136 74 35 39 ];
-        %tmp.136 = getv function ? %tmp.135 :Text;
-        %tmp.137 = newd 6;
-        %tmp.139 = const :text;
-        symbol [ text %tmp.139 75 13 17 const ];
-        symbol [ _currentTime %tmp.141 75 21 33 ];
-        %tmp.141 = getv ? :_currentTime;
-        symbol [ hour %tmp.142 75 34 38 ];
-        %tmp.142 = getv %tmp.141 :hour;
-        symbol [ format %tmp.143 75 39 45 ];
-        %tmp.143 = getv function %tmp.142 :format;
-        %tmp.144 = "%02d";
-        %tmp.145 = invoke %tmp.142 %tmp.143(%tmp.144);
-        %tmp.146 = ":";
-        %tmp.147 = add %tmp.145 %tmp.146;
-        symbol [ _currentTime %tmp.149 75 62 74 ];
-        %tmp.149 = getv ? :_currentTime;
-        symbol [ min %tmp.150 75 75 78 ];
-        %tmp.150 = getv %tmp.149 :min;
-        symbol [ format %tmp.151 75 79 85 ];
-        %tmp.151 = getv function %tmp.150 :format;
-        %tmp.152 = "%02d";
-        %tmp.153 = invoke %tmp.150 %tmp.151(%tmp.152);
-        %tmp.154 = add %tmp.147 %tmp.153;
-        %tmp.155 = dup %tmp.137;
-        %tmp.156 = aputv %tmp.155 %tmp.139 %tmp.154;
-        %tmp.158 = const :locX;
-        symbol [ locX %tmp.158 76 13 17 const ];
-        symbol [ WatchUi %tmp.159 76 21 28 ];
-        %tmp.159 = getm $.Toybox.WatchUi;
-        symbol [ LAYOUT_HALIGN_CENTER %tmp.160 76 29 49 ];
-        %tmp.160 = getv %tmp.159 :LAYOUT_HALIGN_CENTER;
-        %tmp.161 = dup %tmp.156;
-        %tmp.162 = aputv %tmp.161 %tmp.158 %tmp.160;
-        %tmp.164 = const :locY;
-        symbol [ locY %tmp.164 77 13 17 const ];
-        symbol [ WatchUi %tmp.165 77 21 28 ];
-        %tmp.165 = getm $.Toybox.WatchUi;
-        symbol [ LAYOUT_VALIGN_TOP %tmp.166 77 29 46 ];
-        %tmp.166 = getv %tmp.165 :LAYOUT_VALIGN_TOP;
-        %tmp.167 = 35;
-        %tmp.168 = add %tmp.166 %tmp.167;
-        %tmp.169 = dup %tmp.162;
-        %tmp.170 = aputv %tmp.169 %tmp.164 %tmp.168;
-        %tmp.172 = const :font;
-        symbol [ font %tmp.172 78 13 17 const ];
-        symbol [ Graphics %tmp.173 78 21 29 ];
-        %tmp.173 = getm $.Toybox.Graphics;
-        symbol [ FONT_SYSTEM_TINY %tmp.174 78 30 46 ];
-        %tmp.174 = getv %tmp.173 :FONT_SYSTEM_TINY;
-        %tmp.175 = dup %tmp.170;
-        %tmp.176 = aputv %tmp.175 %tmp.172 %tmp.174;
-        %tmp.178 = const :color;
-        symbol [ color %tmp.178 79 13 18 const ];
-        symbol [ Graphics %tmp.179 79 22 30 ];
-        %tmp.179 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLUE %tmp.180 79 31 41 ];
-        %tmp.180 = getv %tmp.179 :COLOR_BLUE;
-        %tmp.181 = dup %tmp.176;
-        %tmp.182 = aputv %tmp.181 %tmp.178 %tmp.180;
-        %tmp.184 = const :textAlign;
-        symbol [ textAlign %tmp.184 80 13 22 const ];
-        symbol [ Graphics %tmp.185 80 26 34 ];
-        %tmp.185 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.186 80 35 54 ];
-        %tmp.186 = getv %tmp.185 :TEXT_JUSTIFY_CENTER;
-        %tmp.187 = dup %tmp.182;
-        %tmp.188 = aputv %tmp.187 %tmp.184 %tmp.186;
-        %tmp.133 = newc %tmp.136 (%tmp.188);
-        symbol [ _timeDisplay ? 74 8 20 ];
-        putv self :_timeDisplay %tmp.133;
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc" 83 8 ]
-        symbol [ WatchUi %tmp.191 83 24 31 ];
-        %tmp.191 = getm $.Toybox.WatchUi;
-        symbol [ Text %tmp.192 83 32 36 ];
-        %tmp.192 = getv function ? %tmp.191 :Text;
-        %tmp.193 = newd 6;
-        %tmp.195 = const :text;
-        symbol [ text %tmp.195 84 13 17 const ];
-        symbol [ _title %tmp.197 84 21 27 ];
-        %tmp.197 = getv ? :_title;
-        %tmp.198 = dup %tmp.193;
-        %tmp.199 = aputv %tmp.198 %tmp.195 %tmp.197;
-        %tmp.201 = const :locX;
-        symbol [ locX %tmp.201 85 13 17 const ];
-        symbol [ WatchUi %tmp.202 85 21 28 ];
-        %tmp.202 = getm $.Toybox.WatchUi;
-        symbol [ LAYOUT_HALIGN_CENTER %tmp.203 85 29 49 ];
-        %tmp.203 = getv %tmp.202 :LAYOUT_HALIGN_CENTER;
-        %tmp.204 = dup %tmp.199;
-        %tmp.205 = aputv %tmp.204 %tmp.201 %tmp.203;
-        %tmp.207 = const :locY;
-        symbol [ locY %tmp.207 86 13 17 const ];
-        %tmp.208 = 100;
-        %tmp.209 = dup %tmp.205;
-        %tmp.210 = aputv %tmp.209 %tmp.207 %tmp.208;
-        %tmp.212 = const :font;
-        symbol [ font %tmp.212 87 13 17 const ];
-        symbol [ Graphics %tmp.213 87 21 29 ];
-        %tmp.213 = getm $.Toybox.Graphics;
-        symbol [ FONT_SYSTEM_MEDIUM %tmp.214 87 30 48 ];
-        %tmp.214 = getv %tmp.213 :FONT_SYSTEM_MEDIUM;
-        %tmp.215 = dup %tmp.210;
-        %tmp.216 = aputv %tmp.215 %tmp.212 %tmp.214;
-        %tmp.218 = const :color;
-        symbol [ color %tmp.218 88 13 18 const ];
-        symbol [ Graphics %tmp.219 88 22 30 ];
-        %tmp.219 = getm $.Toybox.Graphics;
-        symbol [ COLOR_WHITE %tmp.220 88 31 42 ];
-        %tmp.220 = getv %tmp.219 :COLOR_WHITE;
-        %tmp.221 = dup %tmp.216;
-        %tmp.222 = aputv %tmp.221 %tmp.218 %tmp.220;
-        %tmp.224 = const :textAlign;
-        symbol [ textAlign %tmp.224 89 13 22 const ];
-        symbol [ Graphics %tmp.225 89 26 34 ];
-        %tmp.225 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.226 89 35 54 ];
-        %tmp.226 = getv %tmp.225 :TEXT_JUSTIFY_CENTER;
-        %tmp.227 = dup %tmp.222;
-        %tmp.228 = aputv %tmp.227 %tmp.224 %tmp.226;
-        %tmp.189 = newc %tmp.192 (%tmp.228);
-        symbol [ _titleTxt ? 83 8 17 ];
-        putv self :_titleTxt %tmp.189;
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc" 92 8 ]
-        symbol [ WatchUi %tmp.231 92 27 34 ];
-        %tmp.231 = getm $.Toybox.WatchUi;
-        symbol [ Text %tmp.232 92 35 39 ];
-        %tmp.232 = getv function ? %tmp.231 :Text;
-        %tmp.233 = newd 6;
-        %tmp.235 = const :text;
-        symbol [ text %tmp.235 93 13 17 const ];
-        symbol [ _headline %tmp.237 93 21 30 ];
-        %tmp.237 = getv ? :_headline;
-        %tmp.238 = dup %tmp.233;
-        %tmp.239 = aputv %tmp.238 %tmp.235 %tmp.237;
-        %tmp.241 = const :locX;
-        symbol [ locX %tmp.241 94 13 17 const ];
-        symbol [ WatchUi %tmp.242 94 21 28 ];
-        %tmp.242 = getm $.Toybox.WatchUi;
-        symbol [ LAYOUT_HALIGN_CENTER %tmp.243 94 29 49 ];
-        %tmp.243 = getv %tmp.242 :LAYOUT_HALIGN_CENTER;
-        %tmp.244 = dup %tmp.239;
-        %tmp.245 = aputv %tmp.244 %tmp.241 %tmp.243;
-        %tmp.247 = const :locY;
-        symbol [ locY %tmp.247 95 13 17 const ];
-        %tmp.248 = 300;
-        %tmp.249 = dup %tmp.245;
-        %tmp.250 = aputv %tmp.249 %tmp.247 %tmp.248;
-        %tmp.252 = const :font;
-        symbol [ font %tmp.252 96 13 17 const ];
-        symbol [ Graphics %tmp.253 96 21 29 ];
-        %tmp.253 = getm $.Toybox.Graphics;
-        symbol [ FONT_SYSTEM_XTINY %tmp.254 96 30 47 ];
-        %tmp.254 = getv %tmp.253 :FONT_SYSTEM_XTINY;
-        %tmp.255 = dup %tmp.250;
-        %tmp.256 = aputv %tmp.255 %tmp.252 %tmp.254;
-        %tmp.258 = const :color;
-        symbol [ color %tmp.258 97 13 18 const ];
-        symbol [ Graphics %tmp.259 97 22 30 ];
-        %tmp.259 = getm $.Toybox.Graphics;
-        symbol [ COLOR_WHITE %tmp.260 97 31 42 ];
-        %tmp.260 = getv %tmp.259 :COLOR_WHITE;
-        %tmp.261 = dup %tmp.256;
-        %tmp.262 = aputv %tmp.261 %tmp.258 %tmp.260;
-        %tmp.264 = const :textAlign;
-        symbol [ textAlign %tmp.264 98 13 22 const ];
-        symbol [ Graphics %tmp.265 98 26 34 ];
-        %tmp.265 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.266 98 35 54 ];
-        %tmp.266 = getv %tmp.265 :TEXT_JUSTIFY_CENTER;
-        %tmp.267 = dup %tmp.262;
-        %tmp.268 = aputv %tmp.267 %tmp.264 %tmp.266;
-        %tmp.229 = newc %tmp.232 (%tmp.268);
-        symbol [ _headlineTxt ? 92 8 20 ];
-        putv self :_headlineTxt %tmp.229;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_41_51_100_4_stop:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc" 47 8 ]
+        symbol [ System %tmp.7 47 23 29 ];
+        %tmp.7 = getm $.Toybox.System;
+        symbol [ getClockTime %tmp.8 47 30 42 ];
+        %tmp.8 = getv function %tmp.7 :getClockTime;
+        %tmp.9 = invoke %tmp.7 %tmp.8();
+        symbol [ _currentTime ? 47 8 20 ];
+        putv self :_currentTime %tmp.9;
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc" 49 8 ]
+        symbol [ WatchUi %tmp.12 49 29 36 ];
+        %tmp.12 = getm $.Toybox.WatchUi;
+        symbol [ Text %tmp.13 49 37 41 ];
+        %tmp.13 = getv function ? %tmp.12 :Text;
+        %tmp.14 = newd 6;
+        %tmp.16 = const :text;
+        symbol [ text %tmp.16 50 13 17 const ];
+        %tmp.17 = self;
+        symbol [ durationToClock %tmp.18 50 19 34 ];
+        %tmp.18 = getv function %tmp.17 :durationToClock;
+        symbol [ _duration %tmp.20 50 35 44 ];
+        %tmp.20 = getv ? :_duration;
+        %tmp.21 = invoke %tmp.17 %tmp.18(%tmp.20);
+        %tmp.22 = dup %tmp.14;
+        %tmp.23 = aputv %tmp.22 %tmp.16 %tmp.21;
+        %tmp.25 = const :color;
+        symbol [ color %tmp.25 51 13 18 const ];
+        symbol [ Graphics %tmp.26 51 20 28 ];
+        %tmp.26 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.27 51 29 40 ];
+        %tmp.27 = getv %tmp.26 :COLOR_WHITE;
+        %tmp.28 = dup %tmp.23;
+        %tmp.29 = aputv %tmp.28 %tmp.25 %tmp.27;
+        %tmp.31 = const :font;
+        symbol [ font %tmp.31 52 13 17 const ];
+        symbol [ Graphics %tmp.32 52 19 27 ];
+        %tmp.32 = getm $.Toybox.Graphics;
+        symbol [ FONT_NUMBER_MEDIUM %tmp.33 52 28 46 ];
+        %tmp.33 = getv %tmp.32 :FONT_NUMBER_MEDIUM;
+        %tmp.34 = dup %tmp.29;
+        %tmp.35 = aputv %tmp.34 %tmp.31 %tmp.33;
+        %tmp.37 = const :locX;
+        symbol [ locX %tmp.37 53 13 17 const ];
+        symbol [ WatchUi %tmp.38 53 19 26 ];
+        %tmp.38 = getm $.Toybox.WatchUi;
+        symbol [ LAYOUT_HALIGN_CENTER %tmp.39 53 27 47 ];
+        %tmp.39 = getv %tmp.38 :LAYOUT_HALIGN_CENTER;
+        %tmp.40 = 150;
+        %tmp.41 = add %tmp.39 %tmp.40;
+        %tmp.42 = dup %tmp.35;
+        %tmp.43 = aputv %tmp.42 %tmp.37 %tmp.41;
+        %tmp.45 = const :locY;
+        symbol [ locY %tmp.45 54 13 17 const ];
+        symbol [ WatchUi %tmp.46 54 19 26 ];
+        %tmp.46 = getm $.Toybox.WatchUi;
+        symbol [ LAYOUT_VALIGN_CENTER %tmp.47 54 27 47 ];
+        %tmp.47 = getv %tmp.46 :LAYOUT_VALIGN_CENTER;
+        %tmp.48 = dup %tmp.43;
+        %tmp.49 = aputv %tmp.48 %tmp.45 %tmp.47;
+        %tmp.51 = const :textAlign;
+        symbol [ textAlign %tmp.51 55 13 22 const ];
+        symbol [ Graphics %tmp.52 55 24 32 ];
+        %tmp.52 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.53 55 33 52 ];
+        %tmp.53 = getv %tmp.52 :TEXT_JUSTIFY_CENTER;
+        %tmp.54 = dup %tmp.49;
+        %tmp.55 = aputv %tmp.54 %tmp.51 %tmp.53;
+        %tmp.10 = newc %tmp.13 (%tmp.55);
+        symbol [ _timeRemaining ? 49 8 22 ];
+        putv self :_timeRemaining %tmp.10;
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc" 58 8 ]
+        symbol [ WatchUi %tmp.58 58 21 28 ];
+        %tmp.58 = getm $.Toybox.WatchUi;
+        symbol [ Bitmap %tmp.59 58 29 35 ];
+        %tmp.59 = getv function ? %tmp.58 :Bitmap;
+        %tmp.60 = newd 3;
+        %tmp.62 = const :rezId;
+        symbol [ rezId %tmp.62 59 13 18 const ];
+        symbol [ Rez %tmp.64 59 20 23 ];
+        %tmp.64 = getv ? :Rez;
+        symbol [ Drawables %tmp.65 59 24 33 ];
+        %tmp.65 = getv %tmp.64 :Drawables;
+        symbol [ clock %tmp.66 59 34 39 ];
+        %tmp.66 = getv %tmp.65 :clock;
+        %tmp.67 = dup %tmp.60;
+        %tmp.68 = aputv %tmp.67 %tmp.62 %tmp.66;
+        %tmp.70 = const :locX;
+        symbol [ locX %tmp.70 60 13 17 const ];
+        %tmp.71 = 40;
+        %tmp.72 = dup %tmp.68;
+        %tmp.73 = aputv %tmp.72 %tmp.70 %tmp.71;
+        %tmp.75 = const :locY;
+        symbol [ locY %tmp.75 61 13 17 const ];
+        %tmp.76 = 174;
+        %tmp.77 = dup %tmp.73;
+        %tmp.78 = aputv %tmp.77 %tmp.75 %tmp.76;
+        %tmp.56 = newc %tmp.59 (%tmp.78);
+        symbol [ _clock ? 58 8 14 ];
+        putv self :_clock %tmp.56;
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc" 64 8 ]
+        symbol [ WatchUi %tmp.81 64 24 31 ];
+        %tmp.81 = getm $.Toybox.WatchUi;
+        symbol [ Bitmap %tmp.82 64 32 38 ];
+        %tmp.82 = getv function ? %tmp.81 :Bitmap;
+        %tmp.83 = newd 3;
+        %tmp.85 = const :rezId;
+        symbol [ rezId %tmp.85 65 13 18 const ];
+        symbol [ Rez %tmp.87 65 20 23 ];
+        %tmp.87 = getv ? :Rez;
+        symbol [ Drawables %tmp.88 65 24 33 ];
+        %tmp.88 = getv %tmp.87 :Drawables;
+        symbol [ pause %tmp.89 65 34 39 ];
+        %tmp.89 = getv %tmp.88 :pause;
+        %tmp.90 = dup %tmp.83;
+        %tmp.91 = aputv %tmp.90 %tmp.85 %tmp.89;
+        %tmp.93 = const :locX;
+        symbol [ locX %tmp.93 66 13 17 const ];
+        symbol [ WatchUi %tmp.94 66 19 26 ];
+        %tmp.94 = getm $.Toybox.WatchUi;
+        symbol [ LAYOUT_HALIGN_CENTER %tmp.95 66 27 47 ];
+        %tmp.95 = getv %tmp.94 :LAYOUT_HALIGN_CENTER;
+        %tmp.96 = dup %tmp.91;
+        %tmp.97 = aputv %tmp.96 %tmp.93 %tmp.95;
+        %tmp.99 = const :locY;
+        symbol [ locY %tmp.99 67 13 17 const ];
+        symbol [ WatchUi %tmp.100 67 19 26 ];
+        %tmp.100 = getm $.Toybox.WatchUi;
+        symbol [ LAYOUT_VALIGN_CENTER %tmp.101 67 27 47 ];
+        %tmp.101 = getv %tmp.100 :LAYOUT_VALIGN_CENTER;
+        %tmp.102 = 360;
+        %tmp.103 = add %tmp.101 %tmp.102;
+        %tmp.104 = dup %tmp.97;
+        %tmp.105 = aputv %tmp.104 %tmp.99 %tmp.103;
+        %tmp.79 = newc %tmp.82 (%tmp.105);
+        symbol [ _pauseBtn ? 64 8 17 ];
+        putv self :_pauseBtn %tmp.79;
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc" 70 8 ]
+        symbol [ WatchUi %tmp.108 70 23 30 ];
+        %tmp.108 = getm $.Toybox.WatchUi;
+        symbol [ Bitmap %tmp.109 70 31 37 ];
+        %tmp.109 = getv function ? %tmp.108 :Bitmap;
+        %tmp.110 = newd 3;
+        %tmp.112 = const :rezId;
+        symbol [ rezId %tmp.112 71 13 18 const ];
+        symbol [ Rez %tmp.114 71 20 23 ];
+        %tmp.114 = getv ? :Rez;
+        symbol [ Drawables %tmp.115 71 24 33 ];
+        %tmp.115 = getv %tmp.114 :Drawables;
+        symbol [ play %tmp.116 71 34 38 ];
+        %tmp.116 = getv %tmp.115 :play;
+        %tmp.117 = dup %tmp.110;
+        %tmp.118 = aputv %tmp.117 %tmp.112 %tmp.116;
+        %tmp.120 = const :locX;
+        symbol [ locX %tmp.120 72 13 17 const ];
+        symbol [ WatchUi %tmp.121 72 19 26 ];
+        %tmp.121 = getm $.Toybox.WatchUi;
+        symbol [ LAYOUT_HALIGN_CENTER %tmp.122 72 27 47 ];
+        %tmp.122 = getv %tmp.121 :LAYOUT_HALIGN_CENTER;
+        %tmp.123 = dup %tmp.118;
+        %tmp.124 = aputv %tmp.123 %tmp.120 %tmp.122;
+        %tmp.126 = const :locY;
+        symbol [ locY %tmp.126 73 13 17 const ];
+        symbol [ WatchUi %tmp.127 73 19 26 ];
+        %tmp.127 = getm $.Toybox.WatchUi;
+        symbol [ LAYOUT_VALIGN_CENTER %tmp.128 73 27 47 ];
+        %tmp.128 = getv %tmp.127 :LAYOUT_VALIGN_CENTER;
+        %tmp.129 = 360;
+        %tmp.130 = add %tmp.128 %tmp.129;
+        %tmp.131 = dup %tmp.124;
+        %tmp.132 = aputv %tmp.131 %tmp.126 %tmp.130;
+        %tmp.106 = newc %tmp.109 (%tmp.132);
+        symbol [ _playBtn ? 70 8 16 ];
+        putv self :_playBtn %tmp.106;
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc" 76 8 ]
+        symbol [ System %tmp.133 76 23 29 ];
+        %tmp.133 = getm $.Toybox.System;
+        symbol [ getClockTime %tmp.134 76 30 42 ];
+        %tmp.134 = getv function %tmp.133 :getClockTime;
+        %tmp.135 = invoke %tmp.133 %tmp.134();
+        symbol [ _currentTime ? 76 8 20 ];
+        putv self :_currentTime %tmp.135;
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc" 78 8 ]
+        symbol [ WatchUi %tmp.138 78 27 34 ];
+        %tmp.138 = getm $.Toybox.WatchUi;
+        symbol [ Text %tmp.139 78 35 39 ];
+        %tmp.139 = getv function ? %tmp.138 :Text;
+        %tmp.140 = newd 6;
+        %tmp.142 = const :text;
+        symbol [ text %tmp.142 79 13 17 const ];
+        symbol [ _currentTime %tmp.144 79 21 33 ];
+        %tmp.144 = getv ? :_currentTime;
+        symbol [ hour %tmp.145 79 34 38 ];
+        %tmp.145 = getv %tmp.144 :hour;
+        symbol [ format %tmp.146 79 39 45 ];
+        %tmp.146 = getv function %tmp.145 :format;
+        %tmp.147 = "%02d";
+        %tmp.148 = invoke %tmp.145 %tmp.146(%tmp.147);
+        %tmp.149 = ":";
+        %tmp.150 = add %tmp.148 %tmp.149;
+        symbol [ _currentTime %tmp.152 79 62 74 ];
+        %tmp.152 = getv ? :_currentTime;
+        symbol [ min %tmp.153 79 75 78 ];
+        %tmp.153 = getv %tmp.152 :min;
+        symbol [ format %tmp.154 79 79 85 ];
+        %tmp.154 = getv function %tmp.153 :format;
+        %tmp.155 = "%02d";
+        %tmp.156 = invoke %tmp.153 %tmp.154(%tmp.155);
+        %tmp.157 = add %tmp.150 %tmp.156;
+        %tmp.158 = dup %tmp.140;
+        %tmp.159 = aputv %tmp.158 %tmp.142 %tmp.157;
+        %tmp.161 = const :locX;
+        symbol [ locX %tmp.161 80 13 17 const ];
+        symbol [ WatchUi %tmp.162 80 21 28 ];
+        %tmp.162 = getm $.Toybox.WatchUi;
+        symbol [ LAYOUT_HALIGN_CENTER %tmp.163 80 29 49 ];
+        %tmp.163 = getv %tmp.162 :LAYOUT_HALIGN_CENTER;
+        %tmp.164 = dup %tmp.159;
+        %tmp.165 = aputv %tmp.164 %tmp.161 %tmp.163;
+        %tmp.167 = const :locY;
+        symbol [ locY %tmp.167 81 13 17 const ];
+        symbol [ WatchUi %tmp.168 81 21 28 ];
+        %tmp.168 = getm $.Toybox.WatchUi;
+        symbol [ LAYOUT_VALIGN_TOP %tmp.169 81 29 46 ];
+        %tmp.169 = getv %tmp.168 :LAYOUT_VALIGN_TOP;
+        %tmp.170 = 35;
+        %tmp.171 = add %tmp.169 %tmp.170;
+        %tmp.172 = dup %tmp.165;
+        %tmp.173 = aputv %tmp.172 %tmp.167 %tmp.171;
+        %tmp.175 = const :font;
+        symbol [ font %tmp.175 82 13 17 const ];
+        symbol [ Graphics %tmp.176 82 21 29 ];
+        %tmp.176 = getm $.Toybox.Graphics;
+        symbol [ FONT_SYSTEM_TINY %tmp.177 82 30 46 ];
+        %tmp.177 = getv %tmp.176 :FONT_SYSTEM_TINY;
+        %tmp.178 = dup %tmp.173;
+        %tmp.179 = aputv %tmp.178 %tmp.175 %tmp.177;
+        %tmp.181 = const :color;
+        symbol [ color %tmp.181 83 13 18 const ];
+        symbol [ Graphics %tmp.182 83 22 30 ];
+        %tmp.182 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLUE %tmp.183 83 31 41 ];
+        %tmp.183 = getv %tmp.182 :COLOR_BLUE;
+        %tmp.184 = dup %tmp.179;
+        %tmp.185 = aputv %tmp.184 %tmp.181 %tmp.183;
+        %tmp.187 = const :textAlign;
+        symbol [ textAlign %tmp.187 84 13 22 const ];
+        symbol [ Graphics %tmp.188 84 26 34 ];
+        %tmp.188 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.189 84 35 54 ];
+        %tmp.189 = getv %tmp.188 :TEXT_JUSTIFY_CENTER;
+        %tmp.190 = dup %tmp.185;
+        %tmp.191 = aputv %tmp.190 %tmp.187 %tmp.189;
+        %tmp.136 = newc %tmp.139 (%tmp.191);
+        symbol [ _timeDisplay ? 78 8 20 ];
+        putv self :_timeDisplay %tmp.136;
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc" 87 8 ]
+        symbol [ WatchUi %tmp.194 87 24 31 ];
+        %tmp.194 = getm $.Toybox.WatchUi;
+        symbol [ Text %tmp.195 87 32 36 ];
+        %tmp.195 = getv function ? %tmp.194 :Text;
+        %tmp.196 = newd 6;
+        %tmp.198 = const :text;
+        symbol [ text %tmp.198 88 13 17 const ];
+        symbol [ _title %tmp.200 88 21 27 ];
+        %tmp.200 = getv ? :_title;
+        %tmp.201 = dup %tmp.196;
+        %tmp.202 = aputv %tmp.201 %tmp.198 %tmp.200;
+        %tmp.204 = const :locX;
+        symbol [ locX %tmp.204 89 13 17 const ];
+        symbol [ WatchUi %tmp.205 89 21 28 ];
+        %tmp.205 = getm $.Toybox.WatchUi;
+        symbol [ LAYOUT_HALIGN_CENTER %tmp.206 89 29 49 ];
+        %tmp.206 = getv %tmp.205 :LAYOUT_HALIGN_CENTER;
+        %tmp.207 = dup %tmp.202;
+        %tmp.208 = aputv %tmp.207 %tmp.204 %tmp.206;
+        %tmp.210 = const :locY;
+        symbol [ locY %tmp.210 90 13 17 const ];
+        %tmp.211 = 100;
+        %tmp.212 = dup %tmp.208;
+        %tmp.213 = aputv %tmp.212 %tmp.210 %tmp.211;
+        %tmp.215 = const :font;
+        symbol [ font %tmp.215 91 13 17 const ];
+        symbol [ Graphics %tmp.216 91 21 29 ];
+        %tmp.216 = getm $.Toybox.Graphics;
+        symbol [ FONT_SYSTEM_MEDIUM %tmp.217 91 30 48 ];
+        %tmp.217 = getv %tmp.216 :FONT_SYSTEM_MEDIUM;
+        %tmp.218 = dup %tmp.213;
+        %tmp.219 = aputv %tmp.218 %tmp.215 %tmp.217;
+        %tmp.221 = const :color;
+        symbol [ color %tmp.221 92 13 18 const ];
+        symbol [ Graphics %tmp.222 92 22 30 ];
+        %tmp.222 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.223 92 31 42 ];
+        %tmp.223 = getv %tmp.222 :COLOR_WHITE;
+        %tmp.224 = dup %tmp.219;
+        %tmp.225 = aputv %tmp.224 %tmp.221 %tmp.223;
+        %tmp.227 = const :textAlign;
+        symbol [ textAlign %tmp.227 93 13 22 const ];
+        symbol [ Graphics %tmp.228 93 26 34 ];
+        %tmp.228 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.229 93 35 54 ];
+        %tmp.229 = getv %tmp.228 :TEXT_JUSTIFY_CENTER;
+        %tmp.230 = dup %tmp.225;
+        %tmp.231 = aputv %tmp.230 %tmp.227 %tmp.229;
+        %tmp.192 = newc %tmp.195 (%tmp.231);
+        symbol [ _titleTxt ? 87 8 17 ];
+        putv self :_titleTxt %tmp.192;
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc" 96 8 ]
+        symbol [ WatchUi %tmp.234 96 27 34 ];
+        %tmp.234 = getm $.Toybox.WatchUi;
+        symbol [ Text %tmp.235 96 35 39 ];
+        %tmp.235 = getv function ? %tmp.234 :Text;
+        %tmp.236 = newd 6;
+        %tmp.238 = const :text;
+        symbol [ text %tmp.238 97 13 17 const ];
+        symbol [ _headline %tmp.240 97 21 30 ];
+        %tmp.240 = getv ? :_headline;
+        %tmp.241 = dup %tmp.236;
+        %tmp.242 = aputv %tmp.241 %tmp.238 %tmp.240;
+        %tmp.244 = const :locX;
+        symbol [ locX %tmp.244 98 13 17 const ];
+        symbol [ WatchUi %tmp.245 98 21 28 ];
+        %tmp.245 = getm $.Toybox.WatchUi;
+        symbol [ LAYOUT_HALIGN_CENTER %tmp.246 98 29 49 ];
+        %tmp.246 = getv %tmp.245 :LAYOUT_HALIGN_CENTER;
+        %tmp.247 = dup %tmp.242;
+        %tmp.248 = aputv %tmp.247 %tmp.244 %tmp.246;
+        %tmp.250 = const :locY;
+        symbol [ locY %tmp.250 99 13 17 const ];
+        %tmp.251 = 300;
+        %tmp.252 = dup %tmp.248;
+        %tmp.253 = aputv %tmp.252 %tmp.250 %tmp.251;
+        %tmp.255 = const :font;
+        symbol [ font %tmp.255 100 13 17 const ];
+        symbol [ Graphics %tmp.256 100 21 29 ];
+        %tmp.256 = getm $.Toybox.Graphics;
+        symbol [ FONT_SYSTEM_XTINY %tmp.257 100 30 47 ];
+        %tmp.257 = getv %tmp.256 :FONT_SYSTEM_XTINY;
+        %tmp.258 = dup %tmp.253;
+        %tmp.259 = aputv %tmp.258 %tmp.255 %tmp.257;
+        %tmp.261 = const :color;
+        symbol [ color %tmp.261 101 13 18 const ];
+        symbol [ Graphics %tmp.262 101 22 30 ];
+        %tmp.262 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.263 101 31 42 ];
+        %tmp.263 = getv %tmp.262 :COLOR_WHITE;
+        %tmp.264 = dup %tmp.259;
+        %tmp.265 = aputv %tmp.264 %tmp.261 %tmp.263;
+        %tmp.267 = const :textAlign;
+        symbol [ textAlign %tmp.267 102 13 22 const ];
+        symbol [ Graphics %tmp.268 102 26 34 ];
+        %tmp.268 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.269 102 35 54 ];
+        %tmp.269 = getv %tmp.268 :TEXT_JUSTIFY_CENTER;
+        %tmp.270 = dup %tmp.265;
+        %tmp.271 = aputv %tmp.270 %tmp.267 %tmp.269;
+        %tmp.232 = newc %tmp.235 (%tmp.271);
+        symbol [ _headlineTxt ? 96 8 20 ];
+        putv self :_headlineTxt %tmp.232;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_44_51_104_4_stop:
     }
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc"; @line = 102; @symbol_functiondef = [callback1,102,13,22]; ]
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc"; @line = 107; @symbol_functiondef = [callback1,107,13,22]; ]
     function callback1() as Void {
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_102_33_112_4_start:
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc" 103 8 ]
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_103_8_105_8_if_stmt:
-        symbol [ _play %tmp.2 103 12 17 ];
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_107_33_117_4_start:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc" 108 8 ]
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_108_8_110_8_if_stmt:
+        symbol [ _play %tmp.2 108 12 17 ];
         %tmp.2 = getv ? :_play;
-        bf %tmp.2 @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_103_8_105_8_if_end;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_103_8_105_8_if_true:
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_103_19_105_8_start:
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc" 104 12 ]
-        symbol [ _duration %tmp.3 104 12 21 ];
+        bf %tmp.2 @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_108_8_110_8_if_end;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_108_8_110_8_if_true:
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_108_19_110_8_start:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc" 109 12 ]
+        symbol [ _duration %tmp.3 109 12 21 ];
         %tmp.3 = getv self :_duration;
         %tmp.4 = 1;
         %tmp.5 = sub %tmp.3 %tmp.4;
-        symbol [ _duration ? 104 12 21 ];
+        symbol [ _duration ? 109 12 21 ];
         putv self :_duration dup %tmp.5;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_103_19_105_8_stop:
-        goto @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_103_8_105_8_if_end;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_103_8_105_8_if_end:
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc" 106 8 ]
-        symbol [ WatchUi %tmp.6 106 8 15 ];
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_108_19_110_8_stop:
+        goto @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_108_8_110_8_if_end;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_108_8_110_8_if_end:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc" 111 8 ]
+        symbol [ WatchUi %tmp.6 111 8 15 ];
         %tmp.6 = getm $.Toybox.WatchUi;
-        symbol [ requestUpdate %tmp.7 106 16 29 ];
+        symbol [ requestUpdate %tmp.7 111 16 29 ];
         %tmp.7 = getv function %tmp.6 :requestUpdate;
         invoke %tmp.6 %tmp.7();
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc" 108 8 ]
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_108_8_111_8_if_stmt:
-        symbol [ _duration %tmp.9 108 12 21 ];
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc" 113 8 ]
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_113_8_116_8_if_stmt:
+        symbol [ _duration %tmp.9 113 12 21 ];
         %tmp.9 = getv ? :_duration;
         %tmp.10 = 0;
         %tmp.11 = lte %tmp.9 %tmp.10;
-        bf %tmp.11 @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_108_8_111_8_if_end;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_108_8_111_8_if_true:
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_108_28_111_8_start:
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc" 110 12 ]
+        bf %tmp.11 @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_113_8_116_8_if_end;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_113_8_116_8_if_true:
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_113_28_116_8_start:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc" 115 12 ]
         %tmp.12 = self;
-        symbol [ nextView %tmp.13 110 12 20 ];
+        symbol [ nextView %tmp.13 115 12 20 ];
         %tmp.13 = getv function %tmp.12 :nextView;
-        symbol [ TimerFlow %tmp.15 110 21 30 ];
+        symbol [ TimerFlow %tmp.15 115 21 30 ];
         %tmp.15 = getv ? :TimerFlow;
-        symbol [ findPhaseIndex %tmp.16 110 31 45 ];
+        symbol [ findPhaseIndex %tmp.16 115 31 45 ];
         %tmp.16 = getv function %tmp.15 :findPhaseIndex;
-        symbol [ _phase %tmp.18 110 46 52 ];
+        symbol [ _phase %tmp.18 115 46 52 ];
         %tmp.18 = getv ? :_phase;
         %tmp.19 = invoke %tmp.15 %tmp.16(%tmp.18);
         %tmp.20 = 1;
         %tmp.21 = add %tmp.19 %tmp.20;
         invoke %tmp.12 %tmp.13(%tmp.21);
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_108_28_111_8_stop:
-        goto @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_108_8_111_8_if_end;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_108_8_111_8_if_end:
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_102_33_112_4_stop:
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_113_28_116_8_stop:
+        goto @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_113_8_116_8_if_end;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_113_8_116_8_if_end:
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_107_33_117_4_stop:
     }
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc"; @line = 114; @symbol_functiondef = [onLayout,114,13,21]; @symbol_param<0> = [dc,114,22,24]; @symbol_param<0>_type<0> = [Dc,114,28,30]; ]
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc"; @line = 120; @symbol_functiondef = [onLayout,120,13,21]; @symbol_param<0> = [dc,120,22,24]; @symbol_param<0>_type<0> = [Dc,120,28,30]; ]
     function onLayout(dc as Dc) as Void {
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_114_40_119_4_start:
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc" 115 8 ]
-        [ "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_114_40_119_4_start" "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_114_40_119_4_stop" ]
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_120_40_124_4_start:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc" 121 8 ]
+        [ "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_120_40_124_4_start" "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_120_40_124_4_stop" ]
         %timer1.1 = local;
-        symbol [ timer1 %timer1.1 115 12 18 ];
-        symbol [ Timer %tmp.3 115 25 30 ];
+        symbol [ timer1 %timer1.1 121 12 18 ];
+        symbol [ Timer %tmp.3 121 25 30 ];
         %tmp.3 = getm $.Toybox.Timer;
-        symbol [ Timer %tmp.4 115 31 36 ];
+        symbol [ Timer %tmp.4 121 31 36 ];
         %tmp.4 = getv function ? %tmp.3 :Timer;
         %tmp.1 = newc %tmp.4 ();
         lputv %timer1.1 %tmp.1;
-        symbol [ timer1 %timer1.1 115 12 18 ];
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc" 117 8 ]
+        symbol [ timer1 %timer1.1 121 12 18 ];
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc" 122 8 ]
         %tmp.5 = lgetv %timer1.1;
-        symbol [ timer1 %tmp.5 117 8 14 ];
-        symbol [ start %tmp.6 117 15 20 ];
+        symbol [ timer1 %tmp.5 122 8 14 ];
+        symbol [ start %tmp.6 122 15 20 ];
         %tmp.6 = getv function %tmp.5 :start;
         %tmp.7 = self;
-        symbol [ method %tmp.8 117 21 27 ];
+        symbol [ method %tmp.8 122 21 27 ];
         %tmp.8 = getv function %tmp.7 :method;
         %tmp.10 = const :callback1;
-        symbol [ callback1 %tmp.10 117 29 38 const ];
+        symbol [ callback1 %tmp.10 122 29 38 const ];
         %tmp.11 = invoke %tmp.7 %tmp.8(%tmp.10);
         %tmp.12 = 1000;
         %tmp.13 = true;
         invoke %tmp.5 %tmp.6(%tmp.11, %tmp.12, %tmp.13);
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc" 118 8 ]
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc" 123 8 ]
         %tmp.14 = lgetv %timer1.1;
-        symbol [ timer1 %tmp.14 118 17 23 ];
-        symbol [ _timer ? 118 8 14 ];
+        symbol [ timer1 %tmp.14 123 17 23 ];
+        symbol [ _timer ? 123 8 14 ];
         putv self :_timer %tmp.14;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_114_40_119_4_stop:
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_120_40_124_4_stop:
     }
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc"; @line = 121; @symbol_functiondef = [onUpdate,121,13,21]; @symbol_param<0> = [dc,121,22,24]; @symbol_param<0>_type<0> = [Dc,121,28,30]; ]
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc"; @line = 127; @symbol_functiondef = [onUpdate,127,13,21]; @symbol_param<0> = [dc,127,22,24]; @symbol_param<0>_type<0> = [Dc,127,28,30]; ]
     function onUpdate(dc as Dc) as Void {
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_121_40_140_4_start:
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc" 122 8 ]
-        symbol [ BackgroundUtils %tmp.1 122 8 23 ];
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_127_40_150_4_start:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc" 128 8 ]
+        symbol [ BackgroundUtils %tmp.1 128 8 23 ];
         %tmp.1 = getm $.BackgroundUtils;
-        symbol [ drawBackground %tmp.2 122 24 38 ];
+        symbol [ drawBackground %tmp.2 128 24 38 ];
         %tmp.2 = getv function %tmp.1 :drawBackground;
         %tmp.3 = lgetv %dc;
-        symbol [ dc %tmp.3 122 39 41 ];
+        symbol [ dc %tmp.3 128 39 41 ];
         invoke %tmp.1 %tmp.2(%tmp.3);
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc" 123 8 ]
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc" 129 8 ]
         %tmp.4 = lgetv %dc;
-        symbol [ dc %tmp.4 123 8 10 ];
-        symbol [ setColor %tmp.5 123 11 19 ];
+        symbol [ dc %tmp.4 129 8 10 ];
+        symbol [ setColor %tmp.5 129 11 19 ];
         %tmp.5 = getv function %tmp.4 :setColor;
-        symbol [ Graphics %tmp.6 123 20 28 ];
+        symbol [ Graphics %tmp.6 129 20 28 ];
         %tmp.6 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLUE %tmp.7 123 29 39 ];
+        symbol [ COLOR_BLUE %tmp.7 129 29 39 ];
         %tmp.7 = getv %tmp.6 :COLOR_BLUE;
-        symbol [ Graphics %tmp.8 123 41 49 ];
+        symbol [ Graphics %tmp.8 129 41 49 ];
         %tmp.8 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.9 123 50 67 ];
+        symbol [ COLOR_TRANSPARENT %tmp.9 129 50 67 ];
         %tmp.9 = getv %tmp.8 :COLOR_TRANSPARENT;
         invoke %tmp.4 %tmp.5(%tmp.7, %tmp.9);
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc" 125 8 ]
-        symbol [ _timeRemaining %tmp.11 125 8 22 ];
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc" 131 8 ]
+        symbol [ _timeRemaining %tmp.11 131 8 22 ];
         %tmp.11 = getv ? :_timeRemaining;
-        symbol [ setText %tmp.12 125 23 30 ];
+        symbol [ setText %tmp.12 131 23 30 ];
         %tmp.12 = getv function %tmp.11 :setText;
         %tmp.13 = self;
-        symbol [ durationToClock %tmp.14 125 31 46 ];
+        symbol [ durationToClock %tmp.14 131 31 46 ];
         %tmp.14 = getv function %tmp.13 :durationToClock;
-        symbol [ _duration %tmp.16 125 47 56 ];
+        symbol [ _duration %tmp.16 131 47 56 ];
         %tmp.16 = getv ? :_duration;
         %tmp.17 = invoke %tmp.13 %tmp.14(%tmp.16);
         invoke %tmp.11 %tmp.12(%tmp.17);
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc" 126 8 ]
-        symbol [ _timeRemaining %tmp.19 126 8 22 ];
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc" 132 8 ]
+        symbol [ _timeRemaining %tmp.19 132 8 22 ];
         %tmp.19 = getv ? :_timeRemaining;
-        symbol [ draw %tmp.20 126 23 27 ];
+        symbol [ draw %tmp.20 132 23 27 ];
         %tmp.20 = getv function %tmp.19 :draw;
         %tmp.21 = lgetv %dc;
-        symbol [ dc %tmp.21 126 28 30 ];
+        symbol [ dc %tmp.21 132 28 30 ];
         invoke %tmp.19 %tmp.20(%tmp.21);
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc" 127 8 ]
-        symbol [ _clock %tmp.23 127 8 14 ];
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc" 133 8 ]
+        symbol [ _clock %tmp.23 133 8 14 ];
         %tmp.23 = getv ? :_clock;
-        symbol [ draw %tmp.24 127 15 19 ];
+        symbol [ draw %tmp.24 133 15 19 ];
         %tmp.24 = getv function %tmp.23 :draw;
         %tmp.25 = lgetv %dc;
-        symbol [ dc %tmp.25 127 20 22 ];
+        symbol [ dc %tmp.25 133 20 22 ];
         invoke %tmp.23 %tmp.24(%tmp.25);
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc" 128 8 ]
-        symbol [ System %tmp.26 128 23 29 ];
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc" 136 8 ]
+        symbol [ System %tmp.26 136 23 29 ];
         %tmp.26 = getm $.Toybox.System;
-        symbol [ getClockTime %tmp.27 128 30 42 ];
+        symbol [ getClockTime %tmp.27 136 30 42 ];
         %tmp.27 = getv function %tmp.26 :getClockTime;
         %tmp.28 = invoke %tmp.26 %tmp.27();
-        symbol [ _currentTime ? 128 8 20 ];
+        symbol [ _currentTime ? 136 8 20 ];
         putv self :_currentTime %tmp.28;
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc" 129 8 ]
-        symbol [ _timeDisplay %tmp.30 129 8 20 ];
-        %tmp.30 = getv ? :_timeDisplay;
-        symbol [ setText %tmp.31 129 21 28 ];
-        %tmp.31 = getv function %tmp.30 :setText;
-        symbol [ _currentTime %tmp.33 129 30 42 ];
-        %tmp.33 = getv ? :_currentTime;
-        symbol [ hour %tmp.34 129 43 47 ];
-        %tmp.34 = getv %tmp.33 :hour;
-        %tmp.35 = 12;
-        %tmp.36 = mod %tmp.34 %tmp.35;
-        symbol [ format %tmp.37 129 54 60 ];
-        %tmp.37 = getv function %tmp.36 :format;
-        %tmp.38 = "%2d";
-        %tmp.39 = invoke %tmp.36 %tmp.37(%tmp.38);
-        %tmp.40 = ":";
-        %tmp.41 = add %tmp.39 %tmp.40;
-        symbol [ _currentTime %tmp.43 129 76 88 ];
-        %tmp.43 = getv ? :_currentTime;
-        symbol [ min %tmp.44 129 89 92 ];
-        %tmp.44 = getv %tmp.43 :min;
-        symbol [ format %tmp.45 129 93 99 ];
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc" 137 8 ]
+        [ "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_127_40_150_4_start" "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_127_40_150_4_stop" ]
+        %hour.1 = local;
+        symbol [ hour %hour.1 137 12 16 ];
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_137_19_137_70_begin:
+        symbol [ _currentTime %tmp.30 137 20 32 ];
+        %tmp.30 = getv ? :_currentTime;
+        symbol [ hour %tmp.31 137 33 37 ];
+        %tmp.31 = getv %tmp.30 :hour;
+        %tmp.32 = 0;
+        %tmp.33 = eq %tmp.31 %tmp.32;
+        bf %tmp.33 @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_137_19_137_70_false;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_137_19_137_70_true:
+        %tmp.34 = 12;
+        push %tmp.34;
+        goto @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_137_19_137_70_end;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_137_19_137_70_false:
+        symbol [ _currentTime %tmp.36 137 50 62 ];
+        %tmp.36 = getv ? :_currentTime;
+        symbol [ hour %tmp.37 137 63 67 ];
+        %tmp.37 = getv %tmp.36 :hour;
+        %tmp.38 = 12;
+        %tmp.39 = mod %tmp.37 %tmp.38;
+        push %tmp.39;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_137_19_137_70_end:
+        %tmp.40 = phi [%tmp.33 @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_137_19_137_70_begin] [%tmp.34 @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_137_19_137_70_true] [%tmp.39 @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_137_19_137_70_false] [%tmp.40 @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_137_19_137_70_end];
+        lputv %hour.1 %tmp.40;
+        symbol [ hour %hour.1 137 12 16 ];
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc" 138 8 ]
+        symbol [ _timeDisplay %tmp.42 138 8 20 ];
+        %tmp.42 = getv ? :_timeDisplay;
+        symbol [ setText %tmp.43 138 21 28 ];
+        %tmp.43 = getv function %tmp.42 :setText;
+        %tmp.44 = lgetv %hour.1;
+        symbol [ hour %tmp.44 138 30 34 ];
+        symbol [ format %tmp.45 138 36 42 ];
         %tmp.45 = getv function %tmp.44 :format;
-        %tmp.46 = "%02d";
+        %tmp.46 = "%2d";
         %tmp.47 = invoke %tmp.44 %tmp.45(%tmp.46);
-        %tmp.48 = add %tmp.41 %tmp.47;
-        invoke %tmp.30 %tmp.31(%tmp.48);
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc" 130 8 ]
-        symbol [ _timeDisplay %tmp.50 130 8 20 ];
-        %tmp.50 = getv ? :_timeDisplay;
-        symbol [ draw %tmp.51 130 21 25 ];
-        %tmp.51 = getv function %tmp.50 :draw;
-        %tmp.52 = lgetv %dc;
-        symbol [ dc %tmp.52 130 26 28 ];
-        invoke %tmp.50 %tmp.51(%tmp.52);
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc" 132 8 ]
-        symbol [ _headlineTxt %tmp.54 132 8 20 ];
-        %tmp.54 = getv ? :_headlineTxt;
-        symbol [ draw %tmp.55 132 21 25 ];
-        %tmp.55 = getv function %tmp.54 :draw;
-        %tmp.56 = lgetv %dc;
-        symbol [ dc %tmp.56 132 26 28 ];
-        invoke %tmp.54 %tmp.55(%tmp.56);
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc" 133 8 ]
-        symbol [ _titleTxt %tmp.58 133 8 17 ];
-        %tmp.58 = getv ? :_titleTxt;
-        symbol [ draw %tmp.59 133 18 22 ];
+        %tmp.48 = ":";
+        %tmp.49 = add %tmp.47 %tmp.48;
+        symbol [ _currentTime %tmp.51 138 58 70 ];
+        %tmp.51 = getv ? :_currentTime;
+        symbol [ min %tmp.52 138 71 74 ];
+        %tmp.52 = getv %tmp.51 :min;
+        symbol [ format %tmp.53 138 75 81 ];
+        %tmp.53 = getv function %tmp.52 :format;
+        %tmp.54 = "%02d";
+        %tmp.55 = invoke %tmp.52 %tmp.53(%tmp.54);
+        %tmp.56 = add %tmp.49 %tmp.55;
+        invoke %tmp.42 %tmp.43(%tmp.56);
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc" 139 8 ]
+        symbol [ _timeDisplay %tmp.58 139 8 20 ];
+        %tmp.58 = getv ? :_timeDisplay;
+        symbol [ draw %tmp.59 139 21 25 ];
         %tmp.59 = getv function %tmp.58 :draw;
         %tmp.60 = lgetv %dc;
-        symbol [ dc %tmp.60 133 23 25 ];
+        symbol [ dc %tmp.60 139 26 28 ];
         invoke %tmp.58 %tmp.59(%tmp.60);
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc" 135 8 ]
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_135_8_139_8_if_stmt:
-        symbol [ _play %tmp.62 135 12 17 ];
-        %tmp.62 = getv ? :_play;
-        bf %tmp.62 @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_135_8_139_8_if_else_false;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_135_8_139_8_if_true:
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_135_19_137_8_start:
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc" 136 12 ]
-        symbol [ _pauseBtn %tmp.64 136 12 21 ];
-        %tmp.64 = getv ? :_pauseBtn;
-        symbol [ draw %tmp.65 136 22 26 ];
-        %tmp.65 = getv function %tmp.64 :draw;
-        %tmp.66 = lgetv %dc;
-        symbol [ dc %tmp.66 136 27 29 ];
-        invoke %tmp.64 %tmp.65(%tmp.66);
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_135_19_137_8_stop:
-        goto @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_135_8_139_8_if_end;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_135_8_139_8_if_else_false:
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_137_15_139_8_start:
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc" 138 12 ]
-        symbol [ _playBtn %tmp.68 138 12 20 ];
-        %tmp.68 = getv ? :_playBtn;
-        symbol [ draw %tmp.69 138 21 25 ];
-        %tmp.69 = getv function %tmp.68 :draw;
-        %tmp.70 = lgetv %dc;
-        symbol [ dc %tmp.70 138 26 28 ];
-        invoke %tmp.68 %tmp.69(%tmp.70);
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_137_15_139_8_stop:
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_135_8_139_8_if_end:
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_121_40_140_4_stop:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc" 141 8 ]
+        symbol [ _headlineTxt %tmp.62 141 8 20 ];
+        %tmp.62 = getv ? :_headlineTxt;
+        symbol [ draw %tmp.63 141 21 25 ];
+        %tmp.63 = getv function %tmp.62 :draw;
+        %tmp.64 = lgetv %dc;
+        symbol [ dc %tmp.64 141 26 28 ];
+        invoke %tmp.62 %tmp.63(%tmp.64);
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc" 142 8 ]
+        symbol [ _titleTxt %tmp.66 142 8 17 ];
+        %tmp.66 = getv ? :_titleTxt;
+        symbol [ draw %tmp.67 142 18 22 ];
+        %tmp.67 = getv function %tmp.66 :draw;
+        %tmp.68 = lgetv %dc;
+        symbol [ dc %tmp.68 142 23 25 ];
+        invoke %tmp.66 %tmp.67(%tmp.68);
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc" 145 8 ]
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_145_8_149_8_if_stmt:
+        symbol [ _play %tmp.70 145 12 17 ];
+        %tmp.70 = getv ? :_play;
+        bf %tmp.70 @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_145_8_149_8_if_else_false;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_145_8_149_8_if_true:
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_145_19_147_8_start:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc" 146 12 ]
+        symbol [ _pauseBtn %tmp.72 146 12 21 ];
+        %tmp.72 = getv ? :_pauseBtn;
+        symbol [ draw %tmp.73 146 22 26 ];
+        %tmp.73 = getv function %tmp.72 :draw;
+        %tmp.74 = lgetv %dc;
+        symbol [ dc %tmp.74 146 27 29 ];
+        invoke %tmp.72 %tmp.73(%tmp.74);
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_145_19_147_8_stop:
+        goto @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_145_8_149_8_if_end;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_145_8_149_8_if_else_false:
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_147_15_149_8_start:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc" 148 12 ]
+        symbol [ _playBtn %tmp.76 148 12 20 ];
+        %tmp.76 = getv ? :_playBtn;
+        symbol [ draw %tmp.77 148 21 25 ];
+        %tmp.77 = getv function %tmp.76 :draw;
+        %tmp.78 = lgetv %dc;
+        symbol [ dc %tmp.78 148 26 28 ];
+        invoke %tmp.76 %tmp.77(%tmp.78);
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_147_15_149_8_stop:
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_145_8_149_8_if_end:
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_127_40_150_4_stop:
     }
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc"; @line = 142; @symbol_functiondef = [durationToClock,142,13,28]; @symbol_param<0> = [time,142,29,33]; @symbol_return<0> = [String,142,38,44]; ]
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc"; @line = 153; @symbol_functiondef = [durationToClock,153,13,28]; @symbol_param<0> = [time,153,29,33]; @symbol_return<0> = [String,153,38,44]; ]
     function durationToClock(time) as String {
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_142_45_147_4_start:
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc" 144 8 ]
-        [ "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_142_45_147_4_start" "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_142_45_147_4_stop" ]
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_153_45_158_4_start:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc" 155 8 ]
+        [ "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_153_45_158_4_start" "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_153_45_158_4_stop" ]
         %mins.1 = local;
-        symbol [ mins %mins.1 144 12 16 ];
+        symbol [ mins %mins.1 155 12 16 ];
         %tmp.1 = lgetv %time;
-        symbol [ time %tmp.1 144 19 23 ];
+        symbol [ time %tmp.1 155 19 23 ];
         %tmp.2 = 60;
         %tmp.3 = div %tmp.1 %tmp.2;
         lputv %mins.1 %tmp.3;
-        symbol [ mins %mins.1 144 12 16 ];
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc" 145 8 ]
-        [ "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_142_45_147_4_start" "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_142_45_147_4_stop" ]
+        symbol [ mins %mins.1 155 12 16 ];
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc" 156 8 ]
+        [ "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_153_45_158_4_start" "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_153_45_158_4_stop" ]
         %secs.2 = local;
-        symbol [ secs %secs.2 145 12 16 ];
+        symbol [ secs %secs.2 156 12 16 ];
         %tmp.4 = lgetv %time;
-        symbol [ time %tmp.4 145 19 23 ];
+        symbol [ time %tmp.4 156 19 23 ];
         %tmp.5 = 60;
         %tmp.6 = mod %tmp.4 %tmp.5;
         lputv %secs.2 %tmp.6;
-        symbol [ secs %secs.2 145 12 16 ];
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc" 146 8 ]
+        symbol [ secs %secs.2 156 12 16 ];
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc" 157 8 ]
         %tmp.7 = lgetv %mins.1;
-        symbol [ mins %tmp.7 146 15 19 ];
-        symbol [ format %tmp.8 146 20 26 ];
+        symbol [ mins %tmp.7 157 15 19 ];
+        symbol [ format %tmp.8 157 20 26 ];
         %tmp.8 = getv function %tmp.7 :format;
         %tmp.9 = "%02d";
         %tmp.10 = invoke %tmp.7 %tmp.8(%tmp.9);
         %tmp.11 = ":";
         %tmp.12 = add %tmp.10 %tmp.11;
         %tmp.13 = lgetv %secs.2;
-        symbol [ secs %tmp.13 146 44 48 ];
-        symbol [ format %tmp.14 146 49 55 ];
+        symbol [ secs %tmp.13 157 44 48 ];
+        symbol [ format %tmp.14 157 49 55 ];
         %tmp.14 = getv function %tmp.13 :format;
         %tmp.15 = "%02d";
         %tmp.16 = invoke %tmp.13 %tmp.14(%tmp.15);
         %tmp.17 = add %tmp.12 %tmp.16;
         ret %tmp.17;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_142_45_147_4_stop:
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_153_45_158_4_stop:
     }
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc"; @line = 149; @symbol_functiondef = [nextView,149,13,21]; @symbol_param<0> = [index,149,22,27]; ]
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc"; @line = 161; @symbol_functiondef = [nextView,161,13,21]; @symbol_param<0> = [index,161,22,27]; ]
     function nextView(index) {
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_149_29_166_4_start:
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc" 150 8 ]
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_150_8_154_8_if_stmt:
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_161_29_179_4_start:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc" 162 8 ]
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_162_8_166_8_if_stmt:
         %tmp.1 = lgetv %index;
-        symbol [ index %tmp.1 150 12 17 ];
-        symbol [ TimerFlow %tmp.3 150 21 30 ];
+        symbol [ index %tmp.1 162 12 17 ];
+        symbol [ TimerFlow %tmp.3 162 21 30 ];
         %tmp.3 = getv ? :TimerFlow;
-        symbol [ timers %tmp.4 150 31 37 ];
+        symbol [ timers %tmp.4 162 31 37 ];
         %tmp.4 = getv %tmp.3 :timers;
-        symbol [ size %tmp.5 150 38 42 ];
+        symbol [ size %tmp.5 162 38 42 ];
         %tmp.5 = getv function %tmp.4 :size;
         %tmp.6 = invoke %tmp.4 %tmp.5();
         %tmp.7 = gte %tmp.1 %tmp.6;
-        bf %tmp.7 @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_150_8_154_8_if_end;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_150_8_154_8_if_true:
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_150_46_154_8_start:
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc" 152 12 ]
+        bf %tmp.7 @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_162_8_166_8_if_end;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_162_8_166_8_if_true:
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_162_46_166_8_start:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc" 164 12 ]
         %tmp.8 = 0;
         lputv %index %tmp.8;
-        symbol [ index %index 152 12 17 ];
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc" 153 12 ]
-        symbol [ _intervals %tmp.9 153 12 22 ];
+        symbol [ index %index 164 12 17 ];
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc" 165 12 ]
+        symbol [ _intervals %tmp.9 165 12 22 ];
         %tmp.9 = getv self :_intervals;
         %tmp.10 = 1;
         %tmp.11 = sub %tmp.9 %tmp.10;
-        symbol [ _intervals ? 153 12 22 ];
+        symbol [ _intervals ? 165 12 22 ];
         putv self :_intervals dup %tmp.11;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_150_46_154_8_stop:
-        goto @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_150_8_154_8_if_end;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_150_8_154_8_if_end:
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc" 155 8 ]
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_155_8_165_8_if_stmt:
-        symbol [ _intervals %tmp.13 155 12 22 ];
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_162_46_166_8_stop:
+        goto @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_162_8_166_8_if_end;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_162_8_166_8_if_end:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc" 167 8 ]
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_167_8_178_8_if_stmt:
+        symbol [ _intervals %tmp.13 167 12 22 ];
         %tmp.13 = getv ? :_intervals;
         %tmp.14 = 0;
         %tmp.15 = lte %tmp.13 %tmp.14;
-        bf %tmp.15 @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_155_8_165_8_if_else_false;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_155_8_165_8_if_true:
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_155_29_160_8_start:
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc" 157 12 ]
-        [ "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_155_29_160_8_start" "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_155_29_160_8_stop" ]
+        bf %tmp.15 @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_167_8_178_8_if_else_false;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_167_8_178_8_if_true:
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_167_29_172_8_start:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc" 169 12 ]
+        [ "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_167_29_172_8_start" "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_167_29_172_8_stop" ]
         %view.1 = local;
-        symbol [ view %view.1 157 16 20 ];
-        symbol [ SessionLengthView %tmp.19 157 27 44 ];
+        symbol [ view %view.1 169 16 20 ];
+        symbol [ SessionLengthView %tmp.19 169 27 44 ];
         %tmp.19 = getv ? :SessionLengthView;
-        symbol [ SessionFlow %tmp.21 157 45 56 ];
+        symbol [ SessionFlow %tmp.21 169 45 56 ];
         %tmp.21 = getv ? :SessionFlow;
-        symbol [ steps %tmp.22 157 57 62 ];
+        symbol [ steps %tmp.22 169 57 62 ];
         %tmp.22 = getv %tmp.21 :steps;
         %tmp.23 = 0;
         %tmp.24 = agetv %tmp.22 %tmp.23;
-        %tmp.25 = "title1";
-        %tmp.26 = agetv %tmp.24 %tmp.25;
-        symbol [ SessionFlow %tmp.28 157 77 88 ];
-        %tmp.28 = getv ? :SessionFlow;
-        symbol [ steps %tmp.29 157 89 94 ];
-        %tmp.29 = getv %tmp.28 :steps;
-        %tmp.30 = 0;
-        %tmp.31 = agetv %tmp.29 %tmp.30;
-        %tmp.32 = "title2";
-        %tmp.33 = agetv %tmp.31 %tmp.32;
-        symbol [ SessionFlow %tmp.35 157 109 120 ];
-        %tmp.35 = getv ? :SessionFlow;
-        symbol [ steps %tmp.36 157 121 126 ];
-        %tmp.36 = getv %tmp.35 :steps;
-        %tmp.37 = 0;
-        %tmp.38 = agetv %tmp.36 %tmp.37;
-        %tmp.39 = "phase";
-        %tmp.40 = agetv %tmp.38 %tmp.39;
-        %tmp.16 = newc %tmp.19 (%tmp.26, %tmp.33, %tmp.40);
+        %tmp.16 = newc %tmp.19 (%tmp.24);
         lputv %view.1 %tmp.16;
-        symbol [ view %view.1 157 16 20 ];
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc" 158 12 ]
-        symbol [ Attention %tmp.41 158 12 21 ];
-        %tmp.41 = getm $.Toybox.Attention;
-        symbol [ playTone %tmp.42 158 22 30 ];
-        %tmp.42 = getv function %tmp.41 :playTone;
-        symbol [ Attention %tmp.43 158 31 40 ];
-        %tmp.43 = getm $.Toybox.Attention;
-        symbol [ TONE_SUCCESS %tmp.44 158 41 53 ];
-        %tmp.44 = getv %tmp.43 :TONE_SUCCESS;
-        invoke %tmp.41 %tmp.42(%tmp.44);
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc" 159 12 ]
-        symbol [ WatchUi %tmp.45 159 12 19 ];
-        %tmp.45 = getm $.Toybox.WatchUi;
-        symbol [ switchToView %tmp.46 159 20 32 ];
-        %tmp.46 = getv function %tmp.45 :switchToView;
-        %tmp.47 = lgetv %view.1;
-        symbol [ view %tmp.47 159 33 37 ];
-        symbol [ SessionLengthDelegate %tmp.51 159 43 64 ];
-        %tmp.51 = getv ? :SessionLengthDelegate;
-        %tmp.52 = lgetv %view.1;
-        symbol [ view %tmp.52 159 65 69 ];
-        %tmp.48 = newc %tmp.51 (%tmp.52);
-        symbol [ WatchUi %tmp.53 159 72 79 ];
-        %tmp.53 = getm $.Toybox.WatchUi;
-        symbol [ SLIDE_BLINK %tmp.54 159 80 91 ];
-        %tmp.54 = getv %tmp.53 :SLIDE_BLINK;
-        invoke %tmp.45 %tmp.46(%tmp.47, %tmp.48, %tmp.54);
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_155_29_160_8_stop:
-        goto @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_155_8_165_8_if_end;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_155_8_165_8_if_else_false:
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_160_15_165_8_start:
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc" 161 12 ]
-        [ "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_160_15_165_8_start" "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_160_15_165_8_stop" ]
+        symbol [ view %view.1 169 16 20 ];
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc" 170 12 ]
+        symbol [ Attention %tmp.25 170 12 21 ];
+        %tmp.25 = getm $.Toybox.Attention;
+        symbol [ playTone %tmp.26 170 22 30 ];
+        %tmp.26 = getv function %tmp.25 :playTone;
+        symbol [ Attention %tmp.27 170 31 40 ];
+        %tmp.27 = getm $.Toybox.Attention;
+        symbol [ TONE_SUCCESS %tmp.28 170 41 53 ];
+        %tmp.28 = getv %tmp.27 :TONE_SUCCESS;
+        invoke %tmp.25 %tmp.26(%tmp.28);
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc" 171 12 ]
+        symbol [ WatchUi %tmp.29 171 12 19 ];
+        %tmp.29 = getm $.Toybox.WatchUi;
+        symbol [ switchToView %tmp.30 171 20 32 ];
+        %tmp.30 = getv function %tmp.29 :switchToView;
+        %tmp.31 = lgetv %view.1;
+        symbol [ view %tmp.31 171 33 37 ];
+        symbol [ SessionLengthDelegate %tmp.35 171 43 64 ];
+        %tmp.35 = getv ? :SessionLengthDelegate;
+        %tmp.36 = lgetv %view.1;
+        symbol [ view %tmp.36 171 65 69 ];
+        %tmp.32 = newc %tmp.35 (%tmp.36);
+        symbol [ WatchUi %tmp.37 171 72 79 ];
+        %tmp.37 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_BLINK %tmp.38 171 80 91 ];
+        %tmp.38 = getv %tmp.37 :SLIDE_BLINK;
+        invoke %tmp.29 %tmp.30(%tmp.31, %tmp.32, %tmp.38);
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_167_29_172_8_stop:
+        goto @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_167_8_178_8_if_end;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_167_8_178_8_if_else_false:
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_172_15_178_8_start:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc" 174 12 ]
+        [ "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_172_15_178_8_start" "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_172_15_178_8_stop" ]
         %phase.2 = local;
-        symbol [ phase %phase.2 161 16 21 ];
-        symbol [ TimerFlow %tmp.56 161 24 33 ];
-        %tmp.56 = getv ? :TimerFlow;
-        symbol [ timers %tmp.57 161 34 40 ];
-        %tmp.57 = getv %tmp.56 :timers;
-        %tmp.58 = lgetv %index;
-        symbol [ index %tmp.58 161 41 46 ];
-        %tmp.59 = agetv %tmp.57 %tmp.58;
-        lputv %phase.2 %tmp.59;
-        symbol [ phase %phase.2 161 16 21 ];
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc" 162 12 ]
-        [ "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_160_15_165_8_start" "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_160_15_165_8_stop" ]
+        symbol [ phase %phase.2 174 16 21 ];
+        symbol [ TimerFlow %tmp.40 174 24 33 ];
+        %tmp.40 = getv ? :TimerFlow;
+        symbol [ timers %tmp.41 174 34 40 ];
+        %tmp.41 = getv %tmp.40 :timers;
+        %tmp.42 = lgetv %index;
+        symbol [ index %tmp.42 174 41 46 ];
+        %tmp.43 = agetv %tmp.41 %tmp.42;
+        lputv %phase.2 %tmp.43;
+        symbol [ phase %phase.2 174 16 21 ];
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc" 175 12 ]
+        [ "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_172_15_178_8_start" "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_172_15_178_8_stop" ]
         %view.3 = local;
-        symbol [ view %view.3 162 16 20 ];
-        symbol [ TimerView %tmp.63 162 27 36 ];
-        %tmp.63 = getv ? :TimerView;
-        %tmp.64 = lgetv %phase.2;
-        symbol [ phase %tmp.64 162 37 42 ];
-        symbol [ _intervals %tmp.66 162 44 54 ];
-        %tmp.66 = getv ? :_intervals;
-        %tmp.60 = newc %tmp.63 (%tmp.64, %tmp.66);
-        lputv %view.3 %tmp.60;
-        symbol [ view %view.3 162 16 20 ];
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc" 163 12 ]
-        symbol [ Attention %tmp.67 163 12 21 ];
-        %tmp.67 = getm $.Toybox.Attention;
-        symbol [ playTone %tmp.68 163 22 30 ];
-        %tmp.68 = getv function %tmp.67 :playTone;
-        symbol [ Attention %tmp.69 163 31 40 ];
-        %tmp.69 = getm $.Toybox.Attention;
-        symbol [ TONE_INTERVAL_ALERT %tmp.70 163 41 60 ];
-        %tmp.70 = getv %tmp.69 :TONE_INTERVAL_ALERT;
-        invoke %tmp.67 %tmp.68(%tmp.70);
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc" 164 12 ]
-        symbol [ WatchUi %tmp.71 164 12 19 ];
-        %tmp.71 = getm $.Toybox.WatchUi;
-        symbol [ switchToView %tmp.72 164 20 32 ];
-        %tmp.72 = getv function %tmp.71 :switchToView;
-        %tmp.73 = lgetv %view.3;
-        symbol [ view %tmp.73 164 33 37 ];
-        symbol [ TimerDelegate %tmp.77 164 43 56 ];
-        %tmp.77 = getv ? :TimerDelegate;
-        %tmp.78 = lgetv %view.3;
-        symbol [ view %tmp.78 164 57 61 ];
-        %tmp.74 = newc %tmp.77 (%tmp.78);
-        symbol [ WatchUi %tmp.79 164 64 71 ];
-        %tmp.79 = getm $.Toybox.WatchUi;
-        symbol [ SLIDE_BLINK %tmp.80 164 72 83 ];
-        %tmp.80 = getv %tmp.79 :SLIDE_BLINK;
-        invoke %tmp.71 %tmp.72(%tmp.73, %tmp.74, %tmp.80);
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_160_15_165_8_stop:
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_155_8_165_8_if_end:
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_149_29_166_4_stop:
+        symbol [ view %view.3 175 16 20 ];
+        symbol [ TimerView %tmp.47 175 27 36 ];
+        %tmp.47 = getv ? :TimerView;
+        %tmp.48 = lgetv %phase.2;
+        symbol [ phase %tmp.48 175 37 42 ];
+        symbol [ _intervals %tmp.50 175 44 54 ];
+        %tmp.50 = getv ? :_intervals;
+        %tmp.44 = newc %tmp.47 (%tmp.48, %tmp.50);
+        lputv %view.3 %tmp.44;
+        symbol [ view %view.3 175 16 20 ];
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc" 176 12 ]
+        symbol [ Attention %tmp.51 176 12 21 ];
+        %tmp.51 = getm $.Toybox.Attention;
+        symbol [ playTone %tmp.52 176 22 30 ];
+        %tmp.52 = getv function %tmp.51 :playTone;
+        symbol [ Attention %tmp.53 176 31 40 ];
+        %tmp.53 = getm $.Toybox.Attention;
+        symbol [ TONE_INTERVAL_ALERT %tmp.54 176 41 60 ];
+        %tmp.54 = getv %tmp.53 :TONE_INTERVAL_ALERT;
+        invoke %tmp.51 %tmp.52(%tmp.54);
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc" 177 12 ]
+        symbol [ WatchUi %tmp.55 177 12 19 ];
+        %tmp.55 = getm $.Toybox.WatchUi;
+        symbol [ switchToView %tmp.56 177 20 32 ];
+        %tmp.56 = getv function %tmp.55 :switchToView;
+        %tmp.57 = lgetv %view.3;
+        symbol [ view %tmp.57 177 33 37 ];
+        symbol [ TimerDelegate %tmp.61 177 43 56 ];
+        %tmp.61 = getv ? :TimerDelegate;
+        %tmp.62 = lgetv %view.3;
+        symbol [ view %tmp.62 177 57 61 ];
+        %tmp.58 = newc %tmp.61 (%tmp.62);
+        symbol [ WatchUi %tmp.63 177 64 71 ];
+        %tmp.63 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_BLINK %tmp.64 177 72 83 ];
+        %tmp.64 = getv %tmp.63 :SLIDE_BLINK;
+        invoke %tmp.55 %tmp.56(%tmp.57, %tmp.58, %tmp.64);
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_172_15_178_8_stop:
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_167_8_178_8_if_end:
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_161_29_179_4_stop:
     }
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc"; @line = 168; @symbol_functiondef = [onHide,168,13,19]; ]
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc"; @line = 182; @symbol_functiondef = [onHide,182,13,19]; ]
     function onHide() {
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_168_22_173_4_start:
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc" 169 8 ]
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_169_8_172_8_if_stmt:
-        symbol [ _timer %tmp.2 169 12 18 ];
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_182_22_187_4_start:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc" 183 8 ]
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_183_8_186_8_if_stmt:
+        symbol [ _timer %tmp.2 183 12 18 ];
         %tmp.2 = getv ? :_timer;
         %tmp.3 = null;
         %tmp.4 = ne %tmp.2 %tmp.3;
-        bf %tmp.4 @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_169_8_172_8_if_end;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_169_8_172_8_if_true:
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_169_28_172_8_start:
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc" 170 12 ]
-        symbol [ _timer %tmp.6 170 12 18 ];
+        bf %tmp.4 @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_183_8_186_8_if_end;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_183_8_186_8_if_true:
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_183_28_186_8_start:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc" 184 12 ]
+        symbol [ _timer %tmp.6 184 12 18 ];
         %tmp.6 = getv ? :_timer;
         %tmp.7 = as %tmp.6 { (!Null) };
-        symbol [ stop %tmp.8 170 19 23 ];
+        symbol [ stop %tmp.8 184 19 23 ];
         %tmp.8 = getv function %tmp.7 :stop;
         invoke %tmp.7 %tmp.8();
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc" 171 12 ]
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc" 185 12 ]
         %tmp.9 = null;
-        symbol [ _timer ? 171 12 18 ];
+        symbol [ _timer ? 185 12 18 ];
         putv self :_timer %tmp.9;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_169_28_172_8_stop:
-        goto @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_169_8_172_8_if_end;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_169_8_172_8_if_end:
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_168_22_173_4_stop:
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_183_28_186_8_stop:
+        goto @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_183_8_186_8_if_end;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_183_8_186_8_if_end:
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_182_22_187_4_stop:
     }
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc"; @line = 175; @symbol_functiondef = [togglePlay,175,13,23]; @symbol_param<0> = [bool,175,24,28]; @symbol_param<0>_type<0> = [Boolean,175,32,39]; ]
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc"; @line = 190; @symbol_functiondef = [togglePlay,190,13,23]; @symbol_param<0> = [bool,190,24,28]; @symbol_param<0>_type<0> = [Boolean,190,32,39]; ]
     function togglePlay(bool as Boolean) {
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_175_41_177_4_start:
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc" 176 8 ]
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_190_41_192_4_start:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc" 191 8 ]
         %tmp.1 = lgetv %bool;
-        symbol [ bool %tmp.1 176 16 20 ];
-        symbol [ _play ? 176 8 13 ];
+        symbol [ bool %tmp.1 191 16 20 ];
+        symbol [ _play ? 191 8 13 ];
         putv self :_play %tmp.1;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_TimerView_mc_175_41_177_4_stop:
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_TimerView_mc_190_41_192_4_stop:
     }
 }
-[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\TimerView.mc"; @line = 1; ]
+[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\TimerView.mc"; @line = 1; ]
 <init> {
 }

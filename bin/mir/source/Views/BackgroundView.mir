@@ -1,22 +1,22 @@
-[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\BackgroundView.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Graphics,1,14,22]; ]
+[ @file = "c:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\BackgroundView.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Graphics,1,14,22]; ]
 import Toybox.Graphics;
-[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\BackgroundView.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [WatchUi,2,14,21]; ]
+[ @file = "c:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\BackgroundView.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [WatchUi,2,14,21]; ]
 import Toybox.WatchUi;
-[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\BackgroundView.mc"; @line = 3; @symbol_importdef<0> = [BackgroundUtils,3,7,22]; ]
+[ @file = "c:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\BackgroundView.mc"; @line = 3; @symbol_importdef<0> = [BackgroundUtils,3,7,22]; ]
 import BackgroundUtils;
-[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\BackgroundView.mc"; @line = 5; @symbol_classdef = [BackgroundView,5,6,20]; @symbol_extends<0> = [WatchUi,5,29,36]; @symbol_extends<1> = [View,5,37,41]; ]
+[ @file = "c:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\BackgroundView.mc"; @line = 5; @symbol_classdef = [BackgroundView,5,6,20]; @symbol_extends<0> = [WatchUi,5,29,36]; @symbol_extends<1> = [View,5,37,41]; ]
 class BackgroundView extends WatchUi.View {
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\BackgroundView.mc"; @line = 5; ]
+    [ @file = "c:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\BackgroundView.mc"; @line = 5; ]
     <init> {
     }
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\BackgroundView.mc"; @line = 5; ]
+    [ @file = "c:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\BackgroundView.mc"; @line = 5; ]
     static
     <init> {
     }
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\BackgroundView.mc"; @line = 6; @symbol_functiondef = [initialize,6,13,23]; ]
+    [ @file = "c:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\BackgroundView.mc"; @line = 6; @symbol_functiondef = [initialize,6,13,23]; ]
     function initialize() as Void {
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_BackgroundView_mc_6_26_8_4_start:
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\BackgroundView.mc" 7 8 ]
+c__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_BackgroundView_mc_6_26_8_4_start:
+[ "c:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\BackgroundView.mc" 7 8 ]
         symbol [ WatchUi %tmp.1 7 8 15 ];
         %tmp.1 = getm $.Toybox.WatchUi;
         symbol [ View %tmp.2 7 16 20 ];
@@ -24,12 +24,12 @@ C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_
         symbol [ initialize %tmp.3 7 21 31 ];
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_BackgroundView_mc_6_26_8_4_stop:
+c__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_BackgroundView_mc_6_26_8_4_stop:
     }
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\BackgroundView.mc"; @line = 10; @symbol_functiondef = [onUpdate,10,13,21]; @symbol_param<0> = [dc,10,22,24]; @symbol_param<0>_type<0> = [Dc,10,28,30]; ]
+    [ @file = "c:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\BackgroundView.mc"; @line = 10; @symbol_functiondef = [onUpdate,10,13,21]; @symbol_param<0> = [dc,10,22,24]; @symbol_param<0>_type<0> = [Dc,10,28,30]; ]
     function onUpdate(dc as Dc) as Void {
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_BackgroundView_mc_10_40_12_4_start:
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\BackgroundView.mc" 11 8 ]
+c__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_BackgroundView_mc_10_40_12_4_start:
+[ "c:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\BackgroundView.mc" 11 8 ]
         symbol [ BackgroundUtils %tmp.1 11 8 23 ];
         %tmp.1 = getm $.BackgroundUtils;
         symbol [ drawBackground %tmp.2 11 24 38 ];
@@ -37,9 +37,9 @@ C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_
         %tmp.3 = lgetv %dc;
         symbol [ dc %tmp.3 11 39 41 ];
         invoke %tmp.1 %tmp.2(%tmp.3);
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_Views_BackgroundView_mc_10_40_12_4_stop:
+c__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_views_BackgroundView_mc_10_40_12_4_stop:
     }
 }
-[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\Views\BackgroundView.mc"; @line = 1; ]
+[ @file = "c:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\views\BackgroundView.mc"; @line = 1; ]
 <init> {
 }

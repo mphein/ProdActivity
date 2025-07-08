@@ -3,69 +3,88 @@ using Toybox.WatchUi;
 import DurationLimits;
 import SessionFlow;
 import Toybox.Attention;
+import Toybox.Lang;
 
+//! Handles key inputs for adjusting session length settings.
 class SessionLengthDelegate extends WatchUi.InputDelegate {
-    var _view;
+    var _view;    // Reference to current view.
+    var _phaseId; // ID of current phase.
+    var _incr;    // increment for current phase.
+    var _lowLim;  // maximum phase duration.
+    var _upLim;   // minimum phase duration.
 
     function initialize(v) {
         WatchUi.InputDelegate.initialize();
         _view = v;
-    }
+        _phaseId = _view.getPhaseId();
 
+        // Retrieve and assign limits and incr from current phase.
+        var limit = DurationLimits.limits[_phaseId] as Dictionary;
+        _lowLim = limit["min"];
+        _upLim = limit["max"]; 
+        _incr = limit["incr"];
+    }
+    
+    // Processes and delegates various key events including:
+    // UP, DOWN, ESC, ENTER.
     function onKey(keyEvent) {
         if (keyEvent.getKey() == WatchUi.KEY_UP) {
-            System.println("onKey: KEY_UP");
+            System.println("DEBUG: KEY_UP");
             btnPress();
             onUp();
             return true;
         } if (keyEvent.getKey() == WatchUi.KEY_DOWN) {
-            System.println("onKey: KEY_DOWN");
+            System.println("DEBUG: KEY_DOWN");
             btnPress();
             onDown();
             return true;
         } if (keyEvent.getKey() == WatchUi.KEY_ENTER) {
-            System.println("onKey: KEY_SELECT");
+            System.println("DEBUG: KEY_SELECT");
             btnPress();
             onSelect();
             return true;
         } if (keyEvent.getKey() == WatchUi.KEY_ESC) {
-            System.println("onKey: KEY_ESC");
+            System.println("DEBUG: KEY_ESC");
             btnPress();
-            onEsc(); // or create a separate handler if needed
+            onEsc();
             return true;
         }
         return false;
     }
 
-    // Checks if the current value is within the limits and updates the view.
+    // Called when the UP key is pressed. Increases duration if not at max.
     function onUp() {
-        System.println("onUp called");
-        if (_view.currentValue < DurationLimits.limits[_view.phaseId]["max"]) {
-            _view.currentValue += DurationLimits.limits[_view.phaseId]["incr"];
-            Application.getApp().setDuration(_view.phaseId, _view.currentValue);
+        var currentValue = Application.getApp().getDuration(_phaseId);
+
+        if (currentValue < _upLim) {
+            currentValue += _incr;
+            Application.getApp().setDuration(_phaseId, currentValue);
             _view.invalidate();
             return true;
         }
         return false;
     }
 
+    // Called when the DOWN key is pressed. Decrements duration if not at min.
     function onDown() {
-        System.println("onDown called");
-        if (_view.currentValue > DurationLimits.limits[_view.phaseId]["min"]) {
-            _view.currentValue -= DurationLimits.limits[_view.phaseId]["incr"];
-            Application.getApp().setDuration(_view.phaseId, _view.currentValue);
+        var currentValue = Application.getApp().getDuration(_phaseId);
+
+        if (currentValue > _lowLim) {
+            currentValue -= _incr;
+            Application.getApp().setDuration(_phaseId, currentValue);
             _view.invalidate();
             return true;
         }
         return false;
     }
 
+    // Called when the ESC key is pressed.
+    // Switches to PREVIOUS view to readjust settings.
     function onEsc() {
-        System.println("onLeft called");
-        var currentIndex = SessionFlow.findPhaseIndex(_view.phaseId);
-        if (currentIndex > 0 && currentIndex < SessionFlow.steps.size()) {
+        var currentIndex = SessionFlow.findPhaseIndex(_phaseId);
+        if (currentIndex > 0 && currentIndex < SessionFlow.count()) {
             var prevStep = SessionFlow.steps[currentIndex - 1];
-            var prevView = new SessionLengthView(prevStep["title1"], prevStep["title2"], prevStep["phase"]);
+            var prevView = new SessionLengthView(prevStep);
             WatchUi.switchToView(prevView, new SessionLengthDelegate(prevView), WatchUi.SLIDE_BLINK);
             return true;
         }
@@ -73,25 +92,27 @@ class SessionLengthDelegate extends WatchUi.InputDelegate {
 
     }
 
+    // Called when the ENTER key is pressed.
+    // Switches to NEXT view to lock in settings.
     function onSelect() {
         // Confirm selection 
-        Application.getApp().setDuration(_view.phaseId, _view.currentValue);
+        var currentValue = Application.getApp().getDuration(_phaseId);
+        Application.getApp().setDuration(_phaseId, currentValue);
 
         // Switch to the next view
-        var currentIndex = SessionFlow.findPhaseIndex(_view.phaseId);
+        var currentIndex = SessionFlow.findPhaseIndex(_phaseId);
         if (currentIndex >= 0 && currentIndex < SessionFlow.steps.size() - 1) {
             var nextStep = SessionFlow.steps[currentIndex + 1];
-            var nextView = new SessionLengthView(nextStep["title1"], nextStep["title2"], nextStep["phase"]);
+            var nextView = new SessionLengthView(nextStep);
             WatchUi.switchToView(nextView, new SessionLengthDelegate(nextView), WatchUi.SLIDE_BLINK);
         } else {
-            System.println("Focus length: " + Application.getApp().getDuration(DurationType.FOCUS));
             var summaryView = new SummaryView();
             var summaryDelegate = new SummaryDelegate(summaryView);
             WatchUi.switchToView(summaryView, summaryDelegate, WatchUi.SLIDE_BLINK);
         }
-        System.println("onSelect called, switching to active session length view");
     }
 
+    //! Plays a short noise when keys are pressed.
     function btnPress() { 
         Attention.playTone(Attention.TONE_KEY);
     }

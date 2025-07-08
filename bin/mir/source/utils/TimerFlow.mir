@@ -1,0 +1,136 @@
+[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\utils\TimerFlow.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Lang,1,14,18]; ]
+import Toybox.Lang;
+//! TimerFlow manages the order and display information
+//! for the active timer views.
+//! The `timers` array defines each configuration screen,
+//! and `findPhaseIndex()` is used to determine the current position
+//! based on a DurationType phase.
+[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\utils\TimerFlow.mc"; @line = 8; @symbol_moduledef = [TimerFlow,8,7,16]; ]
+module TimerFlow {
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\utils\TimerFlow.mc"; @line = 8; ]
+    <init> {
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\utils\TimerFlow.mc" 9 8 ]
+        %tmp.1 = newa 3;
+        %tmp.2 = newd 3;
+        %tmp.3 = "title";
+        %tmp.4 = "Focus";
+        %tmp.5 = dup %tmp.2;
+        %tmp.6 = aputv %tmp.5 %tmp.3 %tmp.4;
+        %tmp.7 = "headline";
+        %tmp.8 = "Lock in.";
+        %tmp.9 = dup %tmp.6;
+        %tmp.10 = aputv %tmp.9 %tmp.7 %tmp.8;
+        %tmp.11 = "phase";
+        symbol [ DurationType %tmp.13 10 67 79 ];
+        %tmp.13 = getv ? :DurationType;
+        symbol [ FOCUS %tmp.14 10 80 85 ];
+        %tmp.14 = getv %tmp.13 :FOCUS;
+        %tmp.15 = dup %tmp.10;
+        %tmp.16 = aputv %tmp.15 %tmp.11 %tmp.14;
+        %tmp.17 = dup %tmp.1;
+        %tmp.18 = aputv %tmp.17 0 %tmp.16;
+        %tmp.19 = newd 3;
+        %tmp.20 = "title";
+        %tmp.21 = "Active";
+        %tmp.22 = dup %tmp.19;
+        %tmp.23 = aputv %tmp.22 %tmp.20 %tmp.21;
+        %tmp.24 = "headline";
+        %tmp.25 = "Get that heart rate up!";
+        %tmp.26 = dup %tmp.23;
+        %tmp.27 = aputv %tmp.26 %tmp.24 %tmp.25;
+        %tmp.28 = "phase";
+        symbol [ DurationType %tmp.30 11 83 95 ];
+        %tmp.30 = getv ? :DurationType;
+        symbol [ ACTIVE %tmp.31 11 96 102 ];
+        %tmp.31 = getv %tmp.30 :ACTIVE;
+        %tmp.32 = dup %tmp.27;
+        %tmp.33 = aputv %tmp.32 %tmp.28 %tmp.31;
+        %tmp.34 = dup %tmp.18;
+        %tmp.35 = aputv %tmp.34 1 %tmp.33;
+        %tmp.36 = newd 3;
+        %tmp.37 = "title";
+        %tmp.38 = "Rest";
+        %tmp.39 = dup %tmp.36;
+        %tmp.40 = aputv %tmp.39 %tmp.37 %tmp.38;
+        %tmp.41 = "headline";
+        %tmp.42 = "Take it easy.";
+        %tmp.43 = dup %tmp.40;
+        %tmp.44 = aputv %tmp.43 %tmp.41 %tmp.42;
+        %tmp.45 = "phase";
+        symbol [ DurationType %tmp.47 12 71 83 ];
+        %tmp.47 = getv ? :DurationType;
+        symbol [ REST %tmp.48 12 84 88 ];
+        %tmp.48 = getv %tmp.47 :REST;
+        %tmp.49 = dup %tmp.44;
+        %tmp.50 = aputv %tmp.49 %tmp.45 %tmp.48;
+        %tmp.51 = dup %tmp.35;
+        %tmp.52 = aputv %tmp.51 2 %tmp.50;
+        putv self :timers %tmp.52;
+    }
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\utils\TimerFlow.mc"; @line = 9; @position = 8; @symbol_vardef = [timers,9,8,14]; @symbol_type<0> = [Array,9,18,23]; @symbol_type<1> = [Dictionary,9,24,34]; ]
+    var timers as Array<Dictionary>;
+    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\utils\TimerFlow.mc"; @line = 18; @symbol_functiondef = [findPhaseIndex,18,13,27]; @symbol_param<0> = [phase,18,28,33]; ]
+    function findPhaseIndex(phase) {
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_utils_TimerFlow_mc_18_35_25_4_start:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\utils\TimerFlow.mc" 19 8 ]
+        for @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_utils_TimerFlow_mc_19_8_23_8_for_test @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_utils_TimerFlow_mc_19_8_23_8_for_incr @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_utils_TimerFlow_mc_19_8_23_8_for_end;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_utils_TimerFlow_mc_19_8_23_8_for_init:
+        [ "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_utils_TimerFlow_mc_19_8_23_8_for_begin" "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_utils_TimerFlow_mc_19_8_23_8_for_end" ]
+        %i.1 = local;
+        symbol [ i %i.1 19 17 18 ];
+        %tmp.1 = 0;
+        lputv %i.1 %tmp.1;
+        symbol [ i %i.1 19 17 18 ];
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_utils_TimerFlow_mc_19_8_23_8_for_test:
+        %tmp.2 = lgetv %i.1;
+        symbol [ i %tmp.2 19 24 25 ];
+        symbol [ timers %tmp.4 19 28 34 ];
+        %tmp.4 = getv ? :timers;
+        symbol [ size %tmp.5 19 35 39 ];
+        %tmp.5 = getv function %tmp.4 :size;
+        %tmp.6 = invoke %tmp.4 %tmp.5();
+        %tmp.7 = lt %tmp.2 %tmp.6;
+        bf %tmp.7 @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_utils_TimerFlow_mc_19_8_23_8_for_end;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_utils_TimerFlow_mc_19_8_23_8_for_begin:
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_utils_TimerFlow_mc_19_48_23_8_start:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\utils\TimerFlow.mc" 20 12 ]
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_utils_TimerFlow_mc_20_12_22_12_if_stmt:
+        symbol [ timers %tmp.9 20 16 22 ];
+        %tmp.9 = getv ? :timers;
+        %tmp.10 = lgetv %i.1;
+        symbol [ i %tmp.10 20 23 24 ];
+        %tmp.11 = agetv %tmp.9 %tmp.10;
+        %tmp.12 = "phase";
+        %tmp.13 = agetv %tmp.11 %tmp.12;
+        %tmp.14 = lgetv %phase;
+        symbol [ phase %tmp.14 20 38 43 ];
+        %tmp.15 = eq %tmp.13 %tmp.14;
+        bf %tmp.15 @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_utils_TimerFlow_mc_20_12_22_12_if_end;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_utils_TimerFlow_mc_20_12_22_12_if_true:
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_utils_TimerFlow_mc_20_45_22_12_start:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\utils\TimerFlow.mc" 21 16 ]
+        %tmp.16 = lgetv %i.1;
+        symbol [ i %tmp.16 21 23 24 ];
+        ret %tmp.16;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_utils_TimerFlow_mc_20_45_22_12_stop:
+        goto @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_utils_TimerFlow_mc_20_12_22_12_if_end;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_utils_TimerFlow_mc_20_12_22_12_if_end:
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_utils_TimerFlow_mc_19_48_23_8_stop:
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_utils_TimerFlow_mc_19_8_23_8_for_incr:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\utils\TimerFlow.mc" 19 ]
+        %tmp.19 = lgetv %i.1;
+        symbol [ i %tmp.19 19 43 44 ];
+        %tmp.20 = add %tmp.19 1;
+        lputv %i.1 %tmp.20;
+        symbol [ i %i.1 19 43 44 ];
+        goto @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_utils_TimerFlow_mc_19_8_23_8_for_test;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_utils_TimerFlow_mc_19_8_23_8_for_end:
+[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\utils\TimerFlow.mc" 24 8 ]
+        %tmp.21 = -1;
+        ret %tmp.21;
+C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_utils_TimerFlow_mc_18_35_25_4_stop:
+    }
+}
+[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\utils\TimerFlow.mc"; @line = 1; ]
+<init> {
+}

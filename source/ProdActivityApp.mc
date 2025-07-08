@@ -1,20 +1,17 @@
 import Toybox.Application;
 import Toybox.Lang;
 import Toybox.WatchUi;
+import DurationType;
 
-module DurationType {
-    const FOCUS = 0; // Focus phase duration
-    const ACTIVE = 1; // Break phase duration
-    const REST = 2; // Rest phase duration
-    const INTERVALS = 3; // Total session duration
-}
-
+//! Main application class for managing productivity activity sessions.
+//! Handles focus, active, rest durations, and interval counts.
 class ProdActivityApp extends Application.AppBase {
     var _intervals = 1; // Duration of the productivity session in minutes
     var _focusDuration = 20;
     var _activeDuration = 5;
     var _restDuration = 5;
 
+    // Constructor initializes the app base class.
     function initialize() {
         AppBase.initialize();
     }
@@ -28,12 +25,16 @@ class ProdActivityApp extends Application.AppBase {
     function onStop(state as Dictionary?) as Void {
     }
 
-    // Return the initial view of your application here
+    // Returns the initial view and input delegate for the app.
+    // @return Array containing the starting view and delegate.
     function getInitialView() as [Views] or [Views, InputDelegates] {
         return [new LoadingView() , new NullDelegate()];
     }
 
-    function setDuration(phase as Integer, num as Integer) as Void {
+    // Sets the duration value for a given phase.
+    // @param phase One of DurationType constants (FOCUS, ACTIVE, REST, INTERVALS).
+    // @param num Integer duration or count to set.
+    function setDuration(phase, num as Integer) as Void {
         switch(phase) {
             case DurationType.FOCUS:
                 _focusDuration = num;
@@ -52,6 +53,9 @@ class ProdActivityApp extends Application.AppBase {
         }
     }
 
+    // Retrieves the duration value for a given phase.
+    // @param phase One of DurationType constants.
+    // @return Integer duration or count for the phase, or 0 if invalid.
     function getDuration(phase as Integer) as Integer {
         switch(phase) {
             case DurationType.FOCUS:
@@ -70,6 +74,8 @@ class ProdActivityApp extends Application.AppBase {
 
 }
 
+// Helper function to get the global app instance typed as ProdActivityApp.
+// @return Global application instance cast to ProdActivityApp.
 function getApp() as ProdActivityApp {
     return Application.getApp() as ProdActivityApp;
 }

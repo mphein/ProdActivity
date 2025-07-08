@@ -6,6 +6,7 @@ import BackgroundUtils;
 import Toybox.Attention;
 import Toybox.System;
 
+//! TimerView displays timer countdown, current time, and icons during each phase
 class TimerView extends WatchUi.View {
     var _duration;
     var _title as String = "";
@@ -32,15 +33,18 @@ class TimerView extends WatchUi.View {
         _phase = timerDict["phase"];
         _duration = Application.getApp().getDuration(_phase) * 60;
         _intervals = intervals;
-        System.println(_duration);
-        
+            
         // Initialize UI elements
         initializeUi(timerDict);
     }
 
+    // TODO: Convert hardcoded layout positions to % of screen size
+    // Clean up WatchUi.Text creation.
+    // Initializes all Text objects.
     function initializeUi(timerDict as Dictionary) {
         _title = timerDict["title"];
         _headline = timerDict["headline"];
+        _currentTime = System.getClockTime();
 
         _timeRemaining = new WatchUi.Text({
             :text=>durationToClock(_duration),
@@ -99,6 +103,7 @@ class TimerView extends WatchUi.View {
         });
     }
 
+    // Decrements time remaining and calls nextView when timer is up.
     function callback1() as Void {
         if (_play) {
             _duration -= 1;
@@ -111,27 +116,32 @@ class TimerView extends WatchUi.View {
         }
     }
 
+    // Starts a timer that calls a function every second to decrement time remaining.
     function onLayout(dc as Dc) as Void {
         var timer1 = new Timer.Timer();
-
         timer1.start(method(:callback1), 1000, true);
         _timer = timer1;
     }
-
+    
+    // Called every frame to update and draw all visual elements.  
     function onUpdate(dc as Dc) as Void {
         BackgroundUtils.drawBackground(dc);
         dc.setColor(Graphics.COLOR_BLUE, Graphics.COLOR_TRANSPARENT);
-
+        // Display timer elements.
         _timeRemaining.setText(durationToClock(_duration));
         _timeRemaining.draw(dc);
         _clock.draw(dc);
+
+        // Display current time.
         _currentTime = System.getClockTime();
-        _timeDisplay.setText((_currentTime.hour % 12).format("%2d") + ":" + _currentTime.min.format("%02d")); 
+        var hour = (_currentTime.hour == 0) ? 12: _currentTime.hour % 12;
+        _timeDisplay.setText((hour).format("%2d") + ":" + _currentTime.min.format("%02d")); 
         _timeDisplay.draw(dc);
 
         _headlineTxt.draw(dc);
         _titleTxt.draw(dc);
 
+        // Display pause or play icon.
         if (_play) {
             _pauseBtn.draw(dc);
         } else {
@@ -139,6 +149,7 @@ class TimerView extends WatchUi.View {
         }
     }
 
+    // Converts seconds to MM:SS format string
     function durationToClock(time) as String {
         // Convert duration to Mins:Seconds format
         var mins = time / 60;
@@ -146,6 +157,7 @@ class TimerView extends WatchUi.View {
         return mins.format("%02d") + ":" +  secs.format("%02d");
     }
 
+    // Switches to the next timer or session based on remaining intervals
     function nextView(index) {
         if (index >= TimerFlow.timers.size()) {
             // Completed an interval cycle, loop back and decrement.
@@ -154,10 +166,11 @@ class TimerView extends WatchUi.View {
         }
         if (_intervals <= 0) {
             // Done with all intervals go back to setup.
-            var view = new SessionLengthView(SessionFlow.steps[0]["title1"], SessionFlow.steps[0]["title2"], SessionFlow.steps[0]["phase"]);
+            var view = new SessionLengthView(SessionFlow.steps[0]);
             Attention.playTone(Attention.TONE_SUCCESS);
             WatchUi.switchToView(view, new SessionLengthDelegate(view), WatchUi.SLIDE_BLINK);
         } else {
+            // Switch to next phase Timer View.
             var phase = TimerFlow.timers[index];
             var view = new TimerView(phase, _intervals);
             Attention.playTone(Attention.TONE_INTERVAL_ALERT);
@@ -165,6 +178,7 @@ class TimerView extends WatchUi.View {
         }
     }
 
+    // Clean up timers.
     function onHide() {
         if (_timer != null) {
             _timer.stop();
@@ -172,6 +186,7 @@ class TimerView extends WatchUi.View {
         }   
     }
 
+    // Switches to pause or resume the timer.
     function togglePlay(bool as Boolean) {
         _play = bool;
     }

@@ -1,8 +1,8 @@
-[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\TimerFlow.mc"; @line = 2; @symbol_moduledef = [TimerFlow,2,7,16]; ]
+[ @file = "c:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\TimerFlow.mc"; @line = 2; @symbol_moduledef = [TimerFlow,2,7,16]; ]
 module TimerFlow {
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\TimerFlow.mc"; @line = 2; ]
+    [ @file = "c:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\TimerFlow.mc"; @line = 2; ]
     <init> {
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\TimerFlow.mc" 3 8 ]
+[ "c:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\TimerFlow.mc" 3 8 ]
         %tmp.1 = newa 3;
         %tmp.2 = newd 3;
         %tmp.3 = "title";
@@ -60,21 +60,21 @@ module TimerFlow {
         %tmp.52 = aputv %tmp.51 2 %tmp.50;
         putv self :timers %tmp.52;
     }
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\TimerFlow.mc"; @line = 3; @position = 8; @symbol_vardef = [timers,3,8,14]; ]
+    [ @file = "c:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\TimerFlow.mc"; @line = 3; @position = 8; @symbol_vardef = [timers,3,8,14]; ]
     var timers;
-    [ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\TimerFlow.mc"; @line = 9; @symbol_functiondef = [findPhaseIndex,9,13,27]; @symbol_param<0> = [phase,9,28,33]; ]
+    [ @file = "c:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\TimerFlow.mc"; @line = 9; @symbol_functiondef = [findPhaseIndex,9,13,27]; @symbol_param<0> = [phase,9,28,33]; ]
     function findPhaseIndex(phase) {
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_TimerFlow_mc_9_35_16_4_start:
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\TimerFlow.mc" 10 8 ]
-        for @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_TimerFlow_mc_10_8_14_8_for_test @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_TimerFlow_mc_10_8_14_8_for_incr @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_TimerFlow_mc_10_8_14_8_for_end;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_TimerFlow_mc_10_8_14_8_for_init:
-        [ "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_TimerFlow_mc_10_8_14_8_for_begin" "C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_TimerFlow_mc_10_8_14_8_for_end" ]
+c__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_TimerFlow_mc_9_35_16_4_start:
+[ "c:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\TimerFlow.mc" 10 8 ]
+        for @c__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_TimerFlow_mc_10_8_14_8_for_test @c__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_TimerFlow_mc_10_8_14_8_for_incr @c__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_TimerFlow_mc_10_8_14_8_for_end;
+c__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_TimerFlow_mc_10_8_14_8_for_init:
+        [ "c__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_TimerFlow_mc_10_8_14_8_for_begin" "c__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_TimerFlow_mc_10_8_14_8_for_end" ]
         %i.1 = local;
         symbol [ i %i.1 10 17 18 ];
         %tmp.1 = 0;
         lputv %i.1 %tmp.1;
         symbol [ i %i.1 10 17 18 ];
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_TimerFlow_mc_10_8_14_8_for_test:
+c__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_TimerFlow_mc_10_8_14_8_for_test:
         %tmp.2 = lgetv %i.1;
         symbol [ i %tmp.2 10 24 25 ];
         symbol [ timers %tmp.4 10 28 34 ];
@@ -83,11 +83,11 @@ C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_TimerF
         %tmp.5 = getv function %tmp.4 :size;
         %tmp.6 = invoke %tmp.4 %tmp.5();
         %tmp.7 = lt %tmp.2 %tmp.6;
-        bf %tmp.7 @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_TimerFlow_mc_10_8_14_8_for_end;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_TimerFlow_mc_10_8_14_8_for_begin:
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_TimerFlow_mc_10_48_14_8_start:
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\TimerFlow.mc" 11 12 ]
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_TimerFlow_mc_11_12_13_12_if_stmt:
+        bf %tmp.7 @c__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_TimerFlow_mc_10_8_14_8_for_end;
+c__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_TimerFlow_mc_10_8_14_8_for_begin:
+c__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_TimerFlow_mc_10_48_14_8_start:
+[ "c:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\TimerFlow.mc" 11 12 ]
+c__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_TimerFlow_mc_11_12_13_12_if_stmt:
         symbol [ timers %tmp.9 11 16 22 ];
         %tmp.9 = getv ? :timers;
         %tmp.10 = lgetv %i.1;
@@ -98,32 +98,32 @@ C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_TimerF
         %tmp.14 = lgetv %phase;
         symbol [ phase %tmp.14 11 38 43 ];
         %tmp.15 = eq %tmp.13 %tmp.14;
-        bf %tmp.15 @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_TimerFlow_mc_11_12_13_12_if_end;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_TimerFlow_mc_11_12_13_12_if_true:
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_TimerFlow_mc_11_45_13_12_start:
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\TimerFlow.mc" 12 16 ]
+        bf %tmp.15 @c__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_TimerFlow_mc_11_12_13_12_if_end;
+c__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_TimerFlow_mc_11_12_13_12_if_true:
+c__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_TimerFlow_mc_11_45_13_12_start:
+[ "c:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\TimerFlow.mc" 12 16 ]
         %tmp.16 = lgetv %i.1;
         symbol [ i %tmp.16 12 23 24 ];
         ret %tmp.16;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_TimerFlow_mc_11_45_13_12_stop:
-        goto @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_TimerFlow_mc_11_12_13_12_if_end;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_TimerFlow_mc_11_12_13_12_if_end:
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_TimerFlow_mc_10_48_14_8_stop:
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_TimerFlow_mc_10_8_14_8_for_incr:
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\TimerFlow.mc" 10 ]
+c__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_TimerFlow_mc_11_45_13_12_stop:
+        goto @c__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_TimerFlow_mc_11_12_13_12_if_end;
+c__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_TimerFlow_mc_11_12_13_12_if_end:
+c__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_TimerFlow_mc_10_48_14_8_stop:
+c__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_TimerFlow_mc_10_8_14_8_for_incr:
+[ "c:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\TimerFlow.mc" 10 ]
         %tmp.19 = lgetv %i.1;
         symbol [ i %tmp.19 10 43 44 ];
         %tmp.20 = add %tmp.19 1;
         lputv %i.1 %tmp.20;
         symbol [ i %i.1 10 43 44 ];
-        goto @C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_TimerFlow_mc_10_8_14_8_for_test;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_TimerFlow_mc_10_8_14_8_for_end:
-[ "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\TimerFlow.mc" 15 8 ]
+        goto @c__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_TimerFlow_mc_10_8_14_8_for_test;
+c__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_TimerFlow_mc_10_8_14_8_for_end:
+[ "c:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\TimerFlow.mc" 15 8 ]
         %tmp.21 = -1;
         ret %tmp.21;
-C__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_TimerFlow_mc_9_35_16_4_stop:
+c__Users_Michael_Hein_Desktop_ConnectIQSDK_Watch_Apps_ProdActivity_source_TimerFlow_mc_9_35_16_4_stop:
     }
 }
-[ @file = "C:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\TimerFlow.mc"; @line = 2; ]
+[ @file = "c:\Users\Michael Hein\Desktop\ConnectIQSDK\Watch Apps\ProdActivity\source\TimerFlow.mc"; @line = 2; ]
 <init> {
 }
