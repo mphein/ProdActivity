@@ -39,6 +39,9 @@ I designed the initial layout in Figma before coding to visualize the flow and e
 - **Session Duration Selection:**  
   Interactive screen to set your session length using a slider, with min/max labels and real-time updates.
 
+- **Custom Length Timers:**
+  Allows users to define personalized durations for Focus, Active, Rest, and Interval phases tailored to their study or work routines.
+
 - **Transitions:**  
   Smooth transitions between loading and main setup screens.
 
@@ -65,12 +68,16 @@ I designed the initial layout in Figma before coding to visualize the flow and e
 - `source/views/SummaryView.mc` - Summary screen view.
 - `source/views/TimerView.mc` - Timer countdown and phase view.
 
-## Future Additions
-I would like to add/change:
-  - Touch Controls
-  - Refine Styling
-  - Change hardcoded positioning of UI Elements
-    - May not work on other watches
-  - Track Avg HeartRate during Focus, Active, Rest
-    - Can make sure you are getting higher Active HR than Focus HR.
-  - Add vibration notifications to support users with hearing impairments or those who prefer silent alerts
+## Reflection
+This project helped me strengthen my object-oriented programming skills by working extensively with Views and Delegates in the Garmin Connect IQ framework. I gained hands-on experience with Toybox.WatchUi and Toybox.Graphics, learning how to structure watch applications, design user interfaces, manage layouts, and write clean, reusable functions.
+
+Along the way, I improved my debugging skills and developed a better understanding of UI constraints on wearable devices, especially regarding screen size and input methods. Overall, it was a valuable deep dive into wearable app development and system design.
+
+## Next Steps
+Planned enhancements for the app include:
+- Implementing touch controls to support touchscreen devices alongside button input.
+- Refining visual styling for a cleaner, more consistent user interface.
+- Replacing hardcoded UI element positioning with relative layouts to ensure compatibility across various Garmin devices.
+- Adding average heart rate tracking during Focus, Active, and Rest phases to provide users with meaningful health insights.
+- Introducing vibration notifications to accommodate users with hearing impairments or those who prefer silent alerts.
+- These improvements aim to increase usability, accessibility, and device compatibility, making the app more versatile and user-friendly.
