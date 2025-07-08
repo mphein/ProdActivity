@@ -9,6 +9,7 @@ This project also served as a way to explore Monkey C and the Garmin Connect IQ 
 
 I designed the initial layout in Figma before coding to visualize the flow and ensure a clean, user-friendly interface across screens.
 ![UI Sketch](resources/ProdActivity.png)
+[Figma Project](https://www.figma.com/design/s1s3FtbuyGUism4TGBdWSz/ProdActivity?node-id=0-1&m=dev&t=rTEZnanWa2IXcoxC-1)
 
 ## Compatibility & Supported Devices
 
